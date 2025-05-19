@@ -1,4 +1,5 @@
 import "./App.css";
+import "./styles/Header.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Menu from "./pages/Menu";
@@ -14,15 +15,16 @@ function App() {
       <div className="app">
         <Header />
         <main>
-          <Routes>
+          {/* <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/confirmation" element={<Confirmation />} />
-          </Routes>
+            <Route path="*" element={<NotFound />} />
+          </Routes> */}
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );

@@ -1,0 +1,61 @@
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  height: 148px;
+  background-color: #439159;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar {
+  background: #439159;
+  width: 1440px;
+  height: 148px;
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  margin: 0 auto;
+}
+
+.logo {
+  background: #89c299;
+  border-radius: 6px;
+  opacity: 0.56;
+  padding: 15px 40px;
+}
+
+.drone-delights {
+  font-family: "Gabarito", sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(to left, #1e4128, #1e4128);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.symbols {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px 40px;
+}
+
+.symbols a {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  fill: #122818;
+  width: 45px;
+  height: 45px;
+}

@@ -1,0 +1,101 @@
+.hero {
+  height: 470px;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-image: url("../assets/pictures/hero-image.jpg");
+}
+
+.slogan-container {
+  width: 390px;
+  height: 257px;
+  position: absolute;
+  left: 100px;
+  top: 106px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slogan-box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  opacity: 0.47;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  filter: blur(10.3px);
+}
+
+.slogan-text {
+  width: 333px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-tagline {
+  color: #000000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 28px;
+  line-height: 110%;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+  text-align: center;
+  align-self: center;
+}
+
+.core-values {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+  color: #000000;
+  font-size: 20px;
+  line-height: 110%;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.core-values li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.core-values li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #000000;
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+  .slogan-frame {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 390px;
+  }
+
+  .slogan-text {
+    width: 90%;
+  }
+
+  .hero-tagline {
+    font-size: 28px;
+  }
+
+  .speed-flavour-list {
+    font-size: 20px;
+  }
+}

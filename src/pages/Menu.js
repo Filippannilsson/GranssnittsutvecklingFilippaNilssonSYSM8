@@ -1,5 +1,13 @@
+import "../styles/Menu.css";
+import "../App.css";
+import CategoryFilter from "../components/CategoryFilter";
+
 function Menu() {
-  return <h1>Menu</h1>;
+  return (
+    <div className="menu-page">
+      <CategoryFilter />
+    </div>
+  );
 }
 
 export default Menu;

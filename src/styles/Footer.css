@@ -1,0 +1,30 @@
+.footer {
+  background-color: #89c299;
+  height: 141px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-information {
+  display: flex;
+  flex-direction: column;
+  margin-left: 97px;
+  color: #1a3a23;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.drone-delights-footer {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  margin: 0;
+}
+
+.contact-information p,
+.contact-information a {
+  margin: 2px 0;
+  display: block;
+  color: #1a3a23;
+}

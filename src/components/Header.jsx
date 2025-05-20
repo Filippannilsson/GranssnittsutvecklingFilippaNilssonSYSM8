@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "../styles/Header.css";
+import "../App.css";
 import { ReactComponent as HomeIcon } from "../assets/logos/home.svg";
 import { ReactComponent as CartIcon } from "../assets/logos/cart.svg";
 import { ReactComponent as MenuIcon } from "../assets/logos/menu.svg";
@@ -14,7 +15,7 @@ function Header() {
     <header className="header">
       <nav className="navbar">
         <div className="logo">
-          <h1 className="drone-delights">Drone delights</h1>
+          <h1 className="drone-delights-header">Drone Delights</h1>
         </div>
 
         <div className="symbols">

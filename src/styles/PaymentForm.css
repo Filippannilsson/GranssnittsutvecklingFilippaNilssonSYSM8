@@ -1,0 +1,128 @@
+.payment-wrapper {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.payment-section {
+  background-color: #89c299;
+  border: 1px solid #1a3a23;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  max-width: 760px;
+  width: 100%;
+  padding: 32px 25px;
+  overflow: hidden;
+}
+
+.payment-method-title {
+  color: #1a3a23;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 110%;
+  text-transform: uppercase;
+  margin: 0 0 24px 0;
+}
+
+.payment-method-title::after {
+  content: "";
+  display: block;
+  border-style: solid;
+  border-color: #1a3a23;
+  border-width: 1px 0 0 0;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 13px;
+  background-color: #89c299;
+  margin-bottom: 10px;
+}
+
+.radio-group label {
+  color: #1a3a23;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+
+.radio-group input[type="radio"] {
+  appearance: none;
+  background-color: #c2eace;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #1a3a23;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.radio-group input[type="radio"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #1a3a23;
+}
+
+.payment-form {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+.payment-form-card,
+.payment-form-phone {
+  flex: 1 1 50%;
+  box-sizing: border-box;
+}
+
+.payment-form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.payment-form-row .payment-form-group {
+  flex: 1 1 50%;
+  box-sizing: border-box;
+}
+
+.payment-form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.payment-form-group label {
+  color: #1a3a23;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-left: 5px;
+  margin-bottom: 4px;
+}
+
+.payment-form-group input {
+  background-color: #c2eace;
+  border: none;
+  border-radius: 13px;
+  height: 45px;
+  padding: 0 15px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #1a3a23;
+}
+
+.payment-form-group input::placeholder {
+  color: #439159;
+  font-weight: 400;
+}

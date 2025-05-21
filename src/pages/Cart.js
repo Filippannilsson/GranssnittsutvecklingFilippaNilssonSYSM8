@@ -16,6 +16,7 @@ function Cart() {
             <CartItem image={hamburgerImg} name="Hamburger" price="$8.99" />
             <CartItem image={hamburger2Img} name="Hamburger" price="$10.99" />
             <CartItem image={friesImg} name="French Fries" price="$3.29" />
+            <CartItem image={friesImg} name="French Fries" price="$3.29" />
           </div>
           <div className="order-summery-container">
             <div className="order-summery-cart">

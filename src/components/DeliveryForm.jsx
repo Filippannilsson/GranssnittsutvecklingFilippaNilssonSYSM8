@@ -18,16 +18,28 @@ function DeliveryForm() {
           />
         </div>
 
-        <div className="delivery-form-group">
-          <label>Phone Number</label>
-          <input
-            type="tel"
-            id="phone-number"
-            name="phone-number"
-            placeholder="07X XXX XX XX"
-            pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}"
-            required
-          />
+        <div className="delivery-form-row">
+          <div className="delivery-form-group">
+            <label>Street Name</label>
+            <input
+              type="text"
+              id="street-name"
+              name="street-name"
+              placeholder="Street Name"
+              required
+            />
+          </div>
+
+          <div className="delivery-form-group">
+            <label>House Number</label>
+            <input
+              type="text"
+              id="house-number"
+              name="house-number"
+              placeholder="House Number"
+              required
+            />
+          </div>
         </div>
 
         <div className="delivery-form-group">
@@ -42,23 +54,13 @@ function DeliveryForm() {
         </div>
 
         <div className="delivery-form-group">
-          <label>Street Name</label>
+          <label>Phone Number</label>
           <input
-            type="text"
-            id="street-name"
-            name="street-name"
-            placeholder="Street Name"
-            required
-          />
-        </div>
-
-        <div className="delivery-form-group">
-          <label>House Number</label>
-          <input
-            type="text"
-            id="house-number"
-            name="house-number"
-            placeholder="House Number"
+            type="tel"
+            id="phone-number"
+            name="phone-number"
+            placeholder="07X XXX XX XX"
+            pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}"
             required
           />
         </div>

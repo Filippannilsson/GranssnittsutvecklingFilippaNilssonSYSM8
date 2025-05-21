@@ -1,128 +1,162 @@
 .payment-wrapper {
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
+  flex: 1.5;
 }
 
 .payment-section {
   background-color: #89c299;
-  border: 1px solid #1a3a23;
   border-radius: 8px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  max-width: 760px;
-  width: 100%;
-  padding: 32px 25px;
-  overflow: hidden;
+  border: 1px solid #1a3a23;
+  padding: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .payment-method-title {
   color: #1a3a23;
   font-size: 28px;
   font-weight: bold;
-  line-height: 110%;
   text-transform: uppercase;
-  margin: 0 0 24px 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #1a3a23;
 }
 
-.payment-method-title::after {
-  content: "";
-  display: block;
-  border-style: solid;
-  border-color: #1a3a23;
-  border-width: 1px 0 0 0;
-  width: 100%;
-  margin-top: 10px;
+.payment-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.payment-form-card {
+  flex: 1;
+}
+
+.payment-form-phone {
+  flex: 1;
 }
 
 .radio-group {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 12px;
-  border-radius: 13px;
-  background-color: #89c299;
-  margin-bottom: 10px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="radio"] {
+  appearance: none;
+  background-color: #c2eace;
+  border: 1px solid #1a3a23;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  background-color: #1a3a23;
+  border: 4px solid #c2eace;
 }
 
 .radio-group label {
   color: #1a3a23;
-  font-size: 26px;
-  font-weight: bold;
-  line-height: 110%;
+  font-size: 22px;
   text-transform: uppercase;
 }
 
-.radio-group input[type="radio"] {
-  appearance: none;
-  background-color: #c2eace;
-  width: 20px;
-  height: 20px;
-  border: 1px solid #1a3a23;
-  border-radius: 50%;
-  position: relative;
-  cursor: pointer;
-}
-
-.radio-group input[type="radio"]:checked::before {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #1a3a23;
-}
-
-.payment-form {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 20px;
-}
-
-.payment-form-card,
-.payment-form-phone {
-  flex: 1 1 50%;
-  box-sizing: border-box;
+.payment-form-group {
+  margin-bottom: 20px;
 }
 
 .payment-form-row {
   display: flex;
-  gap: 20px;
+  gap: 25px;
 }
 
-.payment-form-row .payment-form-group {
-  flex: 1 1 50%;
-  box-sizing: border-box;
+.payment-form-row .payment-form-group:first-child {
+  flex: 2;
 }
 
-.payment-form-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
+.payment-form-row .payment-form-group:last-child {
+  flex: 1;
 }
 
 .payment-form-group label {
+  display: block;
   color: #1a3a23;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
-  margin-left: 5px;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .payment-form-group input {
+  width: 100%;
+  height: 40px;
   background-color: #c2eace;
+  border-radius: 8px;
   border: none;
-  border-radius: 13px;
-  height: 45px;
   padding: 0 15px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 14px;
-  text-transform: uppercase;
-  color: #1a3a23;
+  color: #439159;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
 }
 
 .payment-form-group input::placeholder {
   color: #439159;
-  font-weight: 400;
+  font-size: 14px;
+}
+
+.payment-form-group input:focus {
+  outline: none;
+}
+
+@media (max-width: 1200px) {
+  .payment-wrapper {
+    flex: 1;
+  }
+}
+
+@media (max-width: 900px) {
+  .payment-form {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .payment-method-title {
+    font-size: 24px;
+  }
+
+  .radio-group label {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .payment-form-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .payment-form-group {
+    width: 100%;
+  }
+
+  .payment-method-title {
+    font-size: 22px;
+  }
+
+  .radio-group label {
+    font-size: 20px;
+  }
+
+  .payment-form-group label {
+    font-size: 15px;
+  }
+
+  .payment-form-group input {
+    height: 38px;
+  }
 }

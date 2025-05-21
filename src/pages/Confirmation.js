@@ -1,14 +1,7 @@
-import DeliveryForm from "../components/DeliveryForm";
-import PaymentForm from "../components/PaymentForm";
-import OrderSummery from "../components/OrderSummery";
-
 function Confirmation() {
   return (
-    <div>
-      <h1>Confirmation-page</h1>
-      <DeliveryForm />
-      <PaymentForm />
-      {/* <OrderSummery /> */}
+    <div className="corfirmation-page">
+      <h1 className="confirmation-title">Confirmation</h1>
     </div>
   );
 }

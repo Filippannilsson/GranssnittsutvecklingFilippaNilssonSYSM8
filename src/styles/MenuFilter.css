@@ -3,7 +3,6 @@
   border-bottom: 2px solid #439159;
   height: 100%;
   position: relative;
-  overflow: hidden;
   padding: 0 30px;
 }
 
@@ -15,7 +14,8 @@
   display: flex;
   align-items: center;
   justify-content: left;
-  margin: 20px 0px;
+  padding: 20px 0px;
+  margin: 0;
 }
 
 .filter-bar {
@@ -100,7 +100,7 @@
 }
 
 .clear-filter-btn:hover {
-  background-color: #439159;
+  background-color: #7ab38a;
 }
 
 .sort-container {

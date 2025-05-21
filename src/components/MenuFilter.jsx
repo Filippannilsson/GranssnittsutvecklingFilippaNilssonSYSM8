@@ -1,0 +1,42 @@
+import "../styles/MenuFilter.css";
+import "../App.css";
+import Searchbar from "./Searchbar";
+
+function MenuFilter() {
+  return (
+    <div className="menu-filter-section">
+      <h1 className="menu-title">Menu</h1>
+      <div className="filter-section">
+        <div className="filter-bar">
+          <button className="all-btn">All</button>
+          <button className="starters-btn">Starters</button>
+          <button className="main-dishes-btn">Main Dishes</button>
+          <button className="desserts-btn">Desserts</button>
+          <button className="drinks-btn">Drinks</button>
+        </div>
+        <div className="filter-controls">
+          <div className="left-controls">
+            <Searchbar />
+            <button
+              className="clear-filter-btn"
+              // onSubmit={}
+            >
+              Clear X
+            </button>
+          </div>
+          <div className="sort-container">
+            <select id="sort" name="sort" defaultValue="">
+              <option value="" disabled>
+                Sort
+              </option>
+              <option value="price">Price</option>
+              <option value="name">Name</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default MenuFilter;

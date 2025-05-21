@@ -2,3 +2,11 @@
   background-color: #c2eace;
   margin: 0;
 }
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 370px);
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem;
+}

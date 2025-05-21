@@ -13,7 +13,7 @@ function Home() {
   return (
     <div className="home-page">
       <Hero />
-      <div className="main-content">
+      <main className="main-content">
         <div className="text-and-button">
           <h1 className="popular-title">Popular</h1>
           <button className="menu-btn" onClick={() => navigate("/menu")}>
@@ -41,7 +41,7 @@ function Home() {
             price="$10.99"
           />
         </div>
-      </div>
+      </main>
     </div>
   );
 }

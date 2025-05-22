@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import "../styles/Cart.css";
 import "../App.css";
 import CartItem from "../components/CartItem";
@@ -7,6 +8,8 @@ import hamburger2Img from "../assets/pictures/hamburger2.png";
 import friesImg from "../assets/pictures/frenchfries.png";
 
 function Cart() {
+  const navigate = useNavigate();
+
   return (
     <div className="cart-page">
       <div className="cart-title-items-container">
@@ -23,8 +26,18 @@ function Cart() {
               <OrderSummery />
             </div>
             <div className="order-summery-btn">
-              <button className="checkout-btn">Checkout</button>
-              <button className="back-menu-btn">Back to menu</button>
+              <button
+                className="checkout-btn"
+                onClick={() => navigate("/checkout")}
+              >
+                Checkout
+              </button>
+              <button
+                className="back-menu-btn"
+                onClick={() => navigate("/menu")}
+              >
+                Back to menu
+              </button>
             </div>
           </div>
         </div>

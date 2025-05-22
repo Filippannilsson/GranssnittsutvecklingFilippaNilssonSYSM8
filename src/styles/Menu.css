@@ -5,8 +5,16 @@
 
 .menu-items {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 370px);
-  justify-content: center;
-  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
   padding: 2rem;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+@media (max-width: 650px) {
+  .menu-items {
+    gap: 1.5rem;
+    padding: 1rem;
+  }
 }

@@ -17,7 +17,8 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-bottom: 10px;
+  max-width: 1190px;
+  padding-bottom: 5px;
 }
 
 .popular-title {
@@ -25,6 +26,7 @@
   color: #1a3a23;
   font-weight: bold;
   text-transform: uppercase;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .menu-btn {
@@ -49,4 +51,40 @@
   flex-wrap: wrap;
   gap: 40px;
   justify-content: center;
+}
+
+.home-page .product-card {
+  max-width: 370px;
+  width: 370px;
+}
+
+/* Responsive adjustments för home page */
+@media (max-width: 1200px) {
+  .popular-cards {
+    gap: 30px;
+  }
+
+  .home-page .product-card {
+    width: 350px;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .popular-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .home-page .product-card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .text-and-button {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
 }

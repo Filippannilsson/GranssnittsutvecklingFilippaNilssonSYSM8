@@ -87,9 +87,7 @@ function Confirmation() {
               <div className="confirmation-price">
                 <div className="delivery-row">
                   <span className="summary-label">Delivery:</span>
-                  <span className="summary-price">
-                    ${deliveryFee.toFixed(2)}
-                  </span>
+                  <span className="summary-price">${delivery.toFixed(2)}</span>
                 </div>
                 <div className="total-row">
                   <span className="summary-label">Total:</span>

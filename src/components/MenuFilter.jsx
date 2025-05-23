@@ -11,7 +11,8 @@ function MenuFilter() {
         <div className="filter-bar">
           <button className="all-btn">All</button>
           <button className="starters-btn">Starters</button>
-          <button className="main-dishes-btn">Main Dishes</button>
+          <button className="dips-btn">Dips</button>
+          <button className="main-dishes-btn">Mains</button>
           <button className="desserts-btn">Desserts</button>
           <button className="drinks-btn">Drinks</button>
         </div>

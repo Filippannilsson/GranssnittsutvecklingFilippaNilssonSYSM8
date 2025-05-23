@@ -1,0 +1,447 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "name": "French Fries",
+      "category": "starters",
+      "price": 3.5,
+      "description": "Classic crispy fries",
+      "image": "/images/frenchfries.png",
+      "popular": true
+    },
+    {
+      "id": 2,
+      "name": "Sweet Potato Fries",
+      "category": "starters",
+      "price": 4.0,
+      "description": "Golden sweet fries",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 3,
+      "name": "Chili Cheese Tops",
+      "category": "starters",
+      "price": 4.5,
+      "description": "Spicy fried cheese balls",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 4,
+      "name": "Onion Rings",
+      "category": "starters",
+      "price": 4.0,
+      "description": "Golden, crispy onion rings",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 5,
+      "name": "Mozzarella Sticks",
+      "category": "starters",
+      "price": 4.5,
+      "description": "Fried mozzarella sticks",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 6,
+      "name": "Chicken Wings",
+      "category": "starters",
+      "price": 5.5,
+      "description": "6 crispy wings",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 7,
+      "name": "Chicken Nuggets (6)",
+      "category": "starters",
+      "price": 4.5,
+      "description": "Fried nuggets, juicy inside",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 8,
+      "name": "Loaded Fries",
+      "category": "starters",
+      "price": 6.5,
+      "description": "Cheese, bacon & jalapeños on fries",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 9,
+      "name": "Garlic Sauce",
+      "category": "dips",
+      "price": 1.0,
+      "description": "Creamy garlic sauce",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 10,
+      "name": "Chipotle Mayo",
+      "category": "dips",
+      "price": 1.0,
+      "description": "Smoky chipotle mayonnaise",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 11,
+      "name": "BBQ Sauce",
+      "category": "dips",
+      "price": 1.0,
+      "description": "Tangy barbecue sauce",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 12,
+      "name": "Truffle Mayo",
+      "category": "dips",
+      "price": 1.2,
+      "description": "Luxurious truffle mayonnaise",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 13,
+      "name": "Sriracha Mayo",
+      "category": "dips",
+      "price": 1.0,
+      "description": "Spicy sriracha mayonnaise",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 14,
+      "name": "Sweet Chili",
+      "category": "dips",
+      "price": 1.0,
+      "description": "Sweet and spicy chili sauce",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 15,
+      "name": "Ketchup",
+      "category": "dips",
+      "price": 0.5,
+      "description": "Classic tomato ketchup",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 16,
+      "name": "Mayonnaise",
+      "category": "dips",
+      "price": 0.5,
+      "description": "Creamy mayonnaise",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 17,
+      "name": "Classic Cheese Burger",
+      "category": "mains",
+      "price": 10.5,
+      "description": "Beef, cheddar, pickles, ketchup & mustard",
+      "image": "/images/hamburger1.png",
+      "popular": true
+    },
+    {
+      "id": 18,
+      "name": "Bacon BBQ Burger",
+      "category": "mains",
+      "price": 11.5,
+      "description": "Beef, bacon, BBQ sauce, cheese, crispy onions",
+      "image": "/images/hamburger2.png",
+      "popular": true
+    },
+    {
+      "id": 19,
+      "name": "Spicy Jalapeño Burger",
+      "category": "mains",
+      "price": 11.5,
+      "description": "Beef, jalapeños, pepper jack, chipotle mayo",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 20,
+      "name": "Truffle Deluxe Burger",
+      "category": "mains",
+      "price": 12.5,
+      "description": "Beef, brie, truffle mayo, caramelized onions",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 21,
+      "name": "Chicken Crispy Burger",
+      "category": "mains",
+      "price": 10.5,
+      "description": "Fried chicken, coleslaw, pickles",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 22,
+      "name": "Grilled Chicken Avocado Burger",
+      "category": "mains",
+      "price": 11.0,
+      "description": "Grilled chicken, avocado, sriracha mayo",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 23,
+      "name": "Halloumi Heaven Burger",
+      "category": "mains",
+      "price": 10.0,
+      "description": "Halloumi, mango chutney, salad, red onion",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 24,
+      "name": "Green Burger",
+      "category": "mains",
+      "price": 10.5,
+      "description": "Plant-based patty, vegan cheese, aioli",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 25,
+      "name": "Chicken Tenders Basket",
+      "category": "mains",
+      "price": 9.5,
+      "description": "Fried tenders with fries",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 26,
+      "name": "Mac n' Cheese",
+      "category": "mains",
+      "price": 8.5,
+      "description": "Creamy baked mac with cheese topping",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 27,
+      "name": "Loaded Nachos",
+      "category": "mains",
+      "price": 9.5,
+      "description": "Cheese, salsa, guac, jalapeños, meat or veg",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 28,
+      "name": "Grilled Cheese Sandwich",
+      "category": "mains",
+      "price": 8.5,
+      "description": "Melted cheese sandwich, tomato soup on side",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 29,
+      "name": "Veggie Bowl",
+      "category": "mains",
+      "price": 9.0,
+      "description": "Quinoa, veggies, hummus, house dressing",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 30,
+      "name": "Chicken Caesar Salad",
+      "category": "mains",
+      "price": 9.0,
+      "description": "Chicken, parmesan, croutons, Caesar dressing",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 31,
+      "name": "Chocolate Milkshake",
+      "category": "desserts",
+      "price": 4.5,
+      "description": "Thick chocolate shake",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 32,
+      "name": "Vanilla Milkshake",
+      "category": "desserts",
+      "price": 4.5,
+      "description": "Creamy vanilla shake",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 33,
+      "name": "Strawberry Milkshake",
+      "category": "desserts",
+      "price": 4.5,
+      "description": "Classic strawberry shake",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 34,
+      "name": "Caramel Milkshake",
+      "category": "desserts",
+      "price": 4.5,
+      "description": "Sweet caramel shake",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 35,
+      "name": "Chocolate Sundae",
+      "category": "desserts",
+      "price": 4.0,
+      "description": "Vanilla ice cream with choc sauce",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 36,
+      "name": "Caramel Sundae",
+      "category": "desserts",
+      "price": 4.0,
+      "description": "Vanilla ice cream with caramel",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 37,
+      "name": "Strawberry Sundae",
+      "category": "desserts",
+      "price": 4.0,
+      "description": "Vanilla ice cream with strawberry",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 38,
+      "name": "Plain Sundae",
+      "category": "desserts",
+      "price": 3.5,
+      "description": "Just vanilla ice cream",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 39,
+      "name": "Coca-Cola",
+      "category": "drinks",
+      "price": 2.5,
+      "description": "Classic soda",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 40,
+      "name": "Fanta",
+      "category": "drinks",
+      "price": 2.5,
+      "description": "Orange soda",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 41,
+      "name": "Sprite",
+      "category": "drinks",
+      "price": 2.5,
+      "description": "Lemon-lime soda",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 42,
+      "name": "Sparkling Water - Plain",
+      "category": "drinks",
+      "price": 2.0,
+      "description": "Carbonated, unsweetened",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 43,
+      "name": "Sparkling Water - Citrus",
+      "category": "drinks",
+      "price": 2.0,
+      "description": "Light lemon/lime flavor",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 44,
+      "name": "Fresh Orange Juice",
+      "category": "drinks",
+      "price": 3.5,
+      "description": "Freshly pressed",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 45,
+      "name": "Fresh Apple Juice",
+      "category": "drinks",
+      "price": 3.5,
+      "description": "Freshly pressed",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 46,
+      "name": "Coffee - Brewed",
+      "category": "drinks",
+      "price": 2.5,
+      "description": "Black, hot brewed",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 47,
+      "name": "Espresso",
+      "category": "drinks",
+      "price": 2.5,
+      "description": "Strong single shot",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 48,
+      "name": "Strawberry Banana Smoothie",
+      "category": "drinks",
+      "price": 4.0,
+      "description": "Creamy fruit smoothie",
+      "image": "/images/example.jpg",
+      "popular": false
+    },
+    {
+      "id": 49,
+      "name": "Mango Passion Smoothie",
+      "category": "drinks",
+      "price": 4.0,
+      "description": "Tropical fruit smoothie",
+      "image": "/images/example.jpg",
+      "popular": false
+    }
+  ],
+  "orders": [],
+  "users": []
+}

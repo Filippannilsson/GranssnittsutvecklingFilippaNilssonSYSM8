@@ -17,7 +17,7 @@ function Home() {
         <div className="text-and-button">
           <h1 className="popular-title">Popular</h1>
           <button className="menu-btn" onClick={() => navigate("/menu")}>
-            Go To Menu
+            Menu
           </button>
         </div>
         <div className="popular-cards">

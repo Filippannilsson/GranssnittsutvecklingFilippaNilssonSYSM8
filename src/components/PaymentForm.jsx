@@ -1,7 +1,14 @@
 import "../styles/PaymentForm.css";
 import "../App.css";
+import { useState } from "react";
 
 function PaymentForm() {
+  const [selectedPaymentMethod, setSelectedPaymentMethod] = useState(null);
+
+  const handlePaymentMethodChange = (method) => {
+    setSelectedPaymentMethod(method);
+  };
+
   return (
     <div className="payment-wrapper">
       <form className="payment-section">
@@ -15,6 +22,8 @@ function PaymentForm() {
                 id="card"
                 name="payment-method"
                 value="card"
+                checked={selectedPaymentMethod === "card"}
+                onChange={() => handlePaymentMethodChange("card")}
                 required
               />
               <label>Card</label>
@@ -27,7 +36,8 @@ function PaymentForm() {
                 name="card-number"
                 placeholder="1234 5678 9012 3456"
                 inputMode="numeric"
-                required
+                disabled={selectedPaymentMethod !== "card"}
+                required={selectedPaymentMethod === "card"}
               />
             </div>
 
@@ -38,7 +48,8 @@ function PaymentForm() {
                 id="name-on-card"
                 name="name-on-card"
                 placeholder="Full name"
-                required
+                disabled={selectedPaymentMethod !== "card"}
+                required={selectedPaymentMethod === "card"}
               />
             </div>
 
@@ -51,7 +62,8 @@ function PaymentForm() {
                   name="expiry-date"
                   placeholder="MM/YY"
                   pattern="(0[1-9]|1[0-2])\/\d{2}"
-                  required
+                  disabled={selectedPaymentMethod !== "card"}
+                  required={selectedPaymentMethod === "card"}
                 />
               </div>
 
@@ -63,7 +75,8 @@ function PaymentForm() {
                   name="cvc"
                   placeholder="123"
                   pattern="\d{3,4}"
-                  required
+                  disabled={selectedPaymentMethod !== "card"}
+                  required={selectedPaymentMethod === "card"}
                 />
               </div>
             </div>
@@ -76,6 +89,8 @@ function PaymentForm() {
                 id="swish"
                 name="payment-method"
                 value="swish"
+                checked={selectedPaymentMethod === "swish"}
+                onChange={() => handlePaymentMethodChange("swish")}
                 required
               />
               <label>Swish</label>
@@ -88,7 +103,8 @@ function PaymentForm() {
                 name="payment-phone"
                 placeholder="07X XXX XX XX"
                 pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}"
-                required
+                disabled={selectedPaymentMethod !== "swish"}
+                required={selectedPaymentMethod === "swish"}
               />
             </div>
           </div>

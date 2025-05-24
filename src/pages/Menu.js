@@ -11,7 +11,7 @@ function Menu() {
   const [selectedCategory, setSelectedCategory] = useState("all");
 
   //Funktion för att hämta meny baserat på kategori
-  const fetchMenuItems = (category = "all") => {
+  function fetchMenuItems(category = "all") {
     if (category === "all") {
       getMenu()
         .then((data) => {
@@ -31,7 +31,7 @@ function Menu() {
           console.error(`Error fetching category ${category}:`, error);
         });
     }
-  };
+  }
 
   useEffect(() => {
     console.log("Fetching menu");
@@ -39,10 +39,10 @@ function Menu() {
   }, []);
 
   //Funktion som MenuFilter anropar när kategori väljs
-  const handleCategoryChange = (category) => {
+  function handleCategoryChange(category) {
     setSelectedCategory(category);
     fetchMenuItems(category);
-  };
+  }
 
   return (
     <div className="menu-page">

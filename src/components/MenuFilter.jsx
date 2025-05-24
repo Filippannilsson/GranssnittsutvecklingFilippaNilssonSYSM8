@@ -2,19 +2,70 @@ import "../styles/MenuFilter.css";
 import "../App.css";
 import Searchbar from "./Searchbar";
 
-function MenuFilter() {
+function MenuFilter({ onCategoryChange, selectedCategory }) {
+  //Funktion för att hantera kategoriklick
+  const handleCategoryClick = (category) => {
+    onCategoryChange(category);
+  };
+
   return (
     <div className="menu-filter-section">
       <h1 className="menu-title">Menu</h1>
 
       <div className="first-row">
         <div className="filter-bar">
-          <button className="all-btn">All</button>
-          <button className="starters-btn">Starters</button>
-          <button className="dips-btn">Dips</button>
-          <button className="main-dishes-btn">Mains</button>
-          <button className="desserts-btn">Desserts</button>
-          <button className="drinks-btn">Drinks</button>
+          <button
+            className={
+              selectedCategory === "all" ? "all-btn active" : "all-btn"
+            }
+            onClick={() => handleCategoryClick("all")}
+          >
+            All
+          </button>
+          <button
+            className={
+              selectedCategory === "starters"
+                ? "starters-btn active"
+                : "starters-btn"
+            }
+            onClick={() => handleCategoryClick("starters")}
+          >
+            Starters
+          </button>
+          <button
+            className={
+              selectedCategory === "dips" ? "dips-btn active" : "dips-btn"
+            }
+            onClick={() => handleCategoryClick("dips")}
+          >
+            Dips
+          </button>
+          <button
+            className={
+              selectedCategory === "mains" ? "mains-btn active" : "mains-btn"
+            }
+            onClick={() => handleCategoryClick("mains")}
+          >
+            Mains
+          </button>
+          <button
+            className={
+              selectedCategory === "desserts"
+                ? "desserts-btn active"
+                : "desserts-btn"
+            }
+            onClick={() => handleCategoryClick("desserts")}
+          >
+            Desserts
+          </button>
+          <button
+            className={
+              selectedCategory === "drinks" ? "drinks-btn active" : "drinks-btn"
+            }
+            onClick={() => handleCategoryClick("drinks")}
+          >
+            Drinks
+          </button>
         </div>
 
         <div className="right-controls">
@@ -28,7 +79,12 @@ function MenuFilter() {
             </select>
           </div>
 
-          <button className="clear-filter-btn">Clear X</button>
+          <button
+            className="clear-filter-btn"
+            onClick={() => handleCategoryClick("all")}
+          >
+            Clear X
+          </button>
         </div>
       </div>
 

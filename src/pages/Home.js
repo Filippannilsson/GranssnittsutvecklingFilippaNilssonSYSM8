@@ -1,14 +1,32 @@
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { getPopularItems } from "../services/api";
 import "../styles/Home.css";
 import "../App.css";
 import Hero from "../components/Hero";
 import MenuItem from "../components/MenuItem";
-import hamburgerImg from "../assets/pictures/hamburger1.png";
-import hamburger2Img from "../assets/pictures/hamburger2.png";
-import friesImg from "../assets/pictures/frenchfries.png";
+import example from "../assets/pictures/example.jpg";
 
 function Home() {
   const navigate = useNavigate();
+  const [popularItems, setPopularItems] = useState([]);
+
+  useEffect(() => {
+    console.log("Fetching popular items");
+
+    getPopularItems()
+      .then((data) => {
+        console.log(
+          "Popular items fetched successfully:",
+          data.length,
+          "items"
+        );
+        setPopularItems(data);
+      })
+      .catch((error) => {
+        console.error("Error fetching popular items:", error);
+      });
+  }, []);
 
   return (
     <div className="home-page">
@@ -21,25 +39,15 @@ function Home() {
           </button>
         </div>
         <div className="popular-cards">
-          <MenuItem
-            image={hamburgerImg}
-            name="Hamburger"
-            description="Juicy grilled burger"
-            price="$8.99"
-          />
-          <MenuItem
-            image={friesImg}
-            name="French Fries"
-            description="Cripsy potatoe fries"
-            price="$3.29"
-          />
-
-          <MenuItem
-            image={hamburger2Img}
-            name="Hamburger"
-            description="Juicy grilled burger"
-            price="$10.99"
-          />
+          {popularItems.map((item) => (
+            <MenuItem
+              key={item.id}
+              image={item.image || example}
+              name={item.name}
+              description={item.description}
+              price={`$${item.price.toFixed(2)}`}
+            />
+          ))}
         </div>
       </main>
     </div>

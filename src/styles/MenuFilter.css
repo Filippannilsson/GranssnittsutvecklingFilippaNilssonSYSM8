@@ -70,6 +70,11 @@
   color: #c2eace;
 }
 
+.filter-bar button.active {
+  background-color: #1a3a23;
+  color: #c2eace;
+}
+
 .sort-container select {
   background-color: #89c299;
   border-radius: 8px;

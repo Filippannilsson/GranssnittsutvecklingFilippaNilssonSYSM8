@@ -3,58 +3,56 @@ import "../styles/Menu.css";
 import "../App.css";
 import MenuFilter from "../components/MenuFilter";
 import MenuItem from "../components/MenuItem";
-import { getMenu } from "../services/api";
+import { getMenu, getMenuByCategory, createOrder } from "../services/api";
 import example from "../assets/pictures/example.jpg";
 
 function Menu() {
-  const [menu, setMenu] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [menuItems, setMenuItems] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState("all");
+
+  //Funktion för att hämta meny baserat på kategori
+  const fetchMenuItems = (category = "all") => {
+    if (category === "all") {
+      getMenu()
+        .then((data) => {
+          console.log("Menu fetched successfully:", data.length, "items");
+          setMenuItems(data);
+        })
+        .catch((error) => {
+          console.error("Error fetching menu:", error);
+        });
+    } else {
+      getMenuByCategory(category)
+        .then((data) => {
+          console.log(`Category ${category} fetched:`, data.length, "items");
+          setMenuItems(data);
+        })
+        .catch((error) => {
+          console.error(`Error fetching category ${category}:`, error);
+        });
+    }
+  };
 
   useEffect(() => {
-    console.log("Fetching menu...");
-
-    getMenu()
-      .then((data) => {
-        console.log("Menu fetched successfully:", data.length, "items");
-        setMenu(data);
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.error("Error fetching menu:", error);
-        setError(error);
-        setLoading(false);
-      });
+    console.log("Fetching menu");
+    fetchMenuItems(); //Hämta alla items från början
   }, []);
 
-  //Visa loading meddelande
-  if (loading) {
-    return (
-      <div className="menu-page">
-        <main>
-          <p>Loading menu...</p>
-        </main>
-      </div>
-    );
-  }
-
-  //Visa om något går fel
-  if (error) {
-    return (
-      <div className="menu-page">
-        <main>
-          <p>Error loading menu: {error}</p>
-        </main>
-      </div>
-    );
-  }
+  //Funktion som MenuFilter anropar när kategori väljs
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category);
+    fetchMenuItems(category);
+  };
 
   return (
     <div className="menu-page">
       <main>
-        <MenuFilter />
+        <MenuFilter
+          onCategoryChange={handleCategoryChange}
+          selectedCategory={selectedCategory}
+        />
         <div className="menu-items">
-          {menu.map((menu) => (
+          {menuItems.map((menu) => (
             <MenuItem
               key={menu.id}
               image={menu.image || example} // Använd en standardbild om ingen bild finns

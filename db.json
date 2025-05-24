@@ -7,13 +7,13 @@
       "price": 3.5,
       "description": "Classic crispy fries",
       "image": "/images/frenchfries.png",
-      "popular": true
+      "popular": false
     },
     {
       "id": 2,
       "name": "Sweet Potato Fries",
       "category": "starters",
-      "price": 4.0,
+      "price": 4,
       "description": "Golden sweet fries",
       "image": "/images/example.jpg",
       "popular": false
@@ -25,13 +25,13 @@
       "price": 4.5,
       "description": "Spicy fried cheese balls",
       "image": "/images/example.jpg",
-      "popular": false
+      "popular": true
     },
     {
       "id": 4,
       "name": "Onion Rings",
       "category": "starters",
-      "price": 4.0,
+      "price": 4,
       "description": "Golden, crispy onion rings",
       "image": "/images/example.jpg",
       "popular": false
@@ -76,7 +76,7 @@
       "id": 9,
       "name": "Garlic Sauce",
       "category": "dips",
-      "price": 1.0,
+      "price": 1,
       "description": "Creamy garlic sauce",
       "image": "/images/example.jpg",
       "popular": false
@@ -85,7 +85,7 @@
       "id": 10,
       "name": "Chipotle Mayo",
       "category": "dips",
-      "price": 1.0,
+      "price": 1,
       "description": "Smoky chipotle mayonnaise",
       "image": "/images/example.jpg",
       "popular": false
@@ -94,7 +94,7 @@
       "id": 11,
       "name": "BBQ Sauce",
       "category": "dips",
-      "price": 1.0,
+      "price": 1,
       "description": "Tangy barbecue sauce",
       "image": "/images/example.jpg",
       "popular": false
@@ -112,7 +112,7 @@
       "id": 13,
       "name": "Sriracha Mayo",
       "category": "dips",
-      "price": 1.0,
+      "price": 1,
       "description": "Spicy sriracha mayonnaise",
       "image": "/images/example.jpg",
       "popular": false
@@ -121,7 +121,7 @@
       "id": 14,
       "name": "Sweet Chili",
       "category": "dips",
-      "price": 1.0,
+      "price": 1,
       "description": "Sweet and spicy chili sauce",
       "image": "/images/example.jpg",
       "popular": false
@@ -193,7 +193,7 @@
       "id": 22,
       "name": "Grilled Chicken Avocado Burger",
       "category": "mains",
-      "price": 11.0,
+      "price": 11,
       "description": "Grilled chicken, avocado, sriracha mayo",
       "image": "/images/example.jpg",
       "popular": false
@@ -202,7 +202,7 @@
       "id": 23,
       "name": "Halloumi Heaven Burger",
       "category": "mains",
-      "price": 10.0,
+      "price": 10,
       "description": "Halloumi, mango chutney, salad, red onion",
       "image": "/images/example.jpg",
       "popular": false
@@ -256,7 +256,7 @@
       "id": 29,
       "name": "Veggie Bowl",
       "category": "mains",
-      "price": 9.0,
+      "price": 9,
       "description": "Quinoa, veggies, hummus, house dressing",
       "image": "/images/example.jpg",
       "popular": false
@@ -265,7 +265,7 @@
       "id": 30,
       "name": "Chicken Caesar Salad",
       "category": "mains",
-      "price": 9.0,
+      "price": 9,
       "description": "Chicken, parmesan, croutons, Caesar dressing",
       "image": "/images/example.jpg",
       "popular": false
@@ -310,7 +310,7 @@
       "id": 35,
       "name": "Chocolate Sundae",
       "category": "desserts",
-      "price": 4.0,
+      "price": 4,
       "description": "Vanilla ice cream with choc sauce",
       "image": "/images/example.jpg",
       "popular": false
@@ -319,7 +319,7 @@
       "id": 36,
       "name": "Caramel Sundae",
       "category": "desserts",
-      "price": 4.0,
+      "price": 4,
       "description": "Vanilla ice cream with caramel",
       "image": "/images/example.jpg",
       "popular": false
@@ -328,7 +328,7 @@
       "id": 37,
       "name": "Strawberry Sundae",
       "category": "desserts",
-      "price": 4.0,
+      "price": 4,
       "description": "Vanilla ice cream with strawberry",
       "image": "/images/example.jpg",
       "popular": false
@@ -373,7 +373,7 @@
       "id": 42,
       "name": "Sparkling Water - Plain",
       "category": "drinks",
-      "price": 2.0,
+      "price": 2,
       "description": "Carbonated, unsweetened",
       "image": "/images/example.jpg",
       "popular": false
@@ -382,7 +382,7 @@
       "id": 43,
       "name": "Sparkling Water - Citrus",
       "category": "drinks",
-      "price": 2.0,
+      "price": 2,
       "description": "Light lemon/lime flavor",
       "image": "/images/example.jpg",
       "popular": false
@@ -427,7 +427,7 @@
       "id": 48,
       "name": "Strawberry Banana Smoothie",
       "category": "drinks",
-      "price": 4.0,
+      "price": 4,
       "description": "Creamy fruit smoothie",
       "image": "/images/example.jpg",
       "popular": false
@@ -436,12 +436,70 @@
       "id": 49,
       "name": "Mango Passion Smoothie",
       "category": "drinks",
-      "price": 4.0,
+      "price": 4,
       "description": "Tropical fruit smoothie",
       "image": "/images/example.jpg",
       "popular": false
     }
   ],
-  "orders": [],
+  "orders": [
+    {
+      "id": "99e1",
+      "items": [
+        {
+          "id": 17,
+          "name": "Classic Cheese Burger",
+          "price": 10.5,
+          "quantity": 2
+        },
+        {
+          "id": 1,
+          "name": "French Fries",
+          "price": 3.5,
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 24.5,
+      "customerInfo": {
+        "name": "Test User",
+        "email": "test@example.com",
+        "address": "Test Street 123",
+        "city": "Stockholm"
+      },
+      "paymentMethod": "card",
+      "createdAt": "2025-05-24T11:41:49.831Z",
+      "status": "pending",
+      "orderNumber": "DD-1748086909840"
+    },
+    {
+      "id": "7a3f",
+      "items": [
+        {
+          "id": 17,
+          "name": "Classic Cheese Burger",
+          "price": 10.5,
+          "quantity": 2
+        },
+        {
+          "id": 1,
+          "name": "French Fries",
+          "price": 3.5,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 24.5,
+      "totalPrice": 27.4,
+      "customerInfo": {
+        "name": "Test User",
+        "email": "test@example.com",
+        "address": "Test Street 123",
+        "city": "Stockholm"
+      },
+      "paymentMethod": "card",
+      "createdAt": "2025-05-24T11:46:43.324Z",
+      "status": "pending",
+      "orderNumber": "DD-1748087203324"
+    }
+  ],
   "users": []
 }

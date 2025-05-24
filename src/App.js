@@ -10,7 +10,7 @@ import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
-import CartProvider from "./context/CartContext";
+import { CartProvider } from "./context/CartContext";
 
 function App() {
   return (

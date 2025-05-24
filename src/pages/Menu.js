@@ -55,6 +55,7 @@ function Menu() {
           {menuItems.map((menu) => (
             <MenuItem
               key={menu.id}
+              id={menu.id}
               image={menu.image || example} // Använd en standardbild om ingen bild finns
               name={menu.name}
               description={menu.description}

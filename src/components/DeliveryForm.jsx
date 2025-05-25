@@ -1,7 +1,31 @@
 import "../styles/DeliveryForm.css";
 import "../App.css";
+import { useState } from "react";
 
-function DeliveryForm() {
+function DeliveryForm({ onDataChange }) {
+  const [deliveryData, setDeliveryData] = useState({
+    fullName: "",
+    streetName: "",
+    houseNumber: "",
+    city: "",
+    phoneNumber: "",
+  });
+
+  function handleInputChange(e) {
+    const { name, value } = e.target;
+    const newData = {
+      ...deliveryData,
+      [name]: value,
+    };
+
+    setDeliveryData(newData);
+
+    //Skicka data till Checkout
+    if (onDataChange) {
+      onDataChange(newData);
+    }
+  }
+
   return (
     <div className="delivery-wrapper">
       <form className="delivery-section">
@@ -11,9 +35,10 @@ function DeliveryForm() {
           <label>Full Name</label>
           <input
             type="text"
-            id="full-name"
-            name="full-name"
+            name="fullName"
             placeholder="Full name"
+            value={deliveryData.fullName}
+            onChange={handleInputChange}
             required
           />
         </div>
@@ -23,9 +48,10 @@ function DeliveryForm() {
             <label>Street Name</label>
             <input
               type="text"
-              id="street-name"
-              name="street-name"
+              name="streetName"
               placeholder="Street Name"
+              value={deliveryData.streetName}
+              onChange={handleInputChange}
               required
             />
           </div>
@@ -34,9 +60,10 @@ function DeliveryForm() {
             <label>House Number</label>
             <input
               type="text"
-              id="house-number"
-              name="house-number"
+              name="houseNumber"
               placeholder="House Number"
+              value={deliveryData.houseNumber}
+              onChange={handleInputChange}
               required
             />
           </div>
@@ -46,9 +73,10 @@ function DeliveryForm() {
           <label>City</label>
           <input
             type="text"
-            id="city"
             name="city"
             placeholder="City"
+            value={deliveryData.city}
+            onChange={handleInputChange}
             required
           />
         </div>
@@ -57,10 +85,11 @@ function DeliveryForm() {
           <label>Phone Number</label>
           <input
             type="tel"
-            id="phone-number"
-            name="phone-number"
+            name="phoneNumber"
             placeholder="07X XXX XX XX"
             pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}"
+            value={deliveryData.phoneNumber}
+            onChange={handleInputChange}
             required
           />
         </div>

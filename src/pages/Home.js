@@ -42,6 +42,7 @@ function Home() {
           {popularItems.map((item) => (
             <MenuItem
               key={item.id}
+              id={item.id}
               image={item.image || example}
               name={item.name}
               description={item.description}

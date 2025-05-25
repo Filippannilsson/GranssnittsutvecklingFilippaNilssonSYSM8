@@ -3,7 +3,7 @@ import "../styles/Menu.css";
 import "../App.css";
 import MenuFilter from "../components/MenuFilter";
 import MenuItem from "../components/MenuItem";
-import { getMenu, getMenuByCategory, createOrder } from "../services/api";
+import { getMenu, getMenuByCategory } from "../services/api";
 import example from "../assets/pictures/example.jpg";
 
 function Menu() {

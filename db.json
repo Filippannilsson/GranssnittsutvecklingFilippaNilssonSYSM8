@@ -1,7 +1,7 @@
 {
   "menu": [
     {
-      "id": 1,
+      "id": "1",
       "name": "French Fries",
       "category": "starters",
       "price": 3.5,
@@ -10,7 +10,7 @@
       "popular": false
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Sweet Potato Fries",
       "category": "starters",
       "price": 4,
@@ -19,7 +19,7 @@
       "popular": false
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Chili Cheese Tops",
       "category": "starters",
       "price": 4.5,
@@ -28,7 +28,7 @@
       "popular": true
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Onion Rings",
       "category": "starters",
       "price": 4,
@@ -37,7 +37,7 @@
       "popular": false
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Mozzarella Sticks",
       "category": "starters",
       "price": 4.5,
@@ -46,7 +46,7 @@
       "popular": false
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Chicken Wings",
       "category": "starters",
       "price": 5.5,
@@ -55,7 +55,7 @@
       "popular": false
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Chicken Nuggets (6)",
       "category": "starters",
       "price": 4.5,
@@ -64,7 +64,7 @@
       "popular": false
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Loaded Fries",
       "category": "starters",
       "price": 6.5,
@@ -73,7 +73,7 @@
       "popular": false
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Garlic Sauce",
       "category": "dips",
       "price": 1,
@@ -82,7 +82,7 @@
       "popular": false
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Chipotle Mayo",
       "category": "dips",
       "price": 1,
@@ -91,7 +91,7 @@
       "popular": false
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "BBQ Sauce",
       "category": "dips",
       "price": 1,
@@ -100,7 +100,7 @@
       "popular": false
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "Truffle Mayo",
       "category": "dips",
       "price": 1.2,
@@ -109,7 +109,7 @@
       "popular": false
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "Sriracha Mayo",
       "category": "dips",
       "price": 1,
@@ -118,7 +118,7 @@
       "popular": false
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "Sweet Chili",
       "category": "dips",
       "price": 1,
@@ -127,7 +127,7 @@
       "popular": false
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "Ketchup",
       "category": "dips",
       "price": 0.5,
@@ -136,7 +136,7 @@
       "popular": false
     },
     {
-      "id": 16,
+      "id": "16",
       "name": "Mayonnaise",
       "category": "dips",
       "price": 0.5,
@@ -145,7 +145,7 @@
       "popular": false
     },
     {
-      "id": 17,
+      "id": "17",
       "name": "Classic Cheese Burger",
       "category": "mains",
       "price": 10.5,
@@ -154,7 +154,7 @@
       "popular": true
     },
     {
-      "id": 18,
+      "id": "18",
       "name": "Bacon BBQ Burger",
       "category": "mains",
       "price": 11.5,
@@ -163,7 +163,7 @@
       "popular": true
     },
     {
-      "id": 19,
+      "id": "19",
       "name": "Spicy Jalapeño Burger",
       "category": "mains",
       "price": 11.5,
@@ -172,7 +172,7 @@
       "popular": false
     },
     {
-      "id": 20,
+      "id": "20",
       "name": "Truffle Deluxe Burger",
       "category": "mains",
       "price": 12.5,
@@ -181,7 +181,7 @@
       "popular": false
     },
     {
-      "id": 21,
+      "id": "21",
       "name": "Chicken Crispy Burger",
       "category": "mains",
       "price": 10.5,
@@ -190,7 +190,7 @@
       "popular": false
     },
     {
-      "id": 22,
+      "id": "22",
       "name": "Grilled Chicken Avocado Burger",
       "category": "mains",
       "price": 11,
@@ -199,7 +199,7 @@
       "popular": false
     },
     {
-      "id": 23,
+      "id": "23",
       "name": "Halloumi Heaven Burger",
       "category": "mains",
       "price": 10,
@@ -208,7 +208,7 @@
       "popular": false
     },
     {
-      "id": 24,
+      "id": "24",
       "name": "Green Burger",
       "category": "mains",
       "price": 10.5,
@@ -217,7 +217,7 @@
       "popular": false
     },
     {
-      "id": 25,
+      "id": "25",
       "name": "Chicken Tenders Basket",
       "category": "mains",
       "price": 9.5,
@@ -226,7 +226,7 @@
       "popular": false
     },
     {
-      "id": 26,
+      "id": "26",
       "name": "Mac n' Cheese",
       "category": "mains",
       "price": 8.5,
@@ -235,7 +235,7 @@
       "popular": false
     },
     {
-      "id": 27,
+      "id": "27",
       "name": "Loaded Nachos",
       "category": "mains",
       "price": 9.5,
@@ -244,7 +244,7 @@
       "popular": false
     },
     {
-      "id": 28,
+      "id": "28",
       "name": "Grilled Cheese Sandwich",
       "category": "mains",
       "price": 8.5,
@@ -253,7 +253,7 @@
       "popular": false
     },
     {
-      "id": 29,
+      "id": "29",
       "name": "Veggie Bowl",
       "category": "mains",
       "price": 9,
@@ -262,7 +262,7 @@
       "popular": false
     },
     {
-      "id": 30,
+      "id": "30",
       "name": "Chicken Caesar Salad",
       "category": "mains",
       "price": 9,
@@ -271,7 +271,7 @@
       "popular": false
     },
     {
-      "id": 31,
+      "id": "31",
       "name": "Chocolate Milkshake",
       "category": "desserts",
       "price": 4.5,
@@ -280,7 +280,7 @@
       "popular": false
     },
     {
-      "id": 32,
+      "id": "32",
       "name": "Vanilla Milkshake",
       "category": "desserts",
       "price": 4.5,
@@ -289,7 +289,7 @@
       "popular": false
     },
     {
-      "id": 33,
+      "id": "33",
       "name": "Strawberry Milkshake",
       "category": "desserts",
       "price": 4.5,
@@ -298,7 +298,7 @@
       "popular": false
     },
     {
-      "id": 34,
+      "id": "34",
       "name": "Caramel Milkshake",
       "category": "desserts",
       "price": 4.5,
@@ -307,7 +307,7 @@
       "popular": false
     },
     {
-      "id": 35,
+      "id": "35",
       "name": "Chocolate Sundae",
       "category": "desserts",
       "price": 4,
@@ -316,7 +316,7 @@
       "popular": false
     },
     {
-      "id": 36,
+      "id": "36",
       "name": "Caramel Sundae",
       "category": "desserts",
       "price": 4,
@@ -325,7 +325,7 @@
       "popular": false
     },
     {
-      "id": 37,
+      "id": "37",
       "name": "Strawberry Sundae",
       "category": "desserts",
       "price": 4,
@@ -334,7 +334,7 @@
       "popular": false
     },
     {
-      "id": 38,
+      "id": "38",
       "name": "Plain Sundae",
       "category": "desserts",
       "price": 3.5,
@@ -343,7 +343,7 @@
       "popular": false
     },
     {
-      "id": 39,
+      "id": "39",
       "name": "Coca-Cola",
       "category": "drinks",
       "price": 2.5,
@@ -352,7 +352,7 @@
       "popular": false
     },
     {
-      "id": 40,
+      "id": "40",
       "name": "Fanta",
       "category": "drinks",
       "price": 2.5,
@@ -361,7 +361,7 @@
       "popular": false
     },
     {
-      "id": 41,
+      "id": "41",
       "name": "Sprite",
       "category": "drinks",
       "price": 2.5,
@@ -370,7 +370,7 @@
       "popular": false
     },
     {
-      "id": 42,
+      "id": "42",
       "name": "Sparkling Water - Plain",
       "category": "drinks",
       "price": 2,
@@ -379,7 +379,7 @@
       "popular": false
     },
     {
-      "id": 43,
+      "id": "43",
       "name": "Sparkling Water - Citrus",
       "category": "drinks",
       "price": 2,
@@ -388,7 +388,7 @@
       "popular": false
     },
     {
-      "id": 44,
+      "id": "44",
       "name": "Fresh Orange Juice",
       "category": "drinks",
       "price": 3.5,
@@ -397,7 +397,7 @@
       "popular": false
     },
     {
-      "id": 45,
+      "id": "45",
       "name": "Fresh Apple Juice",
       "category": "drinks",
       "price": 3.5,
@@ -406,7 +406,7 @@
       "popular": false
     },
     {
-      "id": 46,
+      "id": "46",
       "name": "Coffee - Brewed",
       "category": "drinks",
       "price": 2.5,
@@ -415,7 +415,7 @@
       "popular": false
     },
     {
-      "id": 47,
+      "id": "47",
       "name": "Espresso",
       "category": "drinks",
       "price": 2.5,
@@ -424,7 +424,7 @@
       "popular": false
     },
     {
-      "id": 48,
+      "id": "48",
       "name": "Strawberry Banana Smoothie",
       "category": "drinks",
       "price": 4,
@@ -433,7 +433,7 @@
       "popular": false
     },
     {
-      "id": 49,
+      "id": "49",
       "name": "Mango Passion Smoothie",
       "category": "drinks",
       "price": 4,
@@ -444,61 +444,69 @@
   ],
   "orders": [
     {
-      "id": "99e1",
+      "id": "e36e",
       "items": [
         {
-          "id": 17,
-          "name": "Classic Cheese Burger",
-          "price": 10.5,
+          "id": "6",
+          "name": "Chicken Wings",
+          "description": "6 crispy wings",
+          "price": 5.5,
+          "image": "/images/example.jpg",
           "quantity": 2
         },
         {
-          "id": 1,
-          "name": "French Fries",
-          "price": 3.5,
+          "id": "8",
+          "name": "Loaded Fries",
+          "description": "Cheese, bacon & jalapeños on fries",
+          "price": 6.5,
+          "image": "/images/example.jpg",
           "quantity": 1
-        }
-      ],
-      "totalPrice": 24.5,
-      "customerInfo": {
-        "name": "Test User",
-        "email": "test@example.com",
-        "address": "Test Street 123",
-        "city": "Stockholm"
-      },
-      "paymentMethod": "card",
-      "createdAt": "2025-05-24T11:41:49.831Z",
-      "status": "pending",
-      "orderNumber": "DD-1748086909840"
-    },
-    {
-      "id": "7a3f",
-      "items": [
+        },
         {
-          "id": 17,
-          "name": "Classic Cheese Burger",
-          "price": 10.5,
+          "id": "1",
+          "name": "French Fries",
+          "description": "Classic crispy fries",
+          "price": 3.5,
+          "image": "/images/frenchfries.png",
+          "quantity": 1
+        },
+        {
+          "id": "3",
+          "name": "Chili Cheese Tops",
+          "description": "Spicy fried cheese balls",
+          "price": 4.5,
+          "image": "/images/example.jpg",
           "quantity": 2
         },
         {
-          "id": 1,
-          "name": "French Fries",
-          "price": 3.5,
+          "id": "17",
+          "name": "Classic Cheese Burger",
+          "description": "Beef, cheddar, pickles, ketchup & mustard",
+          "price": 10.5,
+          "image": "/images/hamburger1.png",
           "quantity": 1
         }
       ],
-      "subtotal": 24.5,
-      "totalPrice": 27.4,
-      "customerInfo": {
-        "name": "Test User",
-        "email": "test@example.com",
-        "address": "Test Street 123",
-        "city": "Stockholm"
+      "delivery": {
+        "fullName": "Filippa Nilsson",
+        "streetName": "Flöjtvägen",
+        "houseNumber": "12B",
+        "city": "Lund",
+        "phoneNumber": "0707955732"
       },
-      "paymentMethod": "card",
-      "createdAt": "2025-05-24T11:46:43.324Z",
+      "payment": {
+        "paymentMethod": "swish",
+        "cardNumber": "",
+        "nameOnCard": "",
+        "expiryDate": "",
+        "cvc": "",
+        "swishNumber": "0707955732"
+      },
+      "subtotal": 40.5,
+      "total": 43.79,
+      "createdAt": "2025-05-25T12:13:38.865Z",
       "status": "pending",
-      "orderNumber": "DD-1748087203324"
+      "orderNumber": "DD-1748175218866"
     }
   ],
   "users": []

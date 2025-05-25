@@ -66,7 +66,7 @@ function Checkout() {
       delivery: deliveryData,
       payment: paymentData,
       subtotal: getSubtotal(),
-      total: getSubtotal() + 3.29,
+      total: getSubtotal() + 2.9,
     })
       .then((createdOrder) => {
         clearCart();

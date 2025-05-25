@@ -613,6 +613,104 @@
       "createdAt": "2025-05-25T15:06:31.449Z",
       "status": "pending",
       "orderNumber": "DD-1748185591449"
+    },
+    {
+      "id": "2bc7",
+      "items": [
+        {
+          "id": "2",
+          "name": "Sweet Potato Fries",
+          "description": "Golden sweet fries",
+          "price": 4,
+          "image": "/images/example.jpg",
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "French Fries",
+          "description": "Classic crispy fries",
+          "price": 3.5,
+          "image": "/images/frenchfries.png",
+          "quantity": 1
+        }
+      ],
+      "delivery": {
+        "fullName": "Sara",
+        "streetName": "Sara",
+        "houseNumber": "1",
+        "city": "Sara",
+        "phoneNumber": "0"
+      },
+      "payment": {
+        "paymentMethod": "swish",
+        "cardNumber": "",
+        "nameOnCard": "",
+        "expiryDate": "",
+        "cvc": "",
+        "swishNumber": "0"
+      },
+      "subtotal": 7.5,
+      "total": 10.4,
+      "createdAt": "2025-05-25T15:26:02.155Z",
+      "status": "pending",
+      "orderNumber": "DD-1748186762155"
+    },
+    {
+      "id": "80b1",
+      "items": [
+        {
+          "id": "5",
+          "name": "Mozzarella Sticks",
+          "description": "Fried mozzarella sticks",
+          "price": 4.5,
+          "image": "/images/example.jpg",
+          "quantity": 1
+        },
+        {
+          "id": "12",
+          "name": "Truffle Mayo",
+          "description": "Luxurious truffle mayonnaise",
+          "price": 1.2,
+          "image": "/images/example.jpg",
+          "quantity": 1
+        },
+        {
+          "id": "23",
+          "name": "Halloumi Heaven Burger",
+          "description": "Halloumi, mango chutney, salad, red onion",
+          "price": 10,
+          "image": "/images/example.jpg",
+          "quantity": 1
+        },
+        {
+          "id": "34",
+          "name": "Caramel Milkshake",
+          "description": "Sweet caramel shake",
+          "price": 4.5,
+          "image": "/images/example.jpg",
+          "quantity": 1
+        }
+      ],
+      "delivery": {
+        "fullName": "Linnea Hansson",
+        "streetName": "Eslövsvägen",
+        "houseNumber": "30",
+        "city": "Malmö",
+        "phoneNumber": "0702459134"
+      },
+      "payment": {
+        "paymentMethod": "card",
+        "cardNumber": "1234123412341234",
+        "nameOnCard": "Linnéa Hansson",
+        "expiryDate": "04/29",
+        "cvc": "495",
+        "swishNumber": ""
+      },
+      "subtotal": 20.2,
+      "total": 23.099999999999998,
+      "createdAt": "2025-05-25T15:39:47.441Z",
+      "status": "pending",
+      "orderNumber": "DD-1748187587441"
     }
   ],
   "users": []

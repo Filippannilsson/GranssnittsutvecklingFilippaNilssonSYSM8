@@ -1,12 +1,29 @@
-import React, { createContext, useState, useContext } from "react";
+import React, { createContext, useState, useContext, useEffect } from "react";
 
 //Skapa context
 const CartContext = createContext();
 
 //CartProvider som skickar data till alla children med cart-data
 export function CartProvider({ children }) {
-  //State för varukorgen, ska delas mellan komponenter
-  const [cartItems, setCartItems] = useState([]);
+  //State för varukorgen, ladda från localStorage eller tom array
+  const [cartItems, setCartItems] = useState(() => {
+    try {
+      const savedCart = localStorage.getItem("droneDelightsCart");
+      return savedCart ? JSON.parse(savedCart) : [];
+    } catch (error) {
+      console.error("Error loading cart", error);
+      return [];
+    }
+  });
+
+  //Spara till localStorage när cartItems ändras
+  useEffect(() => {
+    try {
+      localStorage.setItem("droneDelightsCart", JSON.stringify(cartItems));
+    } catch (error) {
+      console.error("Error saving cart to localStorage", error);
+    }
+  }, [cartItems]);
 
   //Funktion för att lägga till i cart
   function addToCart(product) {

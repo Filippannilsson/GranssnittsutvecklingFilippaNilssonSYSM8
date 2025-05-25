@@ -1,29 +1,40 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import "../styles/Confirmation.css";
 import "../App.css";
 import OrderedItem from "../components/OrderedItem";
-import hamburgerImg from "../assets/pictures/hamburger1.png";
-import hamburger2Img from "../assets/pictures/hamburger2.png";
-import friesImg from "../assets/pictures/frenchfries.png";
 
 function Confirmation() {
   const navigate = useNavigate();
+  const location = useLocation();
 
-  // Tom array för nu - kommer fyllas från db.json senare
-  const orderedItems = [];
+  const [orderData, setOrderData] = useState(null);
+  const [orderNumber, setOrderNumber] = useState(null);
 
-  // const orderedItems = [
-  //   { image: hamburgerImg, name: "Hamburger", price: "$10.99" },
+  useEffect(() => {
+    //Hämta den data som skickades från checkout
+    if (location.state) {
+      setOrderData(location.state.orderData);
+      setOrderNumber(location.state.orderNumber);
+    } else {
+      console.log("No order data");
+      navigate("/");
+    }
+  }, [location.state, navigate]);
 
-  // Leveranskostnad
+  if (!orderData) {
+    return null; // Ingenting visas
+  }
+
+  const orderedItems = orderData.items;
+
+  //Leveranskostnad
   const delivery = 2.9;
 
-  // Beräkna subtotal
+  //Beräkna subtotal
   const calculateSubtotal = () => {
     return orderedItems.reduce((total, item) => {
-      // Ta bort $ och konvertera till nummer
-      const price = parseFloat(item.price.replace("$", ""));
-      return total + price;
+      return total + item.price * item.quantity;
     }, 0);
   };
 
@@ -56,34 +67,17 @@ function Confirmation() {
           <div className="order-content">
             <div className="order-left">
               <div className="ordered-items-list">
-                {/* Kommenterat bort tills vidare
-                {orderedItems.map((item, index) => (
-                <OrderedItem key={index} {...item} />
+                {orderedItems.map((item) => (
+                  <OrderedItem
+                    key={item.id}
+                    id={item.id}
+                    image={item.image}
+                    name={item.name}
+                    price={`$${item.price.toFixed(2)}`}
+                    quantity={item.quantity}
+                  />
                 ))}
-
-                {/* Hårdkodade för layout, ersätts av map senare */}
-                <OrderedItem
-                  image={hamburgerImg}
-                  name="Hamburger"
-                  price="$10.99"
-                />
-                <OrderedItem
-                  image={hamburger2Img}
-                  name="Hamburger"
-                  price="$8.99"
-                />
-                <OrderedItem
-                  image={friesImg}
-                  name="French Fries"
-                  price="$3.29"
-                />
-                <OrderedItem
-                  image={hamburgerImg}
-                  name="Hamburger"
-                  price="$9.99"
-                />
               </div>
-
               <div className="confirmation-price">
                 <div className="delivery-row">
                   <span className="summary-label">Delivery:</span>

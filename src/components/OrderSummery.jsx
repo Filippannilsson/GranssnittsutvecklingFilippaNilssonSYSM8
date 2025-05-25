@@ -1,9 +1,8 @@
 import "../styles/OrderSummery.css";
 import "../App.css";
 
-//ÄNDRA HÅRDKODAD SUBTOTAL SENARE
 function OrderSummery({ subtotal = 0 }) {
-  const delivery = 3.29;
+  const delivery = 2.9;
   const total = (subtotal + delivery).toFixed(2);
 
   return (

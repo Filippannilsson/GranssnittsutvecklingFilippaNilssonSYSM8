@@ -507,6 +507,112 @@
       "createdAt": "2025-05-25T12:13:38.865Z",
       "status": "pending",
       "orderNumber": "DD-1748175218866"
+    },
+    {
+      "id": "5c52",
+      "items": [
+        {
+          "id": "6",
+          "name": "Chicken Wings",
+          "description": "6 crispy wings",
+          "price": 5.5,
+          "image": "/images/example.jpg",
+          "quantity": 1
+        },
+        {
+          "id": "9",
+          "name": "Garlic Sauce",
+          "description": "Creamy garlic sauce",
+          "price": 1,
+          "image": "/images/example.jpg",
+          "quantity": 2
+        },
+        {
+          "id": "17",
+          "name": "Classic Cheese Burger",
+          "description": "Beef, cheddar, pickles, ketchup & mustard",
+          "price": 10.5,
+          "image": "/images/hamburger1.png",
+          "quantity": 1
+        },
+        {
+          "id": "36",
+          "name": "Caramel Sundae",
+          "description": "Vanilla ice cream with caramel",
+          "price": 4,
+          "image": "/images/example.jpg",
+          "quantity": 1
+        },
+        {
+          "id": "48",
+          "name": "Strawberry Banana Smoothie",
+          "description": "Creamy fruit smoothie",
+          "price": 4,
+          "image": "/images/example.jpg",
+          "quantity": 2
+        }
+      ],
+      "delivery": {
+        "fullName": "Emma",
+        "streetName": "Testvägen",
+        "houseNumber": "12",
+        "city": "Malmö",
+        "phoneNumber": "0707959392"
+      },
+      "payment": {
+        "paymentMethod": "card",
+        "cardNumber": "1234123456785678",
+        "nameOnCard": "Emma",
+        "expiryDate": "04/07",
+        "cvc": "284",
+        "swishNumber": ""
+      },
+      "subtotal": 30,
+      "total": 33.29,
+      "createdAt": "2025-05-25T14:35:13.129Z",
+      "status": "pending",
+      "orderNumber": "DD-1748183713129"
+    },
+    {
+      "id": "2c70",
+      "items": [
+        {
+          "id": "2",
+          "name": "Sweet Potato Fries",
+          "description": "Golden sweet fries",
+          "price": 4,
+          "image": "/images/example.jpg",
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "French Fries",
+          "description": "Classic crispy fries",
+          "price": 3.5,
+          "image": "/images/frenchfries.png",
+          "quantity": 1
+        }
+      ],
+      "delivery": {
+        "fullName": "Hej",
+        "streetName": "Hej",
+        "houseNumber": "11",
+        "city": "Hej",
+        "phoneNumber": "Hej"
+      },
+      "payment": {
+        "paymentMethod": "swish",
+        "cardNumber": "",
+        "nameOnCard": "",
+        "expiryDate": "",
+        "cvc": "",
+        "swishNumber": "hej"
+      },
+      "subtotal": 7.5,
+      "total": 10.79,
+      "createdAt": "2025-05-25T15:06:31.449Z",
+      "status": "pending",
+      "orderNumber": "DD-1748185591449"
     }
   ],
   "users": []

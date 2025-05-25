@@ -15,6 +15,7 @@ function MenuItem({ id, image, name, description, price }) {
       name,
       description,
       price: parseFloat(price.replace("$", "")), //Ta bort $ och gör om till nummer
+      image,
     };
 
     addToCart(product);

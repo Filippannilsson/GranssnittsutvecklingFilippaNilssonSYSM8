@@ -1,6 +1,7 @@
 .menu-page {
   background-color: #c2eace;
   margin: 0;
+  min-height: calc(100vh - 261px);
 }
 
 .menu-items {
@@ -10,6 +11,13 @@
   padding: 2rem;
   max-width: 1500px;
   margin: 0 auto;
+}
+
+.no-search-results {
+  text-align: center;
+  font-size: 18px;
+  color: #1a3a23;
+  font-style: italic;
 }
 
 @media (max-width: 650px) {

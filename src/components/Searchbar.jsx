@@ -1,7 +1,7 @@
 import "../styles/Searchbar.css";
 import "../App.css";
 
-function Searchbar() {
+function Searchbar({ searchTerm, onSearchChange }) {
   return (
     <form className="searchbar">
       <input
@@ -9,7 +9,8 @@ function Searchbar() {
         name="search"
         placeholder="Search..."
         className="search-input"
-        // onInput={}
+        value={searchTerm}
+        onInput={(e) => onSearchChange(e.target.value)}
       />
     </form>
   );

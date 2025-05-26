@@ -1,5 +1,3 @@
-import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "../styles/Header.css";
 import "../App.css";
@@ -7,9 +5,11 @@ import { ReactComponent as HomeIcon } from "../assets/logos/home.svg";
 import { ReactComponent as CartIcon } from "../assets/logos/cart.svg";
 import { ReactComponent as MenuIcon } from "../assets/logos/menu.svg";
 import { ReactComponent as AccountIcon } from "../assets/logos/account.svg";
+import { useCart } from "../context/CartContext";
 
 function Header() {
-  const location = useLocation();
+  const { getCartCount } = useCart();
+  const cartCount = getCartCount();
 
   return (
     <header className="header">
@@ -27,6 +27,8 @@ function Header() {
           </Link>
           <Link to="/cart" className="shopping-cart">
             <CartIcon className="icon" />
+            {/* Om cartCount är större än 0, visa antal */}
+            {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
           </Link>
           <Link to="/account" className="account">
             <AccountIcon className="icon" />

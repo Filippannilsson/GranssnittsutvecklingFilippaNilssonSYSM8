@@ -8,8 +8,10 @@ import ScrollToTop from "../components/ScrollToTop";
 import example from "../assets/pictures/example.jpg";
 
 function Menu() {
+  const [allMenuItems, setAllMenuItem] = useState([]);
   const [menuItems, setMenuItems] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("all");
+  const [searchTerm, setSearchTerm] = useState("");
 
   //Funktion för att hämta meny baserat på kategori
   function fetchMenuItems(category = "all") {
@@ -17,6 +19,7 @@ function Menu() {
       getMenu()
         .then((data) => {
           console.log("Menu fetched successfully:", data.length, "items");
+          setAllMenuItem(data);
           setMenuItems(data);
         })
         .catch((error) => {
@@ -26,6 +29,7 @@ function Menu() {
       getMenuByCategory(category)
         .then((data) => {
           console.log(`Category ${category} fetched:`, data.length, "items");
+          setAllMenuItem(data);
           setMenuItems(data);
         })
         .catch((error) => {
@@ -33,6 +37,18 @@ function Menu() {
         });
     }
   }
+
+  //Filtrera baserat på sökning
+  useEffect(() => {
+    if (searchTerm === "") {
+      setMenuItems(allMenuItems);
+    } else {
+      const filtered = allMenuItems.filter((item) =>
+        item.name.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+      setMenuItems(filtered);
+    }
+  }, [searchTerm, allMenuItems]);
 
   useEffect(() => {
     console.log("Fetching menu");
@@ -42,7 +58,13 @@ function Menu() {
   //Funktion som MenuFilter anropar när kategori väljs
   function handleCategoryChange(category) {
     setSelectedCategory(category);
+    setSearchTerm("");
     fetchMenuItems(category);
+  }
+
+  //Funktion för att hantera sökning
+  function handleSearchChange(newSearchTerm) {
+    setSearchTerm(newSearchTerm);
   }
 
   return (
@@ -51,18 +73,24 @@ function Menu() {
         <MenuFilter
           onCategoryChange={handleCategoryChange}
           selectedCategory={selectedCategory}
+          searchTerm={searchTerm}
+          onSearchChange={handleSearchChange}
         />
         <div className="menu-items">
-          {menuItems.map((menu) => (
-            <MenuItem
-              key={menu.id}
-              id={menu.id}
-              image={menu.image || example} // Använd en standardbild om ingen bild finns
-              name={menu.name}
-              description={menu.description}
-              price={`$${menu.price.toFixed(2)}`}
-            />
-          ))}
+          {menuItems.length > 0 ? (
+            menuItems.map((menu) => (
+              <MenuItem
+                key={menu.id}
+                id={menu.id}
+                image={menu.image || example} // Använd en standardbild om ingen bild finns
+                name={menu.name}
+                description={menu.description}
+                price={`$${menu.price.toFixed(2)}`}
+              />
+            ))
+          ) : (
+            <p className="no-search-results">No matching items found</p>
+          )}
         </div>
       </main>
       <ScrollToTop showButton={true} />

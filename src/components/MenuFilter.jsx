@@ -2,7 +2,12 @@ import "../styles/MenuFilter.css";
 import "../App.css";
 import Searchbar from "./Searchbar";
 
-function MenuFilter({ onCategoryChange, selectedCategory }) {
+function MenuFilter({
+  onCategoryChange,
+  selectedCategory,
+  searchTerm,
+  onSearchChange,
+}) {
   //Funktion för att hantera kategoriklick
   const handleCategoryClick = (category) => {
     onCategoryChange(category);
@@ -89,7 +94,7 @@ function MenuFilter({ onCategoryChange, selectedCategory }) {
       </div>
 
       <div className="second-row">
-        <Searchbar />
+        <Searchbar searchTerm={searchTerm} onSearchChange={onSearchChange} />
       </div>
     </div>
   );

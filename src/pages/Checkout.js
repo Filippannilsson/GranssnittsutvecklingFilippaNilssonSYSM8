@@ -46,25 +46,8 @@ function Checkout() {
       return;
     }
 
-    if (!paymentData.paymentMethod) {
-      alert("Please select a payment method");
-      return;
-    }
-
-    if (paymentData.paymentMethod === "card") {
-      if (
-        !paymentData.cardNumber ||
-        !paymentData.nameOnCard ||
-        !paymentData.expiryDate ||
-        !paymentData.cvc
-      ) {
-        alert("Please fill in card information");
-        return;
-      }
-    }
-
-    if (paymentData.paymentMethod === "swish" && !paymentData.swishNumber) {
-      alert("Please fill in phone number");
+    if (!paymentData.isValid) {
+      alert("Please fill in card information correctly");
       return;
     }
 

@@ -14,18 +14,160 @@ function PaymentForm({ onDataChange }) {
     swishNumber: "",
   });
 
+  //Hjälpfunktioner för validering
+  function formatCardNumber(value) {
+    //Ta bort allt som inte är siffror
+    const numbers = value.replace(/\D/g, "");
+
+    //Begränsa till 16 siffror
+    const limited = numbers.substring(0, 16);
+
+    //Mellanrum var fjärde siffra
+    return limited.replace(/(.{4})/g, "$1 ").trim();
+  }
+
+  function validateNameOnCard(value) {
+    //Bara bokstäver och mellanslag
+    return value.replace(/[^a-zA-ZåäöÅÄÖ\s]/g, "");
+  }
+
+  function formatExpiryDate(value) {
+    //Ta bort allt som inte är siffror
+    const numbers = value.replace(/\D/g, "");
+
+    //Begränsa till 4 siffror
+    let limited = numbers.substring(0, 4);
+
+    //Formatera som MM/YY
+    if (limited.length >= 2) {
+      return `${limited.substring(0, 2)}/${limited.substring(2, 4)}`;
+    }
+    return limited;
+  }
+
+  //Valideringsfunktion
+  function isValidExpiryDate(value) {
+    const numbers = value.replace(/\D/g, "");
+
+    if (numbers.length !== 4) return false;
+
+    const month = parseInt(numbers.substring(0, 2));
+    const year = parseInt(numbers.substring(2, 4));
+
+    //Kontrollera giltig månad
+    if (month < 1 || month > 12) return false;
+
+    //Kontrollera att datumet inte har gått ut
+    const currentDate = new Date();
+    const currentYear = currentDate.getFullYear() % 100;
+    const currentMonth = currentDate.getMonth() + 1;
+
+    if (year < currentYear || (year === currentYear && month < currentMonth)) {
+      return false;
+    }
+
+    return true;
+  }
+
+  function formatCVC(value) {
+    // Ta bort allt som inte är siffror och begränsa till 3 siffror
+    return value.replace(/\D/g, "").substring(0, 3);
+  }
+
+  function formatSwishNumber(value) {
+    // Ta bort allt som inte är siffror och begränsa till 10 siffror
+    return value.replace(/\D/g, "").substring(0, 10);
+  }
+
+  //Kontrollera om formuläret är giltigt
+  function isFormValid() {
+    if (selectedPaymentMethod === "card") {
+      const cardDigits = paymentData.cardNumber.replace(/\D/g, "");
+      const cvcDigits = paymentData.cvc.replace(/\D/g, "");
+
+      //Kontrollera alla krav för kort
+      if (cardDigits.length !== 16) return false;
+      if (!paymentData.nameOnCard.trim()) return false;
+      if (!isValidExpiryDate(paymentData.expiryDate)) return false;
+      if (cvcDigits.length !== 3) return false;
+    } else if (selectedPaymentMethod === "swish") {
+      const swishDigits = paymentData.swishNumber.replace(/\D/g, "");
+      if (swishDigits.length < 10) return false;
+    } else {
+      //Ingen betalmetod vald
+      return false;
+    }
+
+    return true;
+  }
+
   function handleInputChange(e) {
     const { name, value } = e.target;
+    let formattedValue = value;
+
+    //Applicera validering baserat på fält
+    switch (name) {
+      case "cardNumber":
+        formattedValue = formatCardNumber(value);
+        //Validering för kortnummer
+        const cardDigits = formattedValue.replace(/\D/g, "");
+        if (cardDigits.length > 0 && cardDigits.length !== 16) {
+          e.target.setCustomValidity("Card number must be 16 digits");
+        } else {
+          e.target.setCustomValidity("");
+        }
+        break;
+
+      case "nameOnCard":
+        formattedValue = validateNameOnCard(value);
+        break;
+      case "expiryDate":
+        formattedValue = formatExpiryDate(value);
+
+        //Validering för expiry date
+        if (formattedValue.length === 5) {
+          if (!isValidExpiryDate(formattedValue)) {
+            e.target.setCustomValidity("Invalid expiry date");
+          } else {
+            e.target.setCustomValidity("");
+          }
+        } else {
+          e.target.setCustomValidity("");
+        }
+        break;
+      case "cvc":
+        formattedValue = formatCVC(value);
+
+        //Validering för CVC
+        if (formattedValue.length > 0 && formattedValue.length !== 3) {
+          e.target.setCustomValidity("CVC must be 3 digits");
+        } else {
+          e.target.setCustomValidity("");
+        }
+        break;
+      case "swishNumber":
+        formattedValue = formatSwishNumber(value);
+        //Validering för Swish
+        if (formattedValue.length > 0 && formattedValue.length < 10) {
+          e.target.setCustomValidity("Phone number must be 10 digits");
+        } else {
+          e.target.setCustomValidity("");
+        }
+        break;
+      default:
+        formattedValue = value;
+    }
+
     const newData = {
       ...paymentData,
-      [name]: value,
+      [name]: formattedValue,
     };
 
     setPaymentData(newData);
 
     //Skicka data till Checkout
     if (onDataChange) {
-      onDataChange(newData);
+      onDataChange({ ...newData, isValid: isFormValid() });
     }
   }
 
@@ -46,7 +188,7 @@ function PaymentForm({ onDataChange }) {
 
     //Skicka till Checkout
     if (onDataChange) {
-      onDataChange(newData);
+      onDataChange({ ...newData, isValid: isFormValid() });
     }
   };
 
@@ -77,6 +219,7 @@ function PaymentForm({ onDataChange }) {
                 inputMode="numeric"
                 value={paymentData.cardNumber}
                 onChange={handleInputChange}
+                onBlur={(e) => e.target.reportValidity()}
                 disabled={selectedPaymentMethod !== "card"}
                 required={selectedPaymentMethod === "card"}
               />
@@ -102,9 +245,9 @@ function PaymentForm({ onDataChange }) {
                   type="text"
                   name="expiryDate"
                   placeholder="MM/YY"
-                  pattern="(0[1-9]|1[0-2])\/\d{2}"
                   value={paymentData.expiryDate}
                   onChange={handleInputChange}
+                  onBlur={(e) => e.target.reportValidity()}
                   disabled={selectedPaymentMethod !== "card"}
                   required={selectedPaymentMethod === "card"}
                 />
@@ -116,9 +259,9 @@ function PaymentForm({ onDataChange }) {
                   type="text"
                   name="cvc"
                   placeholder="123"
-                  pattern="\d{3,4}"
                   value={paymentData.cvc}
                   onChange={handleInputChange}
+                  onBlur={(e) => e.target.reportValidity()}
                   disabled={selectedPaymentMethod !== "card"}
                   required={selectedPaymentMethod === "card"}
                 />
@@ -144,9 +287,9 @@ function PaymentForm({ onDataChange }) {
                 type="tel"
                 name="swishNumber"
                 placeholder="07X XXX XX XX"
-                pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}"
                 value={paymentData.swishNumber}
                 onChange={handleInputChange}
+                onBlur={(e) => e.target.reportValidity()}
                 disabled={selectedPaymentMethod !== "swish"}
                 required={selectedPaymentMethod === "swish"}
               />

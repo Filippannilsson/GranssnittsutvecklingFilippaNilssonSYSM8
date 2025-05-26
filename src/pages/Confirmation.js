@@ -17,8 +17,9 @@ function Confirmation() {
       setOrderData(location.state.orderData);
       setOrderNumber(location.state.orderNumber);
     } else {
+      //Omdirigera till cart om den är tom
       console.log("No order data");
-      navigate("/");
+      navigate("/cart");
     }
   }, [location.state, navigate]);
 

@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/Checkout.css";
 import "../App.css";
 import DeliveryForm from "../components/DeliveryForm";
@@ -13,6 +13,13 @@ function Checkout() {
   const { cartItems, getSubtotal, clearCart } = useCart();
   const [deliveryData, setDeliveryData] = useState({});
   const [paymentData, setPaymentData] = useState({});
+
+  //Omdirigera till cart om inget är tillagt i cart
+  useEffect(() => {
+    if (cartItems.length === 0) {
+      navigate("/cart");
+    }
+  }, [cartItems.length, navigate]);
 
   //Funktion som tar emot data från DeliveryForm
   function handleDeliveryData(data) {

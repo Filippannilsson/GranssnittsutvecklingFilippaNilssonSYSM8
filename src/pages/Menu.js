@@ -4,6 +4,7 @@ import "../App.css";
 import MenuFilter from "../components/MenuFilter";
 import MenuItem from "../components/MenuItem";
 import { getMenu, getMenuByCategory } from "../services/api";
+import ScrollToTop from "../components/ScrollToTop";
 import example from "../assets/pictures/example.jpg";
 
 function Menu() {
@@ -64,6 +65,7 @@ function Menu() {
           ))}
         </div>
       </main>
+      <ScrollToTop showButton={true} />
     </div>
   );
 }

@@ -6,7 +6,7 @@
       "category": "starters",
       "price": 3.5,
       "description": "Classic crispy fries",
-      "image": "/images/frenchfries.png",
+      "image": "/images/french-fries.jpg",
       "popular": false
     },
     {
@@ -15,7 +15,7 @@
       "category": "starters",
       "price": 4,
       "description": "Golden sweet fries",
-      "image": "/images/example.jpg",
+      "image": "/images/sweet-potatoe.jpg",
       "popular": false
     },
     {
@@ -24,8 +24,8 @@
       "category": "starters",
       "price": 4.5,
       "description": "Spicy fried cheese balls",
-      "image": "/images/example.jpg",
-      "popular": true
+      "image": "/images/chili-cheese.jpg",
+      "popular": false
     },
     {
       "id": "4",
@@ -33,7 +33,7 @@
       "category": "starters",
       "price": 4,
       "description": "Golden, crispy onion rings",
-      "image": "/images/example.jpg",
+      "image": "/images/onion-rings.jpg",
       "popular": false
     },
     {
@@ -42,7 +42,7 @@
       "category": "starters",
       "price": 4.5,
       "description": "Fried mozzarella sticks",
-      "image": "/images/example.jpg",
+      "image": "/images/mozzarella-sticks.jpg",
       "popular": false
     },
     {
@@ -51,7 +51,7 @@
       "category": "starters",
       "price": 5.5,
       "description": "6 crispy wings",
-      "image": "/images/example.jpg",
+      "image": "/images/chicken-wings.jpg",
       "popular": false
     },
     {
@@ -60,7 +60,7 @@
       "category": "starters",
       "price": 4.5,
       "description": "Fried nuggets, juicy inside",
-      "image": "/images/example.jpg",
+      "image": "/images/chicken-nuggets.jpg",
       "popular": false
     },
     {
@@ -69,7 +69,7 @@
       "category": "starters",
       "price": 6.5,
       "description": "Cheese, bacon & jalapeños on fries",
-      "image": "/images/example.jpg",
+      "image": "/images/loaded-fries.jpg",
       "popular": false
     },
     {
@@ -78,7 +78,7 @@
       "category": "dips",
       "price": 1,
       "description": "Creamy garlic sauce",
-      "image": "/images/example.jpg",
+      "image": "/images/garlic-sauce.jpg",
       "popular": false
     },
     {
@@ -87,7 +87,7 @@
       "category": "dips",
       "price": 1,
       "description": "Smoky chipotle mayonnaise",
-      "image": "/images/example.jpg",
+      "image": "/images/chipotle-mayo.jpg",
       "popular": false
     },
     {
@@ -96,7 +96,7 @@
       "category": "dips",
       "price": 1,
       "description": "Tangy barbecue sauce",
-      "image": "/images/example.jpg",
+      "image": "/images/bbq-sauce.jpg",
       "popular": false
     },
     {
@@ -105,7 +105,7 @@
       "category": "dips",
       "price": 1.2,
       "description": "Luxurious truffle mayonnaise",
-      "image": "/images/example.jpg",
+      "image": "/images/truffle-mayo.jpg",
       "popular": false
     },
     {
@@ -114,7 +114,7 @@
       "category": "dips",
       "price": 1,
       "description": "Spicy sriracha mayonnaise",
-      "image": "/images/example.jpg",
+      "image": "/images/sriracha-mayo.jpg",
       "popular": false
     },
     {
@@ -123,7 +123,7 @@
       "category": "dips",
       "price": 1,
       "description": "Sweet and spicy chili sauce",
-      "image": "/images/example.jpg",
+      "image": "/images/sweet-chili.jpg",
       "popular": false
     },
     {
@@ -132,7 +132,7 @@
       "category": "dips",
       "price": 0.5,
       "description": "Classic tomato ketchup",
-      "image": "/images/example.jpg",
+      "image": "/images/ketchup.jpg",
       "popular": false
     },
     {
@@ -141,7 +141,7 @@
       "category": "dips",
       "price": 0.5,
       "description": "Creamy mayonnaise",
-      "image": "/images/example.jpg",
+      "image": "/images/mayo.jpg",
       "popular": false
     },
     {
@@ -276,7 +276,7 @@
       "category": "desserts",
       "price": 4.5,
       "description": "Thick chocolate shake",
-      "image": "/images/example.jpg",
+      "image": "/images/chocolate-milkshake.jpg",
       "popular": false
     },
     {
@@ -285,7 +285,7 @@
       "category": "desserts",
       "price": 4.5,
       "description": "Creamy vanilla shake",
-      "image": "/images/example.jpg",
+      "image": "/images/vanilla-milkshake.jpg",
       "popular": false
     },
     {
@@ -294,7 +294,7 @@
       "category": "desserts",
       "price": 4.5,
       "description": "Classic strawberry shake",
-      "image": "/images/example.jpg",
+      "image": "/images/strawberry-milkshake.jpg",
       "popular": false
     },
     {
@@ -303,8 +303,8 @@
       "category": "desserts",
       "price": 4.5,
       "description": "Sweet caramel shake",
-      "image": "/images/example.jpg",
-      "popular": false
+      "image": "/images/caramel-milkshake.jpg",
+      "popular": true
     },
     {
       "id": "35",
@@ -312,7 +312,7 @@
       "category": "desserts",
       "price": 4,
       "description": "Vanilla ice cream with choc sauce",
-      "image": "/images/example.jpg",
+      "image": "/images/chocolate-sundae.jpg",
       "popular": false
     },
     {
@@ -321,7 +321,7 @@
       "category": "desserts",
       "price": 4,
       "description": "Vanilla ice cream with caramel",
-      "image": "/images/example.jpg",
+      "image": "/images/caramel-sundae.jpg",
       "popular": false
     },
     {
@@ -330,7 +330,7 @@
       "category": "desserts",
       "price": 4,
       "description": "Vanilla ice cream with strawberry",
-      "image": "/images/example.jpg",
+      "image": "/images/strawberry-sundae.jpg",
       "popular": false
     },
     {
@@ -339,7 +339,7 @@
       "category": "desserts",
       "price": 3.5,
       "description": "Just vanilla ice cream",
-      "image": "/images/example.jpg",
+      "image": "/images/vanilla.jpg",
       "popular": false
     },
     {
@@ -348,7 +348,7 @@
       "category": "drinks",
       "price": 2.5,
       "description": "Classic soda",
-      "image": "/images/example.jpg",
+      "image": "/images/cola.jpg",
       "popular": false
     },
     {
@@ -357,7 +357,7 @@
       "category": "drinks",
       "price": 2.5,
       "description": "Orange soda",
-      "image": "/images/example.jpg",
+      "image": "/images/fanta.jpg",
       "popular": false
     },
     {
@@ -366,7 +366,7 @@
       "category": "drinks",
       "price": 2.5,
       "description": "Lemon-lime soda",
-      "image": "/images/example.jpg",
+      "image": "/images/sprite.jpg",
       "popular": false
     },
     {
@@ -375,7 +375,7 @@
       "category": "drinks",
       "price": 2,
       "description": "Carbonated, unsweetened",
-      "image": "/images/example.jpg",
+      "image": "/images/water.jpg",
       "popular": false
     },
     {
@@ -384,7 +384,7 @@
       "category": "drinks",
       "price": 2,
       "description": "Light lemon/lime flavor",
-      "image": "/images/example.jpg",
+      "image": "/images/water-citrus.jpg",
       "popular": false
     },
     {
@@ -393,7 +393,7 @@
       "category": "drinks",
       "price": 3.5,
       "description": "Freshly pressed",
-      "image": "/images/example.jpg",
+      "image": "/images/orange-juice.jpg",
       "popular": false
     },
     {
@@ -402,7 +402,7 @@
       "category": "drinks",
       "price": 3.5,
       "description": "Freshly pressed",
-      "image": "/images/example.jpg",
+      "image": "/images/apple-juice.jpg",
       "popular": false
     },
     {
@@ -411,7 +411,7 @@
       "category": "drinks",
       "price": 2.5,
       "description": "Black, hot brewed",
-      "image": "/images/example.jpg",
+      "image": "/images/coffee.jpg",
       "popular": false
     },
     {
@@ -420,7 +420,7 @@
       "category": "drinks",
       "price": 2.5,
       "description": "Strong single shot",
-      "image": "/images/example.jpg",
+      "image": "/images/espresso.jpg",
       "popular": false
     },
     {
@@ -429,7 +429,7 @@
       "category": "drinks",
       "price": 4,
       "description": "Creamy fruit smoothie",
-      "image": "/images/example.jpg",
+      "image": "/images/strawberry-banana.jpg",
       "popular": false
     },
     {
@@ -438,7 +438,7 @@
       "category": "drinks",
       "price": 4,
       "description": "Tropical fruit smoothie",
-      "image": "/images/example.jpg",
+      "image": "/images/mango-passion.jpg",
       "popular": false
     }
   ],
@@ -711,6 +711,63 @@
       "createdAt": "2025-05-25T15:39:47.441Z",
       "status": "pending",
       "orderNumber": "DD-1748187587441"
+    },
+    {
+      "id": "b191",
+      "items": [
+        {
+          "id": "34",
+          "name": "Caramel Milkshake",
+          "description": "Sweet caramel shake",
+          "price": 4.5,
+          "image": "/images/caramel-milkshake.jpg",
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "name": "Sweet Potato Fries",
+          "description": "Golden sweet fries",
+          "price": 4,
+          "image": "/images/sweet-potatoe.jpg",
+          "quantity": 1
+        },
+        {
+          "id": "10",
+          "name": "Chipotle Mayo",
+          "description": "Smoky chipotle mayonnaise",
+          "price": 1,
+          "image": "/images/chipotle-mayo.jpg",
+          "quantity": 2
+        },
+        {
+          "id": "24",
+          "name": "Green Burger",
+          "description": "Plant-based patty, vegan cheese, aioli",
+          "price": 10.5,
+          "image": "/images/example.jpg",
+          "quantity": 1
+        }
+      ],
+      "delivery": {
+        "fullName": "Filipp",
+        "streetName": "Flöjtvägen",
+        "houseNumber": "12",
+        "city": "Lund",
+        "phoneNumber": "0707827491"
+      },
+      "payment": {
+        "paymentMethod": "card",
+        "cardNumber": "2329 2831 9900 7163",
+        "nameOnCard": "Filippa",
+        "expiryDate": "04/29",
+        "cvc": "873",
+        "swishNumber": ""
+      },
+      "subtotal": 21,
+      "total": 23.9,
+      "createdAt": "2025-05-25T18:04:38.199Z",
+      "status": "pending",
+      "orderNumber": "DD-1748196278200"
     }
   ],
   "users": []

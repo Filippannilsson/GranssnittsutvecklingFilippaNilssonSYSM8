@@ -8,7 +8,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import example from "../assets/pictures/example.jpg";
 
 function Menu() {
-  const [allMenuItems, setAllMenuItem] = useState([]);
+  const [allMenuItems, setAllMenuItems] = useState([]);
   const [menuItems, setMenuItems] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [searchTerm, setSearchTerm] = useState("");
@@ -19,7 +19,7 @@ function Menu() {
       getMenu()
         .then((data) => {
           console.log("Menu fetched successfully:", data.length, "items");
-          setAllMenuItem(data);
+          setAllMenuItems(data);
           setMenuItems(data);
         })
         .catch((error) => {
@@ -29,7 +29,7 @@ function Menu() {
       getMenuByCategory(category)
         .then((data) => {
           console.log(`Category ${category} fetched:`, data.length, "items");
-          setAllMenuItem(data);
+          setAllMenuItems(data);
           setMenuItems(data);
         })
         .catch((error) => {

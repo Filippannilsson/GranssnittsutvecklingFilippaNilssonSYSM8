@@ -70,28 +70,28 @@ function PaymentForm({ onDataChange }) {
   }
 
   function formatCVC(value) {
-    // Ta bort allt som inte är siffror och begränsa till 3 siffror
+    //Ta bort allt som inte är siffror, begränsa till 3 siffror
     return value.replace(/\D/g, "").substring(0, 3);
   }
 
   function formatSwishNumber(value) {
-    // Ta bort allt som inte är siffror och begränsa till 10 siffror
+    //Ta bort allt som inte är siffror, begränsa till 10 siffror
     return value.replace(/\D/g, "").substring(0, 10);
   }
 
   //Kontrollera om formuläret är giltigt
-  function isFormValid() {
-    if (selectedPaymentMethod === "card") {
-      const cardDigits = paymentData.cardNumber.replace(/\D/g, "");
-      const cvcDigits = paymentData.cvc.replace(/\D/g, "");
+  function isFormValid(data = paymentData, method = selectedPaymentMethod) {
+    if (method === "card") {
+      const cardDigits = data.cardNumber.replace(/\D/g, "");
+      const cvcDigits = data.cvc.replace(/\D/g, "");
 
-      //Kontrollera alla krav för kort
+      //Kontrollera alla krav
       if (cardDigits.length !== 16) return false;
-      if (!paymentData.nameOnCard.trim()) return false;
-      if (!isValidExpiryDate(paymentData.expiryDate)) return false;
+      if (!data.nameOnCard.trim()) return false;
+      if (!isValidExpiryDate(data.expiryDate)) return false;
       if (cvcDigits.length !== 3) return false;
-    } else if (selectedPaymentMethod === "swish") {
-      const swishDigits = paymentData.swishNumber.replace(/\D/g, "");
+    } else if (method === "swish") {
+      const swishDigits = data.swishNumber.replace(/\D/g, "");
       if (swishDigits.length < 10) return false;
     } else {
       //Ingen betalmetod vald
@@ -167,7 +167,10 @@ function PaymentForm({ onDataChange }) {
 
     //Skicka data till Checkout
     if (onDataChange) {
-      onDataChange({ ...newData, isValid: isFormValid() });
+      onDataChange({
+        ...newData,
+        isValid: isFormValid(newData, selectedPaymentMethod),
+      });
     }
   }
 
@@ -188,7 +191,7 @@ function PaymentForm({ onDataChange }) {
 
     //Skicka till Checkout
     if (onDataChange) {
-      onDataChange({ ...newData, isValid: isFormValid() });
+      onDataChange({ ...newData, isValid: isFormValid(newData, method) });
     }
   };
 

@@ -3,10 +3,12 @@ import React, { useState, useEffect } from "react";
 import "../styles/Confirmation.css";
 import "../App.css";
 import OrderedItem from "../components/OrderedItem";
+import { useCart } from "../context/CartContext";
 
 function Confirmation() {
   const navigate = useNavigate();
   const location = useLocation();
+  const { clearCart } = useCart();
 
   const [orderData, setOrderData] = useState(null);
   const [orderNumber, setOrderNumber] = useState(null);
@@ -16,6 +18,7 @@ function Confirmation() {
     if (location.state) {
       setOrderData(location.state.orderData);
       setOrderNumber(location.state.orderNumber);
+      clearCart();
     } else {
       //Omdirigera till cart om den är tom
       console.log("No order data");

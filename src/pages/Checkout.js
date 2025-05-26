@@ -10,7 +10,7 @@ import { createOrder } from "../services/api";
 
 function Checkout() {
   const navigate = useNavigate();
-  const { cartItems, getSubtotal, clearCart } = useCart();
+  const { cartItems, getSubtotal } = useCart();
   const [deliveryData, setDeliveryData] = useState({});
   const [paymentData, setPaymentData] = useState({});
 
@@ -35,19 +35,13 @@ function Checkout() {
 
   //Funktion för att validera beställningen
   function handleCompletePayment() {
-    if (
-      !deliveryData.fullName ||
-      !deliveryData.streetName ||
-      !deliveryData.houseNumber ||
-      !deliveryData.city ||
-      !deliveryData.phoneNumber
-    ) {
-      alert("Please fill in all delivery information");
+    if (!deliveryData.isValid) {
+      alert("Please fill in all delivery information correctly");
       return;
     }
 
     if (!paymentData.isValid) {
-      alert("Please fill in card information correctly");
+      alert("Please fill in payment information correctly");
       return;
     }
 
@@ -59,7 +53,6 @@ function Checkout() {
       total: getSubtotal() + 2.9,
     })
       .then((createdOrder) => {
-        clearCart();
         navigate("/confirmation", {
           state: {
             orderNumber: createdOrder.orderNumber,

@@ -74,7 +74,7 @@ function MenuFilter({
         </div>
 
         <div className="right-controls">
-          <div className="sort-container">
+          {/* <div className="sort-container">
             <select id="sort" name="sort" defaultValue="">
               <option value="" disabled>
                 Sort By
@@ -82,7 +82,7 @@ function MenuFilter({
               <option value="price">Price</option>
               <option value="name">Name</option>
             </select>
-          </div>
+          </div> */}
 
           <button
             className="clear-filter-btn"

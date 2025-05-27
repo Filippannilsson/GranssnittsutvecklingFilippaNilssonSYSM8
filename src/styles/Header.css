@@ -6,40 +6,43 @@
 .navbar {
   background-color: #439159;
   width: 100%;
-  height: 120px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .logo {
-  background: rgba(137, 194, 153, 0.56);
-  border-radius: 6px;
-  min-width: 487px;
-  height: 83px;
-  margin-left: 32px;
+  margin-left: 30px;
   margin-top: 0;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  opacity: 0.6;
 }
+
+.logo-image {
+  height: 95px;
+  width: auto;
+  filter: brightness(0) saturate(100%) invert(7%) sepia(18%) saturate(3486%)
+    hue-rotate(86deg);
+}
+
 .drone-delights-header {
-  color: #1e4128;
-  font-size: 48px;
+  color: #122818;
+  font-size: 30px;
   line-height: 110%;
   font-weight: 500;
   text-transform: uppercase;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  white-space: nowrap;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
 .symbols {
   display: flex;
-  width: 474px;
   height: 115px;
-  gap: 71px;
+  gap: 60px;
   align-items: center;
-  margin-right: 70px;
+  margin-right: 50px;
 }
 .symbols a {
   display: flex;
@@ -53,7 +56,7 @@
 }
 .icon {
   width: auto;
-  height: 45px;
+  height: 40px;
   fill: #122818;
 }
 

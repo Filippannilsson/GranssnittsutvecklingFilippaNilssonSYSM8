@@ -1,6 +1,5 @@
 import "../styles/Hero.css";
 import "../App.css";
-import heroImage from "../assets/pictures/hero-image.jpg";
 
 function Hero() {
   return (
@@ -15,12 +14,6 @@ function Hero() {
             <br />
             door
           </h1>
-
-          <ul className="core-values">
-            <li>Speed</li>
-            <li>Flavour</li>
-            <li>Innovation</li>
-          </ul>
         </div>
       </section>
     </div>

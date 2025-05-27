@@ -17,12 +17,12 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1190px;
+  max-width: 1130px;
   padding-bottom: 5px;
 }
 
 .popular-title {
-  font-size: 32px;
+  font-size: 28px;
   color: #1a3a23;
   font-weight: bold;
   text-transform: uppercase;
@@ -35,7 +35,7 @@
   border-radius: 8px;
   padding: 9px 20px;
   color: #1a3a23;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: bold;
   text-transform: uppercase;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -51,11 +51,12 @@
   flex-wrap: wrap;
   gap: 40px;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 .home-page .product-card {
-  max-width: 370px;
-  width: 370px;
+  max-width: 350px;
+  width: 350px;
 }
 
 /* Responsive adjustments för home page */

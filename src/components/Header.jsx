@@ -5,6 +5,7 @@ import { ReactComponent as HomeIcon } from "../assets/logos/home.svg";
 import { ReactComponent as CartIcon } from "../assets/logos/cart.svg";
 import { ReactComponent as MenuIcon } from "../assets/logos/menu.svg";
 import { ReactComponent as AccountIcon } from "../assets/logos/account.svg";
+import droneDelightsLogo from "../assets/logos/dd-logo2.png";
 import { useCart } from "../context/CartContext";
 
 function Header() {
@@ -15,7 +16,17 @@ function Header() {
     <header className="header">
       <nav className="navbar">
         <div className="logo">
-          <h1 className="drone-delights-header">Drone Delights</h1>
+          <Link to="/">
+            <img
+              src={droneDelightsLogo}
+              alt="Drone Delights Logo"
+              className="logo-image"
+            />
+          </Link>
+          <h1 className="drone-delights-header">
+            Drone <br />
+            Delights
+          </h1>
         </div>
 
         <div className="symbols">

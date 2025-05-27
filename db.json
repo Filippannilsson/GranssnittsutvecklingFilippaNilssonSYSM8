@@ -620,6 +620,151 @@
       "createdAt": "2025-05-26T12:21:19.714Z",
       "status": "pending",
       "orderNumber": "DD-1748262079714"
+    },
+    {
+      "id": "0239",
+      "items": [
+        {
+          "id": "34",
+          "name": "Caramel Milkshake",
+          "description": "Sweet caramel shake",
+          "price": 4.5,
+          "image": "/images/caramel-milkshake.jpg",
+          "quantity": 2
+        },
+        {
+          "id": "36",
+          "name": "Caramel Sundae",
+          "description": "Vanilla ice cream with caramel",
+          "price": 4,
+          "image": "/images/caramel-sundae.jpg",
+          "quantity": 1
+        },
+        {
+          "id": "20",
+          "name": "Truffle Deluxe Burger",
+          "description": "Beef, brie, truffle mayo, caramelized onions",
+          "price": 12.5,
+          "image": "/images/example.jpg",
+          "quantity": 1
+        }
+      ],
+      "delivery": {
+        "fullName": "Filippa Nilsson",
+        "streetName": "Flöjtvägen",
+        "houseNumber": "12B",
+        "city": "Lund",
+        "phoneNumber": "0707955732",
+        "isValid": true
+      },
+      "payment": {
+        "paymentMethod": "card",
+        "cardNumber": "2345 9348 2948 2398",
+        "nameOnCard": "Filippa Nilsson",
+        "expiryDate": "04/28",
+        "cvc": "042",
+        "swishNumber": "",
+        "isValid": true
+      },
+      "subtotal": 25.5,
+      "total": 28.4,
+      "createdAt": "2025-05-26T12:32:33.076Z",
+      "status": "pending",
+      "orderNumber": "DD-1748262753076"
+    },
+    {
+      "id": "c904",
+      "items": [
+        {
+          "id": "2",
+          "name": "Sweet Potato Fries",
+          "description": "Golden sweet fries",
+          "price": 4,
+          "image": "/images/sweet-potatoe.jpg",
+          "quantity": 1
+        },
+        {
+          "id": "41",
+          "name": "Sprite",
+          "description": "Lemon-lime soda",
+          "price": 2.5,
+          "image": "/images/sprite.jpg",
+          "quantity": 1
+        },
+        {
+          "id": "47",
+          "name": "Espresso",
+          "description": "Strong single shot",
+          "price": 2.5,
+          "image": "/images/espresso.jpg",
+          "quantity": 1
+        },
+        {
+          "id": "9",
+          "name": "Garlic Sauce",
+          "description": "Creamy garlic sauce",
+          "price": 1,
+          "image": "/images/garlic-sauce.jpg",
+          "quantity": 1
+        }
+      ],
+      "delivery": {
+        "fullName": "Test",
+        "streetName": "Test",
+        "houseNumber": "2",
+        "city": "Malmö",
+        "phoneNumber": "2832932938",
+        "isValid": true
+      },
+      "payment": {
+        "paymentMethod": "card",
+        "cardNumber": "4103 9812 0381 9381",
+        "nameOnCard": "Test",
+        "expiryDate": "06/30",
+        "cvc": "232",
+        "swishNumber": "",
+        "isValid": true
+      },
+      "subtotal": 10,
+      "total": 12.9,
+      "createdAt": "2025-05-27T09:29:15.070Z",
+      "status": "pending",
+      "orderNumber": "DD-1748338155070"
+    },
+    {
+      "id": "222e",
+      "items": [
+        {
+          "id": "2",
+          "name": "Sweet Potato Fries",
+          "description": "Golden sweet fries",
+          "price": 4,
+          "image": "/images/sweet-potatoe.jpg",
+          "quantity": 1
+        }
+      ],
+      "delivery": {
+        "fullName": "Filippa",
+        "streetName": "Test",
+        "houseNumber": "14",
+        "city": "Lund",
+        "phoneNumber": "0034920320",
+        "isValid": true
+      },
+      "payment": {
+        "paymentMethod": "swish",
+        "cardNumber": "",
+        "nameOnCard": "",
+        "expiryDate": "",
+        "cvc": "",
+        "swishNumber": "2302932039",
+        "isValid": true
+      },
+      "subtotal": 4,
+      "total": 6.9,
+      "createdAt": "2025-05-27T11:15:06.596Z",
+      "status": "pending",
+      "orderNumber": "DD-1748344506597"
     }
   ],
   "users": []

@@ -41,7 +41,7 @@ function Header() {
             {/* Om cartCount är större än 0, visa antal */}
             {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
           </Link>
-          <Link to="/account" className="account">
+          <Link to="/login" className="account">
             <AccountIcon className="icon" />
           </Link>
         </div>

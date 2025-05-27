@@ -14,7 +14,7 @@
 
 .delivery-information-title {
   color: #1a3a23;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 0;
@@ -36,7 +36,7 @@
   display: block;
   color: #1a3a23;
   font-family: "Gabarito-Medium", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 110%;
   font-weight: 500;
   text-transform: uppercase;
@@ -58,7 +58,7 @@
 
 .delivery-form-group input::placeholder {
   color: #439159;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .delivery-form-group input:focus {

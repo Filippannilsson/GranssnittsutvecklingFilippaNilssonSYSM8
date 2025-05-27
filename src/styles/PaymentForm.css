@@ -14,7 +14,7 @@
 
 .payment-method-title {
   color: #1a3a23;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 0;
@@ -62,7 +62,7 @@ input[type="radio"]:checked {
 
 .radio-group label {
   color: #1a3a23;
-  font-size: 22px;
+  font-size: 20px;
   text-transform: uppercase;
 }
 
@@ -86,7 +86,7 @@ input[type="radio"]:checked {
 .payment-form-group label {
   display: block;
   color: #1a3a23;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 8px;
 }
@@ -106,7 +106,7 @@ input[type="radio"]:checked {
 
 .payment-form-group input::placeholder {
   color: #439159;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .payment-form-group input:focus {

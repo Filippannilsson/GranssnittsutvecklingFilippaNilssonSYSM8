@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import "../styles/Profile.css";
 import "../App.css";
+import MyOrderOverview from "../components/MyOrderOverview";
 
 function Profile() {
   const navigate = useNavigate();
@@ -30,7 +31,10 @@ function Profile() {
 
           <div className="profile-content">
             <div className="orders-section">
-              <p>Your orders will appear here...</p>
+              <MyOrderOverview />
+              <MyOrderOverview />
+              <MyOrderOverview />
+              {/* <p>Your orders will appear here...</p> */}
             </div>
           </div>
         </div>

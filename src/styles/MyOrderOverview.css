@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+.order-container {
+  margin-bottom: 2px;
+}
+
 .overview-ordernumber,
 .view-details,
 .overview-date,

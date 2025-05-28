@@ -1,12 +1,19 @@
 import { useNavigate } from "react-router-dom";
 import { useUser } from "../context/UserContext";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../styles/Register.css";
 import "../App.css";
 
 function Register() {
   const navigate = useNavigate();
   const { registerUser } = useUser();
+
+  //Om redan inloggad, skicka till profile
+  useEffect(() => {
+    if (isLoggedIn()) {
+      navigate("/profile");
+    }
+  }, [isLoggedIn, navigate]);
 
   const [formData, setFormData] = useState({
     name: "",

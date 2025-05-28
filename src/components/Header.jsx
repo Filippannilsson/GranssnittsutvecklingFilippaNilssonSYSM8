@@ -4,12 +4,14 @@ import "../App.css";
 import { ReactComponent as HomeIcon } from "../assets/logos/home.svg";
 import { ReactComponent as CartIcon } from "../assets/logos/cart.svg";
 import { ReactComponent as MenuIcon } from "../assets/logos/menu.svg";
-import { ReactComponent as AccountIcon } from "../assets/logos/account.svg";
+import { ReactComponent as ProfileIcon } from "../assets/logos/profile.svg";
 import droneDelightsLogo from "../assets/logos/dd-logo2.png";
 import { useCart } from "../context/CartContext";
+import { useUser } from "../context/UserContext";
 
 function Header() {
   const { getCartCount } = useCart();
+  const { isLoggedIn } = useUser();
   const cartCount = getCartCount();
 
   return (
@@ -41,8 +43,8 @@ function Header() {
             {/* Om cartCount är större än 0, visa antal */}
             {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
           </Link>
-          <Link to="/login" className="account">
-            <AccountIcon className="icon" />
+          <Link to={isLoggedIn() ? "/profile" : "/login"} className="profile">
+            <ProfileIcon className="icon" />
           </Link>
         </div>
       </nav>

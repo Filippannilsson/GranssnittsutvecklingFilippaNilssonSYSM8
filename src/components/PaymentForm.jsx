@@ -174,7 +174,7 @@ function PaymentForm({ onDataChange }) {
     }
   }
 
-  const handlePaymentMethodChange = (method) => {
+  function handlePaymentMethodChange(method) {
     setSelectedPaymentMethod(method);
 
     //Rensa fält baserat på vilken metod som väljs
@@ -193,7 +193,7 @@ function PaymentForm({ onDataChange }) {
     if (onDataChange) {
       onDataChange({ ...newData, isValid: isFormValid(newData, method) });
     }
-  };
+  }
 
   return (
     <div className="payment-wrapper">

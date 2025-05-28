@@ -9,9 +9,9 @@ function MenuFilter({
   onSearchChange,
 }) {
   //Funktion för att hantera kategoriklick
-  const handleCategoryClick = (category) => {
+  function handleCategoryClick(category) {
     onCategoryChange(category);
-  };
+  }
 
   return (
     <div className="menu-filter-section">

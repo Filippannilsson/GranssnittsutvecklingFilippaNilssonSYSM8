@@ -834,5 +834,26 @@
       "orderNumber": "DD-1748359346717"
     }
   ],
-  "users": []
+  "users": [
+    {
+      "id": "1",
+      "name": "user",
+      "email": "user@gmail.com",
+      "password": "password"
+    },
+    {
+      "id": 1748433657399,
+      "name": "Filippa",
+      "email": "filippa@gmail.com",
+      "password": "Password1!",
+      "createdAt": "2025-05-28T12:00:57.399Z"
+    },
+    {
+      "id": 1748433764806,
+      "name": "Test",
+      "email": "test@gmail.com",
+      "password": "password",
+      "createdAt": "2025-05-28T12:02:44.806Z"
+    }
+  ]
 }

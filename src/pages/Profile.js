@@ -1,21 +1,31 @@
 import { useNavigate } from "react-router-dom";
+import { useUser } from "../context/UserContext";
+import { useEffect } from "react";
 import "../styles/Profile.css";
 import "../App.css";
 import MyOrderOverview from "../components/MyOrderOverview";
 
 function Profile() {
   const navigate = useNavigate();
+  const { user, logoutUser, isLoggedIn } = useUser();
 
-  const handleLogout = () => {
-    // Funktionalitet senare
+  //Om inte inloggad, skicka till startsidan
+  useEffect(() => {
+    if (!isLoggedIn()) {
+      navigate("/login");
+    }
+  }, [isLoggedIn, navigate]);
+
+  function handleLogout() {
+    logoutUser();
     navigate("/login");
-  };
+  }
 
   return (
     <main className="profile-main">
       <section className="profile-section">
         <header className="profile-header">
-          <h1 className="profile-welcome">Welcome Username</h1>
+          <h1 className="profile-welcome">Welcome {user?.name}</h1>
           <button className="logout-btn" onClick={handleLogout}>
             Log Out
           </button>

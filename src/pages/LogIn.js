@@ -1,14 +1,52 @@
 import { useNavigate } from "react-router-dom";
-import "../styles/LogIn.css";
+import { useUser } from "../context/UserContext";
+import { useState } from "react";
+import "../styles/Login.css";
 import "../App.css";
 
 function LogIn() {
   const navigate = useNavigate();
+  const { loginUser } = useUser();
 
-  const handleLogin = (e) => {
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+  const [error, setError] = useState("");
+
+  function handleInputChange(e) {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+    if (error) setError("");
+  }
+
+  async function handleLogin(e) {
     e.preventDefault();
-    //Funktionalitet senare
-  };
+    setError("");
+
+    //Basic validering
+    if (!formData.email || !formData.password) {
+      setError("Fill in all fields");
+      return;
+    }
+
+    try {
+      const result = await loginUser(formData.email, formData.password);
+
+      if (result.success) {
+        console.log("Login successfull");
+        navigate("/profile");
+      } else {
+        setError(result.error);
+      }
+    } catch (error) {
+      console.error("Login error:", error);
+      setError("Something went wrong, try again");
+    }
+  }
 
   return (
     <main className="main-page">
@@ -26,6 +64,8 @@ function LogIn() {
                 type="email"
                 id="email"
                 name="email"
+                value={formData.email}
+                onChange={handleInputChange}
                 placeholder="Enter your email"
                 required
               />
@@ -41,11 +81,15 @@ function LogIn() {
                 type="password"
                 id="password"
                 name="password"
+                value={formData.password}
+                onChange={handleInputChange}
                 placeholder="Enter your password"
                 required
               />
             </div>
           </div>
+
+          {error && <div className="error-message">{error}</div>}
 
           <div className="login-btns">
             <button type="submit" className="login-btn">

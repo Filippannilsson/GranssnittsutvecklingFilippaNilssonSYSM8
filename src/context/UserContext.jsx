@@ -48,7 +48,7 @@ export function UserProvider({ children }) {
         console.log("Login successful:", currentUser);
         return { success: true, user: currentUser };
       } else {
-        return { success: false, error: "Invalid login" };
+        return { success: false, error: "Invalid email or password" };
       }
     } catch (error) {
       console.error("Login error:", error);
@@ -82,7 +82,7 @@ export function UserProvider({ children }) {
   }
 
   //Funktion för att logga ut en användare
-  function logOutUser() {
+  function logoutUser() {
     setUser(null);
     console.log("User logged out");
   }
@@ -97,7 +97,7 @@ export function UserProvider({ children }) {
     user,
     loginUser,
     registerUser,
-    logOutUser,
+    logoutUser,
     isLoggedIn,
   };
 

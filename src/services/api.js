@@ -126,3 +126,16 @@ export function createUser(userData) {
 }
 
 //Hämta beställningar från en specifik användare
+export function getUserOrders(userId) {
+  return fetch(`${BASE_URL}/orders?userId=${userId}`)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`Error fetching user orders: ${response.status}`);
+      }
+      return response.json();
+    })
+    .catch((error) => {
+      console.error("Error fetching user orders:", error);
+      throw error;
+    });
+}

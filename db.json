@@ -444,311 +444,24 @@
   ],
   "orders": [
     {
-      "id": "e36e",
+      "id": "dd61",
+      "userId": "1",
       "items": [
         {
-          "id": "6",
-          "name": "Chicken Wings",
-          "description": "6 crispy wings",
-          "price": 5.5,
-          "image": "/images/example.jpg",
-          "quantity": 2
-        },
-        {
-          "id": "8",
-          "name": "Loaded Fries",
-          "description": "Cheese, bacon & jalapeños on fries",
-          "price": 6.5,
-          "image": "/images/example.jpg",
-          "quantity": 1
-        },
-        {
-          "id": "1",
-          "name": "French Fries",
-          "description": "Classic crispy fries",
-          "price": 3.5,
-          "image": "/images/frenchfries.png",
-          "quantity": 1
-        },
-        {
-          "id": "3",
-          "name": "Chili Cheese Tops",
-          "description": "Spicy fried cheese balls",
-          "price": 4.5,
-          "image": "/images/example.jpg",
-          "quantity": 2
-        },
-        {
-          "id": "17",
-          "name": "Classic Cheese Burger",
-          "description": "Beef, cheddar, pickles, ketchup & mustard",
-          "price": 10.5,
-          "image": "/images/hamburger1.png",
-          "quantity": 1
-        }
-      ],
-      "delivery": {
-        "fullName": "Filippa Nilsson",
-        "streetName": "Flöjtvägen",
-        "houseNumber": "12B",
-        "city": "Lund",
-        "phoneNumber": "0707955732"
-      },
-      "payment": {
-        "paymentMethod": "swish",
-        "cardNumber": "",
-        "nameOnCard": "",
-        "expiryDate": "",
-        "cvc": "",
-        "swishNumber": "0707955732"
-      },
-      "subtotal": 40.5,
-      "total": 43.79,
-      "createdAt": "2025-05-25T12:13:38.865Z",
-      "status": "pending",
-      "orderNumber": "DD-1748175218866"
-    },
-    {
-      "id": "0b18",
-      "items": [
-        {
-          "id": "17",
-          "name": "Classic Cheese Burger",
-          "description": "Beef, cheddar, pickles, ketchup & mustard",
-          "price": 10.5,
-          "image": "/images/hamburger1.png",
-          "quantity": 2
-        }
-      ],
-      "delivery": {
-        "fullName": "Filippa Nilsson",
-        "streetName": "Flöjtvägenn",
-        "houseNumber": "12BBb",
-        "city": "Lundd",
-        "phoneNumber": "0707070707",
-        "isValid": true
-      },
-      "payment": {
-        "paymentMethod": "card",
-        "cardNumber": "1234 1123 4123 4222",
-        "nameOnCard": "Filippa",
-        "expiryDate": "04/29",
-        "cvc": "123",
-        "swishNumber": "",
-        "isValid": true
-      },
-      "subtotal": 21,
-      "total": 23.9,
-      "createdAt": "2025-05-26T12:03:57.914Z",
-      "status": "pending",
-      "orderNumber": "DD-1748261037914"
-    },
-    {
-      "id": "d377",
-      "items": [
-        {
-          "id": "6",
-          "name": "Chicken Wings",
-          "description": "6 crispy wings",
-          "price": 5.5,
-          "image": "/images/chicken-wings.jpg",
-          "quantity": 1
-        }
-      ],
-      "delivery": {
-        "fullName": "Filippa",
-        "streetName": "Flöjtv",
-        "houseNumber": "12",
-        "city": "lund",
-        "phoneNumber": "0000202032",
-        "isValid": true
-      },
-      "payment": {
-        "paymentMethod": "card",
-        "cardNumber": "1234 1234 4567 8429",
-        "nameOnCard": "Filippa",
-        "expiryDate": "06/39",
-        "cvc": "233",
-        "swishNumber": "",
-        "isValid": true
-      },
-      "subtotal": 5.5,
-      "total": 8.4,
-      "createdAt": "2025-05-26T12:15:43.077Z",
-      "status": "pending",
-      "orderNumber": "DD-1748261743077"
-    },
-    {
-      "id": "7a5d",
-      "items": [
-        {
-          "id": "7",
-          "name": "Chicken Nuggets (6)",
-          "description": "Fried nuggets, juicy inside",
-          "price": 4.5,
-          "image": "/images/chicken-nuggets.jpg",
-          "quantity": 1
-        },
-        {
-          "id": "10",
-          "name": "Chipotle Mayo",
-          "description": "Smoky chipotle mayonnaise",
-          "price": 1,
-          "image": "/images/chipotle-mayo.jpg",
-          "quantity": 2
-        }
-      ],
-      "delivery": {
-        "fullName": "Filippa",
-        "streetName": "Flöjtvägen",
-        "houseNumber": "12",
-        "city": "Lund",
-        "phoneNumber": "0342930391",
-        "isValid": true
-      },
-      "payment": {
-        "paymentMethod": "card",
-        "cardNumber": "1201 9821 9281 9028",
-        "nameOnCard": "Filippa",
-        "expiryDate": "06/29",
-        "cvc": "339",
-        "swishNumber": "",
-        "isValid": true
-      },
-      "subtotal": 6.5,
-      "total": 9.4,
-      "createdAt": "2025-05-26T12:21:19.714Z",
-      "status": "pending",
-      "orderNumber": "DD-1748262079714"
-    },
-    {
-      "id": "0239",
-      "items": [
-        {
-          "id": "34",
-          "name": "Caramel Milkshake",
-          "description": "Sweet caramel shake",
-          "price": 4.5,
-          "image": "/images/caramel-milkshake.jpg",
-          "quantity": 2
-        },
-        {
-          "id": "36",
-          "name": "Caramel Sundae",
-          "description": "Vanilla ice cream with caramel",
+          "id": "4",
+          "name": "Onion Rings",
+          "description": "Golden, crispy onion rings",
           "price": 4,
-          "image": "/images/caramel-sundae.jpg",
-          "quantity": 1
-        },
-        {
-          "id": "20",
-          "name": "Truffle Deluxe Burger",
-          "description": "Beef, brie, truffle mayo, caramelized onions",
-          "price": 12.5,
-          "image": "/images/example.jpg",
+          "image": "/images/onion-rings.jpg",
           "quantity": 1
         }
       ],
       "delivery": {
-        "fullName": "Filippa Nilsson",
-        "streetName": "Flöjtvägen",
-        "houseNumber": "12B",
-        "city": "Lund",
-        "phoneNumber": "0707955732",
-        "isValid": true
-      },
-      "payment": {
-        "paymentMethod": "card",
-        "cardNumber": "2345 9348 2948 2398",
-        "nameOnCard": "Filippa Nilsson",
-        "expiryDate": "04/28",
-        "cvc": "042",
-        "swishNumber": "",
-        "isValid": true
-      },
-      "subtotal": 25.5,
-      "total": 28.4,
-      "createdAt": "2025-05-26T12:32:33.076Z",
-      "status": "pending",
-      "orderNumber": "DD-1748262753076"
-    },
-    {
-      "id": "c904",
-      "items": [
-        {
-          "id": "2",
-          "name": "Sweet Potato Fries",
-          "description": "Golden sweet fries",
-          "price": 4,
-          "image": "/images/sweet-potatoe.jpg",
-          "quantity": 1
-        },
-        {
-          "id": "41",
-          "name": "Sprite",
-          "description": "Lemon-lime soda",
-          "price": 2.5,
-          "image": "/images/sprite.jpg",
-          "quantity": 1
-        },
-        {
-          "id": "47",
-          "name": "Espresso",
-          "description": "Strong single shot",
-          "price": 2.5,
-          "image": "/images/espresso.jpg",
-          "quantity": 1
-        },
-        {
-          "id": "9",
-          "name": "Garlic Sauce",
-          "description": "Creamy garlic sauce",
-          "price": 1,
-          "image": "/images/garlic-sauce.jpg",
-          "quantity": 1
-        }
-      ],
-      "delivery": {
-        "fullName": "Test",
-        "streetName": "Test",
-        "houseNumber": "2",
-        "city": "Malmö",
-        "phoneNumber": "2832932938",
-        "isValid": true
-      },
-      "payment": {
-        "paymentMethod": "card",
-        "cardNumber": "4103 9812 0381 9381",
-        "nameOnCard": "Test",
-        "expiryDate": "06/30",
-        "cvc": "232",
-        "swishNumber": "",
-        "isValid": true
-      },
-      "subtotal": 10,
-      "total": 12.9,
-      "createdAt": "2025-05-27T09:29:15.070Z",
-      "status": "pending",
-      "orderNumber": "DD-1748338155070"
-    },
-    {
-      "id": "222e",
-      "items": [
-        {
-          "id": "2",
-          "name": "Sweet Potato Fries",
-          "description": "Golden sweet fries",
-          "price": 4,
-          "image": "/images/sweet-potatoe.jpg",
-          "quantity": 1
-        }
-      ],
-      "delivery": {
-        "fullName": "Filippa",
-        "streetName": "Test",
-        "houseNumber": "14",
-        "city": "Lund",
-        "phoneNumber": "0034920320",
+        "fullName": "test",
+        "streetName": "test",
+        "houseNumber": "4",
+        "city": "sdl",
+        "phoneNumber": "0239230023",
         "isValid": true
       },
       "payment": {
@@ -757,42 +470,19 @@
         "nameOnCard": "",
         "expiryDate": "",
         "cvc": "",
-        "swishNumber": "2302932039",
+        "swishNumber": "3923989182",
         "isValid": true
       },
       "subtotal": 4,
       "total": 6.9,
-      "createdAt": "2025-05-27T11:15:06.596Z",
+      "createdAt": "2025-05-29T09:07:56.428Z",
       "status": "pending",
-      "orderNumber": "DD-1748344506597"
+      "orderNumber": "DD-1748509676428"
     },
     {
-      "id": "4f52",
+      "id": "8e1e",
+      "userId": 1748433657399,
       "items": [
-        {
-          "id": "15",
-          "name": "Ketchup",
-          "description": "Classic tomato ketchup",
-          "price": 0.5,
-          "image": "/images/ketchup.jpg",
-          "quantity": 1
-        },
-        {
-          "id": "19",
-          "name": "Spicy Jalapeño Burger",
-          "description": "Beef, jalapeños, pepper jack, chipotle mayo",
-          "price": 11.5,
-          "image": "/images/example.jpg",
-          "quantity": 1
-        },
-        {
-          "id": "17",
-          "name": "Classic Cheese Burger",
-          "description": "Beef, cheddar, pickles, ketchup & mustard",
-          "price": 10.5,
-          "image": "/images/hamburger1.png",
-          "quantity": 1
-        },
         {
           "id": "6",
           "name": "Chicken Wings",
@@ -802,20 +492,52 @@
           "quantity": 1
         },
         {
-          "id": "7",
-          "name": "Chicken Nuggets (6)",
-          "description": "Fried nuggets, juicy inside",
+          "id": "13",
+          "name": "Sriracha Mayo",
+          "description": "Spicy sriracha mayonnaise",
+          "price": 1,
+          "image": "/images/sriracha-mayo.jpg",
+          "quantity": 1
+        },
+        {
+          "id": "18",
+          "name": "Bacon BBQ Burger",
+          "description": "Beef, bacon, BBQ sauce, cheese, crispy onions",
+          "price": 11.5,
+          "image": "/images/hamburger2.png",
+          "quantity": 1
+        },
+        {
+          "id": "31",
+          "name": "Chocolate Milkshake",
+          "description": "Thick chocolate shake",
           "price": 4.5,
-          "image": "/images/chicken-nuggets.jpg",
+          "image": "/images/chocolate-milkshake.jpg",
+          "quantity": 1
+        },
+        {
+          "id": "37",
+          "name": "Strawberry Sundae",
+          "description": "Vanilla ice cream with strawberry",
+          "price": 4,
+          "image": "/images/strawberry-sundae.jpg",
+          "quantity": 1
+        },
+        {
+          "id": "43",
+          "name": "Sparkling Water - Citrus",
+          "description": "Light lemon/lime flavor",
+          "price": 2,
+          "image": "/images/water-citrus.jpg",
           "quantity": 1
         }
       ],
       "delivery": {
-        "fullName": "kölk",
-        "streetName": "klkl",
-        "houseNumber": "kl",
-        "city": "klk",
-        "phoneNumber": "9809998999",
+        "fullName": "Filippa",
+        "streetName": "test",
+        "houseNumber": "7",
+        "city": "Malmö",
+        "phoneNumber": "0232093203",
         "isValid": true
       },
       "payment": {
@@ -824,14 +546,14 @@
         "nameOnCard": "",
         "expiryDate": "",
         "cvc": "",
-        "swishNumber": "2389183918",
+        "swishNumber": "0129102910",
         "isValid": true
       },
-      "subtotal": 32.5,
-      "total": 35.4,
-      "createdAt": "2025-05-27T15:22:26.717Z",
+      "subtotal": 28.5,
+      "total": 31.4,
+      "createdAt": "2025-05-29T09:09:29.297Z",
       "status": "pending",
-      "orderNumber": "DD-1748359346717"
+      "orderNumber": "DD-1748509769297"
     }
   ],
   "users": [
@@ -847,13 +569,6 @@
       "email": "filippa@gmail.com",
       "password": "Password1!",
       "createdAt": "2025-05-28T12:00:57.399Z"
-    },
-    {
-      "id": 1748433764806,
-      "name": "Test",
-      "email": "test@gmail.com",
-      "password": "password",
-      "createdAt": "2025-05-28T12:02:44.806Z"
     }
   ]
 }

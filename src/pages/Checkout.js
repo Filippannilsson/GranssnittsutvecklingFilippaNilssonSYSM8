@@ -6,11 +6,13 @@ import DeliveryForm from "../components/DeliveryForm";
 import PaymentForm from "../components/PaymentForm";
 import OrderSummery from "../components/OrderSummery";
 import { useCart } from "../context/CartContext";
+import { useUser } from "../context/UserContext";
 import { createOrder } from "../services/api";
 
 function Checkout() {
   const navigate = useNavigate();
   const { cartItems, getSubtotal } = useCart();
+  const { user } = useUser();
   const [deliveryData, setDeliveryData] = useState({});
   const [paymentData, setPaymentData] = useState({});
 
@@ -46,6 +48,7 @@ function Checkout() {
     }
 
     createOrder({
+      userId: user?.id, //null för gästbeställningar
       items: cartItems,
       delivery: deliveryData,
       payment: paymentData,

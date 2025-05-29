@@ -6,7 +6,7 @@ import "../App.css";
 
 function Register() {
   const navigate = useNavigate();
-  const { registerUser } = useUser();
+  const { registerUser, isLoggedIn } = useUser();
 
   //Om redan inloggad, skicka till profile
   useEffect(() => {

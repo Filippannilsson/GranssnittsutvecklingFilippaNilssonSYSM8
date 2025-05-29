@@ -75,6 +75,15 @@
   flex-shrink: 0;
 }
 
+.arrow-icon {
+  transform: rotate(0deg);
+  transition: transform 0.3s;
+}
+
+.arrow-icon.expanded {
+  transform: rotate(180deg);
+}
+
 .overview-right-section {
   align-items: flex-end;
   width: 180px;

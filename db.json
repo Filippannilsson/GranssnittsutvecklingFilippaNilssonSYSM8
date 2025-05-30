@@ -16,7 +16,7 @@
       "price": 4,
       "description": "Golden sweet fries",
       "image": "/images/sweet-potatoe.jpg",
-      "popular": false
+      "popular": true
     },
     {
       "id": "3",
@@ -47,16 +47,16 @@
     },
     {
       "id": "6",
-      "name": "Chicken Wings",
+      "name": "Side Sallad",
       "category": "starters",
-      "price": 5.5,
-      "description": "6 crispy wings",
-      "image": "/images/chicken-wings.jpg",
+      "price": 3.5,
+      "description": "Fresh sallad",
+      "image": "/images/side-sallad.jpg",
       "popular": false
     },
     {
       "id": "7",
-      "name": "Chicken Nuggets (6)",
+      "name": "Chicken Nuggets",
       "category": "starters",
       "price": 4.5,
       "description": "Fried nuggets, juicy inside",
@@ -65,11 +65,11 @@
     },
     {
       "id": "8",
-      "name": "Loaded Fries",
+      "name": "Nacho Plate",
       "category": "starters",
       "price": 6.5,
-      "description": "Cheese, bacon & jalapeños on fries",
-      "image": "/images/loaded-fries.jpg",
+      "description": "Nacho Plate",
+      "image": "/images/nacho-plate.jpg",
       "popular": false
     },
     {
@@ -150,7 +150,7 @@
       "category": "mains",
       "price": 10.5,
       "description": "Beef, cheddar, pickles, ketchup & mustard",
-      "image": "/images/hamburger1.png",
+      "image": "/images/example.jpg",
       "popular": true
     },
     {
@@ -159,8 +159,8 @@
       "category": "mains",
       "price": 11.5,
       "description": "Beef, bacon, BBQ sauce, cheese, crispy onions",
-      "image": "/images/hamburger2.png",
-      "popular": true
+      "image": "/images/example.jpg",
+      "popular": false
     },
     {
       "id": "19",
@@ -554,6 +554,58 @@
       "createdAt": "2025-05-29T09:09:29.297Z",
       "status": "pending",
       "orderNumber": "DD-1748509769297"
+    },
+    {
+      "id": "c2e2",
+      "userId": 1748433657399,
+      "items": [
+        {
+          "id": "3",
+          "name": "Chili Cheese Tops",
+          "description": "Spicy fried cheese balls",
+          "price": 4.5,
+          "image": "/images/chili-cheese.jpg",
+          "quantity": 5
+        },
+        {
+          "id": "6",
+          "name": "Side Sallad",
+          "description": "Fresh sallad",
+          "price": 3.5,
+          "image": "/images/side-sallad.jpg",
+          "quantity": 1
+        },
+        {
+          "id": "10",
+          "name": "Chipotle Mayo",
+          "description": "Smoky chipotle mayonnaise",
+          "price": 1,
+          "image": "/images/chipotle-mayo.jpg",
+          "quantity": 1
+        }
+      ],
+      "delivery": {
+        "fullName": "d",
+        "streetName": "h",
+        "houseNumber": "g",
+        "city": "g",
+        "phoneNumber": "7777777777",
+        "isValid": true
+      },
+      "payment": {
+        "paymentMethod": "swish",
+        "cardNumber": "",
+        "nameOnCard": "",
+        "expiryDate": "",
+        "cvc": "",
+        "swishNumber": "5555555555",
+        "isValid": true
+      },
+      "subtotal": 27,
+      "total": 29.9,
+      "createdAt": "2025-05-29T14:16:31.716Z",
+      "status": "pending",
+      "orderNumber": "DD-1748528191716"
     }
   ],
   "users": [

@@ -10,7 +10,6 @@ function Profile() {
   const navigate = useNavigate();
   const { user, logoutUser, isLoggedIn } = useUser();
   const [userOrders, setUserOrders] = useState([]);
-  // const [isLoadingOrders, setIsLoadingOrders] = useState(true);
 
   //Om inte inloggad, skicka till startsidan
   useEffect(() => {
@@ -26,9 +25,9 @@ function Profile() {
     }
   }, [user]);
 
+  //Funktion för att hämta users beställningar från API
   async function fetchUserOrders() {
     try {
-      // setIsLoadingOrders(true);
       const orders = await getUserOrders(user.id);
 
       //Sortera orders, nyast först
@@ -36,17 +35,19 @@ function Profile() {
         (a, b) => new Date(b.createdAt) - new Date(a.createdAt)
       );
 
+      //Spara sorterade beställningar
       setUserOrders(sortedOrders);
       console.log("User orders loaded:", sortedOrders);
     } catch (error) {
       console.error("Error fetching user orders:", error);
       setUserOrders([]);
     } finally {
-      // setIsLoadingOrders(false);
     }
   }
 
+  //Funktion för att logga ut
   function handleLogout() {
+    //Anropa från userContext
     logoutUser();
     navigate("/login");
   }
@@ -72,6 +73,7 @@ function Profile() {
           <div className="profile-content">
             <div className="orders-section">
               {userOrders?.length > 0 ? (
+                //Loopa igenom och visa alla beställningar
                 userOrders.map((order) => (
                   <MyOrderOverview key={order.id} orderData={order} />
                 ))

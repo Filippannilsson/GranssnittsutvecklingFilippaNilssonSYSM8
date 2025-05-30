@@ -1,11 +1,17 @@
 import "../styles/MenuItem.css";
 import "../App.css";
 import React from "react";
+import { ReactComponent as NotFavoriteIcon } from "../assets/logos/not-favorite.svg";
+import { ReactComponent as FavoriteIcon } from "../assets/logos/is-favorite.svg";
 import { useCart } from "../context/CartContext";
+import { useFavorites } from "../context/FavoritesContext";
 
 function MenuItem({ id, image, name, description, price }) {
   //Tillgång till cart-funktion via context
   const { addToCart } = useCart();
+
+  //Tillgång till favorite-funktion via context
+  const { toggleFavorite, isFavorite } = useFavorites();
 
   //Funktion för att hantera klick på add-knapp
   function handleAddToCart() {
@@ -14,7 +20,7 @@ function MenuItem({ id, image, name, description, price }) {
       id,
       name,
       description,
-      price: parseFloat(price.replace("$", "")), //Ta bort $ och gör om till nummer
+      price: parseFloat(price.replace("$", "")), //Tar bort $ och gör om till nummer
       image,
     };
 
@@ -22,8 +28,37 @@ function MenuItem({ id, image, name, description, price }) {
     console.log(`Added ${name} to cart`);
   }
 
+  //Funktion för att hantera favorit-markering
+  function handleToggleFavorite(e) {
+    e.preventDefault();
+
+    const product = {
+      id,
+      name,
+      description,
+      price: parseFloat(price.replace("$", "")),
+      image,
+    };
+
+    //Toggle favorite
+    const isNowFavorite = toggleFavorite(product);
+    console.log(
+      `${isNowFavorite ? "Added to" : "Removed from"} favorites: ${name}`
+    );
+  }
+
+  //Kontrollera om produkt är favoritmarkerad för att visa rätt hjärt-ikon
+  const productIsFavorite = isFavorite(id);
+
   return (
     <div className="product-card">
+      <div className="favorite-heart" onClick={handleToggleFavorite}>
+        {productIsFavorite ? (
+          <FavoriteIcon className="favorite-logo favorite" />
+        ) : (
+          <NotFavoriteIcon className="favorite-logo not-favorite" />
+        )}
+      </div>
       <img className="dish-image" src={image} alt={name} />
 
       <div className="product-info">

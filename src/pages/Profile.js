@@ -63,7 +63,7 @@ function Profile() {
     <main className="profile-main">
       <section className="profile-section">
         <header className="profile-header">
-          <h1 className="profile-welcome">Welcome {user?.name}</h1>
+          <h1 className="profile-welcome">Welcome {user?.username}</h1>
           <button className="logout-btn" onClick={handleLogout}>
             Log Out
           </button>

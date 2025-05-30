@@ -33,7 +33,7 @@
   margin-bottom: 15px;
 }
 
-.register-name-section,
+.register-username-section,
 .register-email-section {
   margin-bottom: 15px;
 }
@@ -42,7 +42,7 @@
   margin-bottom: 20px;
 }
 
-.register-name-label,
+.register-username-label,
 .register-email-label,
 .register-password-label {
   display: block;
@@ -52,13 +52,13 @@
   margin-bottom: 8px;
 }
 
-.name-input,
+.username-input,
 .register-email-input,
 .register-password-input {
   width: 100%;
 }
 
-.name-input input,
+.username-input input,
 .register-email-input input,
 .register-password-input input {
   width: 100%;
@@ -74,7 +74,7 @@
   outline: none;
 }
 
-.name-input input::placeholder,
+.username-input input::placeholder,
 .register-email-input input::placeholder,
 .register-password-input input::placeholder {
   color: #439159;
@@ -107,7 +107,6 @@
   transition: all 0.3s;
 }
 
-/* Button specifik padding */
 .register-btn {
   padding: 14px 25px;
 }

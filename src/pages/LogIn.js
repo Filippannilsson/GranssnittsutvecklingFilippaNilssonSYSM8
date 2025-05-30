@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import "../styles/Login.css";
 import "../App.css";
 
-function LogIn() {
+function Login() {
   const navigate = useNavigate();
   const { loginUser, isLoggedIn } = useUser();
 
@@ -16,7 +16,7 @@ function LogIn() {
   }, [isLoggedIn, navigate]);
 
   const [formData, setFormData] = useState({
-    email: "",
+    username: "",
     password: "",
   });
   const [error, setError] = useState("");
@@ -35,13 +35,13 @@ function LogIn() {
     setError("");
 
     //Basic validering
-    if (!formData.email || !formData.password) {
+    if (!formData.username || !formData.password) {
       setError("Fill in all fields");
       return;
     }
 
     try {
-      const result = await loginUser(formData.email, formData.password);
+      const result = await loginUser(formData.username, formData.password);
 
       if (result.success) {
         console.log("Login successfull");
@@ -62,18 +62,18 @@ function LogIn() {
         <div className="log-in-line"></div>
 
         <form onSubmit={handleLogin}>
-          <div className="login-email-section">
-            <label htmlFor="email" className="login-email-label">
-              Email
+          <div className="login-username-section">
+            <label htmlFor="username" className="login-username-label">
+              Username
             </label>
-            <div className="login-email-input">
+            <div className="login-username-input">
               <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
+                type="text"
+                id="username"
+                name="username"
+                value={formData.username}
                 onChange={handleInputChange}
-                placeholder="Enter your email"
+                placeholder="Username"
                 required
               />
             </div>
@@ -90,7 +90,7 @@ function LogIn() {
                 name="password"
                 value={formData.password}
                 onChange={handleInputChange}
-                placeholder="Enter your password"
+                placeholder="Password"
                 required
               />
             </div>
@@ -116,4 +116,4 @@ function LogIn() {
   );
 }
 
-export default LogIn;
+export default Login;

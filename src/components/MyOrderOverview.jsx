@@ -52,7 +52,7 @@ function MyOrderOverview({ orderData }) {
               <span className="product-name">{item.name}</span>
               <span className="product-quantity">x{item.quantity}</span>
               <span className="product-price">
-                ${item.price * item.quantity}
+                ${(item.price * item.quantity).toFixed(2)}
               </span>
             </div>
           ))

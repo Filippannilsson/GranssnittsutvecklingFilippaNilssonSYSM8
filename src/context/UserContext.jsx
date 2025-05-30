@@ -34,13 +34,13 @@ export function UserProvider({ children }) {
   }, [user]);
 
   //Funktion för att logga in användare
-  async function loginUser(email, password) {
+  async function loginUser(username, password) {
     try {
       const users = await getUsers();
 
-      //Hitta rätt användare från databasen genom att jämföra mail och lösen
+      //Hitta rätt användare från databasen genom att jämföra användarnamn och lösen
       const currentUser = users.find(
-        (u) => u.email === email && u.password === password
+        (u) => u.username === username && u.password === password
       );
 
       if (currentUser) {
@@ -48,7 +48,7 @@ export function UserProvider({ children }) {
         console.log("Login successful:", currentUser);
         return { success: true, user: currentUser };
       } else {
-        return { success: false, error: "Invalid email or password" };
+        return { success: false, error: "Invalid username or password" };
       }
     } catch (error) {
       console.error("Login error:", error);

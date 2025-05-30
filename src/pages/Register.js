@@ -16,7 +16,7 @@ function Register() {
   }, [isLoggedIn, navigate]);
 
   const [formData, setFormData] = useState({
-    name: "",
+    username: "",
     email: "",
     password: "",
   });
@@ -42,11 +42,11 @@ function Register() {
   function validateForm() {
     const errors = {};
 
-    //Validera namn
-    if (!formData.name.trim()) {
-      errors.name = "Name is required";
-    } else if (formData.name.trim().length < 2) {
-      errors.name = "Name must be at least 2 characters";
+    //Validera användarnamn
+    if (!formData.username.trim()) {
+      errors.username = "Username is required";
+    } else if (formData.username.trim().length < 2) {
+      errors.username = "Username must be at least 2 characters";
     }
 
     //Validera mail
@@ -99,22 +99,22 @@ function Register() {
         <div className="register-line"></div>
 
         <form onSubmit={handleRegister} noValidate>
-          <div className="register-name-section">
-            <label htmlFor="name" className="register-name-label">
-              Name
+          <div className="register-username-section">
+            <label htmlFor="name" className="register-username-label">
+              Username
             </label>
-            <div className="name-input">
+            <div className="username-input">
               <input
                 type="text"
-                id="name"
-                name="name"
-                value={formData.name}
+                id="username"
+                name="username"
+                value={formData.username}
                 onChange={handleInputChange}
-                placeholder="Name"
+                placeholder="Username"
                 required
               />
-              {validationErrors.name && (
-                <span className="field-error">{validationErrors.name}</span>
+              {validationErrors.username && (
+                <span className="field-error">{validationErrors.username}</span>
               )}
             </div>
           </div>

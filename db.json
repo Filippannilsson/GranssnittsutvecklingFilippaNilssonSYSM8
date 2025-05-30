@@ -607,17 +607,32 @@
   ],
   "users": [
     {
-      "id": "1",
-      "name": "user",
+      "id": 1,
+      "username": "user",
       "email": "user@gmail.com",
-      "password": "password"
+      "password": "password",
+      "createdAt": "2025-05-31T00:00:00.000Z"
     },
     {
       "id": 1748433657399,
-      "name": "Filippa",
+      "username": "Filippa",
       "email": "filippa@gmail.com",
       "password": "Password1!",
       "createdAt": "2025-05-28T12:00:57.399Z"
+    },
+    {
+      "id": 1748648832314,
+      "username": "emma",
+      "email": "test@gmail.com",
+      "password": "emma11",
+      "createdAt": "2025-05-30T23:47:12.314Z"
+    },
+    {
+      "id": 1748648908377,
+      "username": "test",
+      "email": "testa@gmail.com",
+      "password": "testing",
+      "createdAt": "2025-05-30T23:48:28.377Z"
     }
   ]
 }

@@ -51,7 +51,6 @@ export function createOrder(orderData) {
   const orderWithTimestamp = {
     ...orderData,
     createdAt: new Date().toISOString(),
-    status: "pending",
     orderNumber: `DD-${Date.now()}`,
   };
 

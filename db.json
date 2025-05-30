@@ -476,7 +476,6 @@
       "subtotal": 4,
       "total": 6.9,
       "createdAt": "2025-05-29T09:07:56.428Z",
-      "status": "pending",
       "orderNumber": "DD-1748509676428"
     },
     {
@@ -552,7 +551,6 @@
       "subtotal": 28.5,
       "total": 31.4,
       "createdAt": "2025-05-29T09:09:29.297Z",
-      "status": "pending",
       "orderNumber": "DD-1748509769297"
     },
     {
@@ -604,7 +602,6 @@
       "subtotal": 27,
       "total": 29.9,
       "createdAt": "2025-05-29T14:16:31.716Z",
-      "status": "pending",
       "orderNumber": "DD-1748528191716"
     }
   ],

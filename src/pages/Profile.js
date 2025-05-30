@@ -5,11 +5,13 @@ import { getUserOrders } from "../services/api";
 import "../styles/Profile.css";
 import "../App.css";
 import MyOrderOverview from "../components/MyOrderOverview";
+import MyFavorites from "../components/MyFavorites";
 
 function Profile() {
   const navigate = useNavigate();
   const { user, logoutUser, isLoggedIn } = useUser();
   const [userOrders, setUserOrders] = useState([]);
+  const [activeTab, setActiveTab] = useState("orders");
 
   //Om inte inloggad, skicka till startsidan
   useEffect(() => {
@@ -52,6 +54,11 @@ function Profile() {
     navigate("/login");
   }
 
+  //Funktion för att byta flik
+  function handleTabChange(tab) {
+    setActiveTab(tab);
+  }
+
   return (
     <main className="profile-main">
       <section className="profile-section">
@@ -64,25 +71,39 @@ function Profile() {
 
         <div className="profile-body">
           <nav className="profile-nav">
-            <button className="nav-btn active">My Orders</button>
-            <button className="nav-btn">Favorites</button>
+            <button
+              className={`nav-btn ${activeTab === "orders" ? "active" : ""}`}
+              onClick={() => handleTabChange("orders")}
+            >
+              My Orders
+            </button>
+            <button
+              className={`nav-btn ${activeTab === "favorites" ? "active" : ""}`}
+              onClick={() => handleTabChange("favorites")}
+            >
+              Favorites
+            </button>
           </nav>
 
           <div className="profile-divider"></div>
 
           <div className="profile-content">
-            <div className="orders-section">
-              {userOrders?.length > 0 ? (
-                //Loopa igenom och visa alla beställningar
-                userOrders.map((order) => (
-                  <MyOrderOverview key={order.id} orderData={order} />
-                ))
-              ) : (
-                <p className="no-order-results">
-                  You haven't placed any orders yet
-                </p>
-              )}
-            </div>
+            {activeTab === "orders" && (
+              <div className="orders-section">
+                {userOrders?.length > 0 ? (
+                  //Loopa igenom och visa alla beställningar
+                  userOrders.map((order) => (
+                    <MyOrderOverview key={order.id} orderData={order} />
+                  ))
+                ) : (
+                  <p className="no-order-results">
+                    You haven't placed any orders yet
+                  </p>
+                )}
+              </div>
+            )}
+
+            {activeTab === "favorites" && <MyFavorites />}
           </div>
         </div>
       </section>

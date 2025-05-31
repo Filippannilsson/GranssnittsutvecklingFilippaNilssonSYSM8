@@ -27,6 +27,18 @@
     hue-rotate(86deg);
 }
 
+.header a {
+  text-decoration: none;
+}
+
+.header a:link,
+.header a:visited,
+.header a:hover,
+.header a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
 .drone-delights-header {
   color: #122818;
   font-size: 30px;

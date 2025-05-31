@@ -59,15 +59,21 @@ export function UserProvider({ children }) {
   //Funktion för att registrera användare
   async function registerUser(userData) {
     try {
-      //Kolla om mail redan finns i databasen
+      //Kolla om mail eller username redan finns i databasen
       const users = await getUsers();
 
-      //Sök igenom alla users för att se om samma mail redan finns
-      const existingUser = users.find((u) => u.email === userData.email);
+      //Sök igenom alla users för att se om samma mail eller användarnamn redan finns
+      const existingUser = users.find(
+        (u) => u.email === userData.email || u.username === userData.username
+      );
 
       //Avbryt registrering om mail redan finns
       if (existingUser) {
-        return { success: false, error: "Email already exists" };
+        if (existingUser.email === userData.email) {
+          return { success: false, error: "Email already exists" };
+        } else {
+          return { success: false, error: "Username already exists" };
+        }
       }
 
       const createdUser = await createUser(userData);

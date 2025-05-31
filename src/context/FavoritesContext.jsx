@@ -88,6 +88,12 @@ export function FavoritesProvider({ children }) {
     return favorites.some((item) => item.id === productId);
   }
 
+  //Ta bort alla favoriter
+  function clearAllFavorites() {
+    setFavorites([]);
+    console.log("All favorites cleared");
+  }
+
   //Alla värden som ska delas med andra components
   const contextValue = {
     favorites,
@@ -95,6 +101,7 @@ export function FavoritesProvider({ children }) {
     removeFromFavorites,
     toggleFavorite,
     isFavorite,
+    clearAllFavorites,
   };
 
   //Ge alla children tillgång till contextValue

@@ -150,7 +150,7 @@
       "category": "mains",
       "price": 10.5,
       "description": "Beef, cheddar, pickles, ketchup & mustard",
-      "image": "/images/example.jpg",
+      "image": "/images/cheese-burger.jpg",
       "popular": true
     },
     {
@@ -159,7 +159,7 @@
       "category": "mains",
       "price": 11.5,
       "description": "Beef, bacon, BBQ sauce, cheese, crispy onions",
-      "image": "/images/example.jpg",
+      "image": "/images/bacon-bbq-burger.jpg",
       "popular": false
     },
     {
@@ -168,7 +168,7 @@
       "category": "mains",
       "price": 11.5,
       "description": "Beef, jalapeños, pepper jack, chipotle mayo",
-      "image": "/images/example.jpg",
+      "image": "/images/jalapeno-burger.jpg",
       "popular": false
     },
     {
@@ -177,7 +177,7 @@
       "category": "mains",
       "price": 12.5,
       "description": "Beef, brie, truffle mayo, caramelized onions",
-      "image": "/images/example.jpg",
+      "image": "/images/truffle-burger.jpg",
       "popular": false
     },
     {
@@ -186,7 +186,7 @@
       "category": "mains",
       "price": 10.5,
       "description": "Fried chicken, coleslaw, pickles",
-      "image": "/images/example.jpg",
+      "image": "/images/chicken-burger.jpg",
       "popular": false
     },
     {
@@ -195,16 +195,16 @@
       "category": "mains",
       "price": 11,
       "description": "Grilled chicken, avocado, sriracha mayo",
-      "image": "/images/example.jpg",
+      "image": "/images/avokado-burger.jpg",
       "popular": false
     },
     {
       "id": "23",
-      "name": "Halloumi Heaven Burger",
+      "name": "Halloumi Burger",
       "category": "mains",
       "price": 10,
       "description": "Halloumi, mango chutney, salad, red onion",
-      "image": "/images/example.jpg",
+      "image": "/images/halloumi-burger.jpg",
       "popular": false
     },
     {
@@ -213,7 +213,7 @@
       "category": "mains",
       "price": 10.5,
       "description": "Plant-based patty, vegan cheese, aioli",
-      "image": "/images/example.jpg",
+      "image": "/images/vegan-burger.jpg",
       "popular": false
     },
     {
@@ -222,7 +222,7 @@
       "category": "mains",
       "price": 9.5,
       "description": "Fried tenders with fries",
-      "image": "/images/example.jpg",
+      "image": "/images/chicken-tenders.jpg",
       "popular": false
     },
     {
@@ -231,16 +231,7 @@
       "category": "mains",
       "price": 8.5,
       "description": "Creamy baked mac with cheese topping",
-      "image": "/images/example.jpg",
-      "popular": false
-    },
-    {
-      "id": "27",
-      "name": "Loaded Nachos",
-      "category": "mains",
-      "price": 9.5,
-      "description": "Cheese, salsa, guac, jalapeños, meat or veg",
-      "image": "/images/example.jpg",
+      "image": "/images/mac-n-cheese.jpg",
       "popular": false
     },
     {
@@ -249,7 +240,7 @@
       "category": "mains",
       "price": 8.5,
       "description": "Melted cheese sandwich, tomato soup on side",
-      "image": "/images/example.jpg",
+      "image": "/images/grilled-cheese.jpg",
       "popular": false
     },
     {
@@ -258,7 +249,7 @@
       "category": "mains",
       "price": 9,
       "description": "Quinoa, veggies, hummus, house dressing",
-      "image": "/images/example.jpg",
+      "image": "/images/veggie-bowl.jpg",
       "popular": false
     },
     {
@@ -267,7 +258,7 @@
       "category": "mains",
       "price": 9,
       "description": "Chicken, parmesan, croutons, Caesar dressing",
-      "image": "/images/example.jpg",
+      "image": "/images/caesar-salad.jpg",
       "popular": false
     },
     {

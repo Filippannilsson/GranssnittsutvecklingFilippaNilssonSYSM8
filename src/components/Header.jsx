@@ -25,10 +25,12 @@ function Header() {
               className="logo-image"
             />
           </Link>
-          <h1 className="drone-delights-header">
-            Drone <br />
-            Delights
-          </h1>
+          <Link to="/">
+            <h1 className="drone-delights-header">
+              Drone <br />
+              Delights
+            </h1>
+          </Link>
         </div>
 
         <div className="symbols">

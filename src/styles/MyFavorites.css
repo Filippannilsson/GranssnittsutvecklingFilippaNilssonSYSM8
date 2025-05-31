@@ -20,6 +20,30 @@
   height: 250px !important;
 }
 
+.clear-favorites-section {
+  margin-top: 30px;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #1a3a23;
+}
+
+.clear-favorites-btn {
+  background-color: #89c299;
+  color: #1a3a23;
+  border: 1px solid #1a3a23;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.clear-favorites-btn:hover {
+  background-color: #1a3a23;
+  color: #c2eace;
+}
+
 .no-favorites {
   text-align: left;
   color: #1a3a23;

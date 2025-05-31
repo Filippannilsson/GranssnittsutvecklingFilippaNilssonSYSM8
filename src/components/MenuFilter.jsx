@@ -74,13 +74,15 @@ function MenuFilter({
             >
               Drinks
             </button>
-          </div>
-          <div className="clear-section">
             <button
-              className="clear-filter-btn"
-              onClick={() => handleCategoryClick("all")}
+              className={
+                selectedCategory === "favorites"
+                  ? "favorites-btn active"
+                  : "favorites-btn"
+              }
+              onClick={() => handleCategoryClick("favorites")}
             >
-              Clear filter X
+              Favorites
             </button>
           </div>
         </div>
@@ -88,6 +90,14 @@ function MenuFilter({
 
       <div className="second-row">
         <Searchbar searchTerm={searchTerm} onSearchChange={onSearchChange} />
+        <div className="clear-section">
+          <button
+            className="clear-filter-btn"
+            onClick={() => handleCategoryClick("all")}
+          >
+            Clear
+          </button>
+        </div>
       </div>
     </div>
   );

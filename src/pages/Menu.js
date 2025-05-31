@@ -4,6 +4,7 @@ import "../App.css";
 import MenuFilter from "../components/MenuFilter";
 import MenuItem from "../components/MenuItem";
 import { getMenu, getMenuByCategory } from "../services/api";
+import { useFavorites } from "../context/FavoritesContext";
 import ScrollToTop from "../components/ScrollToTop";
 import example from "../assets/pictures/example.jpg";
 
@@ -12,6 +13,8 @@ function Menu() {
   const [menuItems, setMenuItems] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [searchTerm, setSearchTerm] = useState("");
+
+  const { favorites } = useFavorites();
 
   //Funktion för att hämta meny baserat på kategori
   function fetchMenuItems(category = "all") {
@@ -24,6 +27,19 @@ function Menu() {
         })
         .catch((error) => {
           console.error("Error fetching menu:", error);
+        });
+    } else if (category === "favorites") {
+      getMenu()
+        .then((data) => {
+          const favoritesItems = data.filter((item) =>
+            favorites.some((fav) => fav.id === item.id)
+          );
+          console.log("Favorites filtered:", favoritesItems.length, "items");
+          setAllMenuItems(favoritesItems);
+          setMenuItems(favoritesItems);
+        })
+        .catch((error) => {
+          console.error("Error fetching menu for favorites:", error);
         });
     } else {
       getMenuByCategory(category)
@@ -49,6 +65,12 @@ function Menu() {
       setMenuItems(filtered);
     }
   }, [searchTerm, allMenuItems]);
+
+  useEffect(() => {
+    if (selectedCategory === "favorites") {
+      fetchMenuItems("favorites");
+    }
+  }, [favorites, selectedCategory]);
 
   useEffect(() => {
     console.log("Fetching menu");

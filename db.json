@@ -594,6 +594,40 @@
       "total": 29.9,
       "createdAt": "2025-05-29T14:16:31.716Z",
       "orderNumber": "DD-1748528191716"
+    },
+    {
+      "id": "ab77",
+      "items": [
+        {
+          "id": "33",
+          "name": "Strawberry Milkshake",
+          "description": "Classic strawberry shake",
+          "price": 4.5,
+          "image": "/images/strawberry-milkshake.jpg",
+          "quantity": 3
+        }
+      ],
+      "delivery": {
+        "fullName": "Filippa",
+        "streetName": "test",
+        "houseNumber": "3",
+        "city": "Lund",
+        "phoneNumber": "9999999999",
+        "isValid": true
+      },
+      "payment": {
+        "paymentMethod": "swish",
+        "cardNumber": "",
+        "nameOnCard": "",
+        "expiryDate": "",
+        "cvc": "",
+        "swishNumber": "9999999999",
+        "isValid": true
+      },
+      "subtotal": 13.5,
+      "total": 16.4,
+      "createdAt": "2025-05-31T17:30:56.864Z",
+      "orderNumber": "DD-1748712656864"
     }
   ],
   "users": [

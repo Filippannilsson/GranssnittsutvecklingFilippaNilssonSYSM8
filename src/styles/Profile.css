@@ -113,57 +113,97 @@
 }
 
 /* Responsiv design */
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   .profile-main {
-    padding: 15px;
+    padding: 0 15px;
   }
 
   .profile-header {
-    gap: 20px;
+    gap: 15px;
   }
 
   .profile-welcome {
-    font-size: 24px;
+    font-size: 22px;
+    padding: 15px 0;
   }
 
   .logout-btn {
+    font-size: 14px;
+    padding: 10px 15px;
     align-self: flex-end;
   }
 
   .profile-body {
     flex-direction: column;
-    gap: 20px;
-  }
-
-  .profile-nav {
     gap: 15px;
   }
 
+  .profile-nav {
+    gap: 8px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .profile-divider {
-    display: none;
+    width: 220px;
+    height: 1px;
+    background-color: #1a3a23;
+    margin: 10px 0;
   }
 
   .nav-btn {
-    font-size: 18px;
+    font-size: 16px;
     width: auto;
     height: auto;
-    min-width: 120px;
+    min-width: 100px;
   }
 
   .profile-content {
     padding: 10px 0;
   }
+
+  .orders-section {
+    font-size: 14px;
+  }
 }
 
-@media (max-width: 600px) {
-  .profile-nav {
-    /* flex-direction: column; */
-    gap: 10px;
+@media (max-width: 480px) {
+  .profile-main {
+    padding: 0 10px;
+  }
+
+  .profile-welcome {
+    font-size: 18px;
+    padding: 12px 0;
+    text-align: center;
+  }
+
+  .logout-btn {
+    font-size: 12px;
+    padding: 8px 12px;
+    align-self: center;
+    width: fit-content;
+  }
+
+  .profile-body {
+    gap: 12px;
   }
 
   .nav-btn {
-    font-size: 16px;
-    width: 100%;
-    min-width: auto;
+    font-size: 14px;
+    width: auto;
+    min-width: 80px;
+    padding: 8px 12px;
+    text-align: center;
+  }
+
+  .profile-content {
+    padding: 8px 0;
+    min-height: 200px;
+  }
+
+  .orders-section {
+    font-size: 12px;
   }
 }

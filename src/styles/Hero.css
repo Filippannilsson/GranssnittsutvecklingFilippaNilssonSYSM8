@@ -71,3 +71,24 @@
     font-size: 20px;
   }
 }
+
+@media (max-width: 480px) {
+  .hero {
+    height: 100px;
+  }
+
+  .slogan-container {
+    width: 200px;
+    height: 60px;
+    right: 10px;
+    top: 30px;
+  }
+
+  .slogan-text {
+    width: 185px;
+  }
+
+  .hero-tagline {
+    font-size: 14px;
+  }
+}

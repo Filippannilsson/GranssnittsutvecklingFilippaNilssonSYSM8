@@ -113,50 +113,107 @@ input[type="radio"]:checked {
   outline: none;
 }
 
-@media (max-width: 1200px) {
-  .payment-wrapper {
-    flex: 1;
+@media (max-width: 768px) {
+  .payment-section {
+    padding: 15px;
   }
-}
 
-@media (max-width: 900px) {
+  .payment-method-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+  }
+
   .payment-form {
     flex-direction: column;
-    gap: 30px;
-  }
-
-  .payment-method-title {
-    font-size: 24px;
+    gap: 25px;
   }
 
   .radio-group label {
-    font-size: 22px;
-  }
-}
-
-@media (max-width: 600px) {
-  .payment-form-row {
-    flex-direction: column;
-    gap: 20px;
+    font-size: 14px;
   }
 
-  .payment-form-group {
-    width: 100%;
+  .radio-group {
+    margin-bottom: 15px;
+    gap: 8px;
   }
 
-  .payment-method-title {
-    font-size: 22px;
-  }
-
-  .radio-group label {
-    font-size: 20px;
+  input[type="radio"] {
+    width: 16px;
+    height: 16px;
   }
 
   .payment-form-group label {
-    font-size: 15px;
+    font-size: 13px;
+    margin-bottom: 6px;
   }
 
   .payment-form-group input {
     height: 38px;
+    font-size: 13px;
+    padding: 0 12px;
+  }
+
+  .payment-form-group input::placeholder {
+    font-size: 12px;
+  }
+
+  .payment-form-row {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-section {
+    padding: 12px;
+  }
+
+  .payment-method-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+  }
+
+  .payment-form-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .radio-group label {
+    font-size: 12px;
+  }
+
+  .radio-group {
+    margin-bottom: 12px;
+    gap: 6px;
+  }
+
+  input[type="radio"] {
+    width: 14px;
+    height: 14px;
+  }
+
+  .payment-form-group {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .payment-form-group label {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .payment-form-group input {
+    height: 35px;
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  .payment-form-group input::placeholder {
+    font-size: 11px;
+  }
+
+  .payment-form {
+    gap: 15px;
   }
 }

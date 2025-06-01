@@ -124,15 +124,38 @@
   .logo {
     width: 90%;
     min-width: auto;
-    margin: 0 auto;
+    margin: 0 auto 5px auto;
+  }
+
+  .logo-image {
+    height: 65px;
+  }
+
+  .drone-delights-header {
+    font-size: 22px;
+    line-height: 100%;
   }
 
   .symbols {
     gap: 16px;
+    height: 45px;
+    margin: 0 auto;
+  }
+
+  .symbols a {
+    padding: 5px;
   }
 
   .icon {
     width: 24px;
     height: 24px;
+  }
+
+  .cart-badge {
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+    top: -3px;
+    right: -2px;
   }
 }

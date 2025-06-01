@@ -155,16 +155,3 @@
     font-size: 15px;
   }
 }
-
-@media (max-width: 600px) {
-  .register-btns {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .register-btn,
-  .back-to-login-btn {
-    width: 100%;
-    justify-content: center;
-  }
-}

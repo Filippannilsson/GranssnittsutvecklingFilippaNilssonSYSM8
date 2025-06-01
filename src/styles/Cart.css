@@ -155,7 +155,6 @@
 .back-menu-btn:hover {
   background-color: #6b9c79;
 }
-
 /* Media queries för olika skärmstorlekar */
 @media (min-width: 1024px) {
   .cart-content-wrapper {
@@ -192,6 +191,52 @@
 
 @media (max-width: 480px) {
   .cart-title {
-    font-size: 28px;
+    font-size: 22px;
+    padding: 15px 0;
+  }
+
+  .cart-items {
+    padding: 8px;
+    margin-bottom: 15px;
+  }
+
+  .order-summery-container {
+    gap: 15px;
+    padding-bottom: 15px;
+  }
+
+  .cart-page .order-summary-title {
+    font-size: 16px;
+  }
+
+  .cart-page .summary-row .label,
+  .cart-page .summary-row .value {
+    font-size: 14px;
+  }
+
+  .checkout-btn,
+  .back-menu-btn {
+    font-size: 12px;
+    padding: 12px 8px;
+    width: 120px;
+  }
+
+  .order-summery-btn {
+    gap: 8px;
+  }
+
+  .empty-cart {
+    width: 100%;
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  .empty-cart-text {
+    font-size: 16px;
+  }
+
+  .empty-cart button {
+    width: 110px;
+    font-size: 11px;
   }
 }

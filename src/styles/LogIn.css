@@ -142,10 +142,3 @@
     font-size: 15px;
   }
 }
-
-@media (max-width: 600px) {
-  .login-btn,
-  .to-register-btn {
-    justify-content: center;
-  }
-}

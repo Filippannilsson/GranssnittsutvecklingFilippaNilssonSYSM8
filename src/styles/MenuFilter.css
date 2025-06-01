@@ -20,7 +20,6 @@
 
 .first-row {
   display: flex;
-  /* max-width: 1000px; */
   align-items: flex-start;
   justify-content: space-between;
 }
@@ -151,7 +150,7 @@
 
 @media (max-width: 480px) {
   .menu-title {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   .filter-bar {

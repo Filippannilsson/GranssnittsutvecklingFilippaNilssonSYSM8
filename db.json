@@ -476,6 +476,84 @@
       "total": 23.4,
       "createdAt": "2025-06-01T12:26:23.953Z",
       "orderNumber": "DD-1748780783953"
+    },
+    {
+      "id": "d782",
+      "userId": 1748433657399,
+      "items": [
+        {
+          "id": "31",
+          "name": "Vanilla Milkshake",
+          "description": "Creamy vanilla shake",
+          "price": 4.5,
+          "image": "/images/vanilla-milkshake.jpg",
+          "quantity": 1
+        },
+        {
+          "id": "32",
+          "name": "Strawberry Milkshake",
+          "description": "Fresh strawberry shake",
+          "price": 4.5,
+          "image": "/images/strawberry-milkshake.jpg",
+          "quantity": 1
+        }
+      ],
+      "delivery": {
+        "fullName": "Filippa",
+        "streetName": "k",
+        "houseNumber": "9",
+        "city": "j",
+        "phoneNumber": "9999999999",
+        "isValid": true
+      },
+      "payment": {
+        "paymentMethod": "swish",
+        "cardNumber": "",
+        "nameOnCard": "",
+        "expiryDate": "",
+        "cvc": "",
+        "swishNumber": "8888888888",
+        "isValid": true
+      },
+      "subtotal": 9,
+      "total": 11.9,
+      "createdAt": "2025-06-01T14:23:57.832Z",
+      "orderNumber": "DD-1748787837832"
+    },
+    {
+      "id": "6652",
+      "userId": 1748433657399,
+      "items": [
+        {
+          "id": "1",
+          "name": "French Fries",
+          "description": "Classic crispy fries",
+          "price": 3.5,
+          "image": "/images/french-fries.jpg",
+          "quantity": 1
+        }
+      ],
+      "delivery": {
+        "fullName": "u",
+        "streetName": "u",
+        "houseNumber": "8",
+        "city": "u",
+        "phoneNumber": "8888888888",
+        "isValid": true
+      },
+      "payment": {
+        "paymentMethod": "swish",
+        "cardNumber": "",
+        "nameOnCard": "",
+        "expiryDate": "",
+        "cvc": "",
+        "swishNumber": "7777777777",
+        "isValid": true
+      },
+      "subtotal": 3.5,
+      "total": 6.4,
+      "createdAt": "2025-06-01T14:38:42.826Z",
+      "orderNumber": "DD-1748788722827"
     }
   ],
   "users": [

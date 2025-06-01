@@ -51,3 +51,51 @@
   font-size: 16px;
   font-style: italic;
 }
+
+@media (max-width: 1000px) {
+  .favorites-grid {
+    justify-content: center;
+    gap: 16px;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .favorites-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    justify-items: center;
+  }
+
+  .favorites-section .product-card {
+    width: 150px;
+    height: auto;
+  }
+
+  .favorites-section .dish-image {
+    height: 150px;
+  }
+
+  .favorites-section .dish-name {
+    font-size: 14px;
+  }
+
+  .favorites-section .price,
+  .favorites-section .description {
+    font-size: 12px;
+  }
+
+  .clear-favorites-section {
+    margin-top: 15px;
+    padding: 12px 0;
+  }
+
+  .clear-favorites-btn {
+    font-size: 11px;
+    padding: 8px 16px;
+  }
+
+  .no-favorites {
+    font-size: 12px;
+  }
+}

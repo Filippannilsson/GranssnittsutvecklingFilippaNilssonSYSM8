@@ -15,15 +15,15 @@
 .confirmation-title {
   color: #1e4128;
   text-align: center;
-  font-size: 40px;
+  font-size: 34px;
   text-transform: uppercase;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .confirmation-message {
   text-align: center;
-  margin: 10px 0 30px 0;
+  margin-bottom: 30px;
 }
 
 .confirmation-info {
@@ -54,7 +54,7 @@
 
 .your-order-title {
   color: #1a3a23;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -98,13 +98,13 @@
 }
 
 .delivery-row {
-  font-size: 16px;
+  font-size: 15px;
   color: #1a3a23;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .total-row {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   color: #1a3a23;
   text-transform: uppercase;
@@ -122,7 +122,7 @@
 
 .back-home-btn {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 2px;
   background-color: #89c299;
   color: #1a3a23;

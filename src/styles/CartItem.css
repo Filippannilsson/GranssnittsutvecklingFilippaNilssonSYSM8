@@ -30,7 +30,7 @@
   overflow: hidden;
   object-fit: cover;
   aspect-ratio: 1;
-  flex: 0 0 90px;
+  flex: 0 0 auto;
 }
 
 .cart-item-name,

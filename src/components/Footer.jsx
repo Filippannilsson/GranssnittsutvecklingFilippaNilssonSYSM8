@@ -8,7 +8,9 @@ function Footer() {
     <footer className="footer">
       <div className="contact-information">
         <h3 className="drone-delights-footer">Drone Delights</h3>
-        <a href="mailto:info@dronedelights.com">Mail: info@dronedelights.com</a>
+        <a href="mailto:info@dronedelights.com">
+          Email: info@dronedelights.com
+        </a>
         <p>Phone: 0707-070707</p>
         <p>© {currentYear} Drone Delights</p>
       </div>

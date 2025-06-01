@@ -7,20 +7,29 @@
 .menu-items {
   display: grid;
   grid-template-columns: repeat(auto-fit, 250px);
-  gap: 40px;
+  gap: 20px;
   padding: 2rem 2rem 2rem 3rem;
   max-width: 1500px;
   margin: 0 auto;
-  justify-content: start;
+  justify-content: space-around;
 }
 
 .menu-page .product-card {
-  width: 250px;
-  height: 350px;
+  width: 230px;
+  height: 330px;
 }
 
 .menu-page .dish-image {
-  height: 250px !important;
+  height: 230px !important;
+}
+
+.menu-page .dish-name {
+  font-size: 16px;
+}
+
+.menu-page .price,
+.description {
+  font-size: 14px;
 }
 
 .no-search-results {

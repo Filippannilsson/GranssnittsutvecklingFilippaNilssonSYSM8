@@ -14,7 +14,7 @@
 
 .delivery-information-title {
   color: #1a3a23;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 0;
@@ -24,7 +24,7 @@
 }
 
 .delivery-form-group {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .delivery-form-row {
@@ -35,10 +35,7 @@
 .delivery-form-group label {
   display: block;
   color: #1a3a23;
-  font-family: "Gabarito-Medium", sans-serif;
   font-size: 14px;
-  line-height: 110%;
-  font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 8px;
 }

@@ -15,15 +15,15 @@
       "category": "starters",
       "price": 4,
       "description": "Golden sweet fries",
-      "image": "/images/sweet-potatoe.jpg",
-      "popular": true
+      "image": "/images/sweet-potato.jpg",
+      "popular": false
     },
     {
       "id": "3",
       "name": "Chili Cheese Tops",
       "category": "starters",
       "price": 4.5,
-      "description": "Spicy fried cheese balls",
+      "description": "Fried cheese balls",
       "image": "/images/chili-cheese.jpg",
       "popular": false
     },
@@ -34,7 +34,7 @@
       "price": 4,
       "description": "Golden, crispy onion rings",
       "image": "/images/onion-rings.jpg",
-      "popular": false
+      "popular": true
     },
     {
       "id": "5",
@@ -47,11 +47,11 @@
     },
     {
       "id": "6",
-      "name": "Side Sallad",
+      "name": "Side Salad",
       "category": "starters",
       "price": 3.5,
-      "description": "Fresh sallad",
-      "image": "/images/side-sallad.jpg",
+      "description": "Fresh salad",
+      "image": "/images/side-salad.jpg",
       "popular": false
     },
     {
@@ -59,7 +59,7 @@
       "name": "Chicken Nuggets",
       "category": "starters",
       "price": 4.5,
-      "description": "Fried nuggets, juicy inside",
+      "description": "Fried nuggets",
       "image": "/images/chicken-nuggets.jpg",
       "popular": false
     },
@@ -149,9 +149,9 @@
       "name": "Classic Cheese Burger",
       "category": "mains",
       "price": 10.5,
-      "description": "Beef, cheddar, pickles, ketchup & mustard",
+      "description": "Beef, cheddar, pickles, ketchup, mustard",
       "image": "/images/cheese-burger.jpg",
-      "popular": true
+      "popular": false
     },
     {
       "id": "18",
@@ -185,9 +185,9 @@
       "name": "Chicken Crispy Burger",
       "category": "mains",
       "price": 10.5,
-      "description": "Fried chicken, coleslaw, pickles",
+      "description": "Fried chicken, salad, pickles, dressing",
       "image": "/images/chicken-burger.jpg",
-      "popular": false
+      "popular": true
     },
     {
       "id": "22",
@@ -235,34 +235,34 @@
       "popular": false
     },
     {
-      "id": "28",
+      "id": "27",
       "name": "Grilled Cheese Sandwich",
       "category": "mains",
-      "price": 8.5,
-      "description": "Melted cheese sandwich, tomato soup on side",
+      "price": 6.5,
+      "description": "Melted cheese sandwich",
       "image": "/images/grilled-cheese.jpg",
       "popular": false
     },
     {
-      "id": "29",
+      "id": "28",
       "name": "Veggie Bowl",
       "category": "mains",
-      "price": 9,
-      "description": "Quinoa, veggies, hummus, house dressing",
+      "price": 10.5,
+      "description": "Quinoa, veggies, hummus, dressing",
       "image": "/images/veggie-bowl.jpg",
       "popular": false
     },
     {
-      "id": "30",
+      "id": "29",
       "name": "Chicken Caesar Salad",
       "category": "mains",
-      "price": 9,
+      "price": 10.5,
       "description": "Chicken, parmesan, croutons, Caesar dressing",
       "image": "/images/caesar-salad.jpg",
       "popular": false
     },
     {
-      "id": "31",
+      "id": "30",
       "name": "Chocolate Milkshake",
       "category": "desserts",
       "price": 4.5,
@@ -271,7 +271,7 @@
       "popular": false
     },
     {
-      "id": "32",
+      "id": "31",
       "name": "Vanilla Milkshake",
       "category": "desserts",
       "price": 4.5,
@@ -280,16 +280,16 @@
       "popular": false
     },
     {
-      "id": "33",
+      "id": "32",
       "name": "Strawberry Milkshake",
       "category": "desserts",
       "price": 4.5,
-      "description": "Classic strawberry shake",
+      "description": "Fresh strawberry shake",
       "image": "/images/strawberry-milkshake.jpg",
       "popular": false
     },
     {
-      "id": "34",
+      "id": "33",
       "name": "Caramel Milkshake",
       "category": "desserts",
       "price": 4.5,
@@ -298,16 +298,16 @@
       "popular": true
     },
     {
-      "id": "35",
+      "id": "34",
       "name": "Chocolate Sundae",
       "category": "desserts",
       "price": 4,
-      "description": "Vanilla ice cream with choc sauce",
+      "description": "Vanilla ice cream with chocolate sauce",
       "image": "/images/chocolate-sundae.jpg",
       "popular": false
     },
     {
-      "id": "36",
+      "id": "35",
       "name": "Caramel Sundae",
       "category": "desserts",
       "price": 4,
@@ -316,7 +316,7 @@
       "popular": false
     },
     {
-      "id": "37",
+      "id": "36",
       "name": "Strawberry Sundae",
       "category": "desserts",
       "price": 4,
@@ -325,25 +325,25 @@
       "popular": false
     },
     {
-      "id": "38",
+      "id": "37",
       "name": "Plain Sundae",
       "category": "desserts",
       "price": 3.5,
-      "description": "Just vanilla ice cream",
+      "description": "Vanilla ice cream",
       "image": "/images/vanilla.jpg",
       "popular": false
     },
     {
-      "id": "39",
+      "id": "38",
       "name": "Coca-Cola",
       "category": "drinks",
       "price": 2.5,
-      "description": "Classic soda",
+      "description": "Cola soda",
       "image": "/images/cola.jpg",
       "popular": false
     },
     {
-      "id": "40",
+      "id": "39",
       "name": "Fanta",
       "category": "drinks",
       "price": 2.5,
@@ -352,7 +352,7 @@
       "popular": false
     },
     {
-      "id": "41",
+      "id": "40",
       "name": "Sprite",
       "category": "drinks",
       "price": 2.5,
@@ -361,7 +361,7 @@
       "popular": false
     },
     {
-      "id": "42",
+      "id": "41",
       "name": "Sparkling Water - Plain",
       "category": "drinks",
       "price": 2,
@@ -370,7 +370,7 @@
       "popular": false
     },
     {
-      "id": "43",
+      "id": "42",
       "name": "Sparkling Water - Citrus",
       "category": "drinks",
       "price": 2,
@@ -379,7 +379,7 @@
       "popular": false
     },
     {
-      "id": "44",
+      "id": "43",
       "name": "Fresh Orange Juice",
       "category": "drinks",
       "price": 3.5,
@@ -388,7 +388,7 @@
       "popular": false
     },
     {
-      "id": "45",
+      "id": "44",
       "name": "Fresh Apple Juice",
       "category": "drinks",
       "price": 3.5,
@@ -397,7 +397,7 @@
       "popular": false
     },
     {
-      "id": "46",
+      "id": "45",
       "name": "Coffee - Brewed",
       "category": "drinks",
       "price": 2.5,
@@ -406,7 +406,7 @@
       "popular": false
     },
     {
-      "id": "47",
+      "id": "46",
       "name": "Espresso",
       "category": "drinks",
       "price": 2.5,
@@ -415,16 +415,16 @@
       "popular": false
     },
     {
-      "id": "48",
+      "id": "47",
       "name": "Strawberry Banana Smoothie",
       "category": "drinks",
       "price": 4,
-      "description": "Creamy fruit smoothie",
+      "description": "Fruit smoothie",
       "image": "/images/strawberry-banana.jpg",
       "popular": false
     },
     {
-      "id": "49",
+      "id": "48",
       "name": "Mango Passion Smoothie",
       "category": "drinks",
       "price": 4,
@@ -435,199 +435,47 @@
   ],
   "orders": [
     {
-      "id": "dd61",
-      "userId": "1",
-      "items": [
-        {
-          "id": "4",
-          "name": "Onion Rings",
-          "description": "Golden, crispy onion rings",
-          "price": 4,
-          "image": "/images/onion-rings.jpg",
-          "quantity": 1
-        }
-      ],
-      "delivery": {
-        "fullName": "test",
-        "streetName": "test",
-        "houseNumber": "4",
-        "city": "sdl",
-        "phoneNumber": "0239230023",
-        "isValid": true
-      },
-      "payment": {
-        "paymentMethod": "swish",
-        "cardNumber": "",
-        "nameOnCard": "",
-        "expiryDate": "",
-        "cvc": "",
-        "swishNumber": "3923989182",
-        "isValid": true
-      },
-      "subtotal": 4,
-      "total": 6.9,
-      "createdAt": "2025-05-29T09:07:56.428Z",
-      "orderNumber": "DD-1748509676428"
-    },
-    {
-      "id": "8e1e",
+      "id": "6129",
       "userId": 1748433657399,
       "items": [
-        {
-          "id": "6",
-          "name": "Chicken Wings",
-          "description": "6 crispy wings",
-          "price": 5.5,
-          "image": "/images/chicken-wings.jpg",
-          "quantity": 1
-        },
-        {
-          "id": "13",
-          "name": "Sriracha Mayo",
-          "description": "Spicy sriracha mayonnaise",
-          "price": 1,
-          "image": "/images/sriracha-mayo.jpg",
-          "quantity": 1
-        },
         {
           "id": "18",
           "name": "Bacon BBQ Burger",
           "description": "Beef, bacon, BBQ sauce, cheese, crispy onions",
           "price": 11.5,
-          "image": "/images/hamburger2.png",
+          "image": "/images/bacon-bbq-burger.jpg",
           "quantity": 1
         },
         {
-          "id": "31",
-          "name": "Chocolate Milkshake",
-          "description": "Thick chocolate shake",
-          "price": 4.5,
-          "image": "/images/chocolate-milkshake.jpg",
-          "quantity": 1
-        },
-        {
-          "id": "37",
-          "name": "Strawberry Sundae",
-          "description": "Vanilla ice cream with strawberry",
-          "price": 4,
-          "image": "/images/strawberry-sundae.jpg",
-          "quantity": 1
-        },
-        {
-          "id": "43",
-          "name": "Sparkling Water - Citrus",
-          "description": "Light lemon/lime flavor",
-          "price": 2,
-          "image": "/images/water-citrus.jpg",
-          "quantity": 1
-        }
-      ],
-      "delivery": {
-        "fullName": "Filippa",
-        "streetName": "test",
-        "houseNumber": "7",
-        "city": "Malmö",
-        "phoneNumber": "0232093203",
-        "isValid": true
-      },
-      "payment": {
-        "paymentMethod": "swish",
-        "cardNumber": "",
-        "nameOnCard": "",
-        "expiryDate": "",
-        "cvc": "",
-        "swishNumber": "0129102910",
-        "isValid": true
-      },
-      "subtotal": 28.5,
-      "total": 31.4,
-      "createdAt": "2025-05-29T09:09:29.297Z",
-      "orderNumber": "DD-1748509769297"
-    },
-    {
-      "id": "c2e2",
-      "userId": 1748433657399,
-      "items": [
-        {
-          "id": "3",
-          "name": "Chili Cheese Tops",
-          "description": "Spicy fried cheese balls",
-          "price": 4.5,
-          "image": "/images/chili-cheese.jpg",
-          "quantity": 5
-        },
-        {
-          "id": "6",
-          "name": "Side Sallad",
-          "description": "Fresh sallad",
-          "price": 3.5,
-          "image": "/images/side-sallad.jpg",
-          "quantity": 1
-        },
-        {
-          "id": "10",
-          "name": "Chipotle Mayo",
-          "description": "Smoky chipotle mayonnaise",
-          "price": 1,
-          "image": "/images/chipotle-mayo.jpg",
-          "quantity": 1
-        }
-      ],
-      "delivery": {
-        "fullName": "d",
-        "streetName": "h",
-        "houseNumber": "g",
-        "city": "g",
-        "phoneNumber": "7777777777",
-        "isValid": true
-      },
-      "payment": {
-        "paymentMethod": "swish",
-        "cardNumber": "",
-        "nameOnCard": "",
-        "expiryDate": "",
-        "cvc": "",
-        "swishNumber": "5555555555",
-        "isValid": true
-      },
-      "subtotal": 27,
-      "total": 29.9,
-      "createdAt": "2025-05-29T14:16:31.716Z",
-      "orderNumber": "DD-1748528191716"
-    },
-    {
-      "id": "ab77",
-      "items": [
-        {
-          "id": "33",
+          "id": "32",
           "name": "Strawberry Milkshake",
-          "description": "Classic strawberry shake",
+          "description": "Fresh strawberry shake",
           "price": 4.5,
           "image": "/images/strawberry-milkshake.jpg",
-          "quantity": 3
+          "quantity": 2
         }
       ],
       "delivery": {
-        "fullName": "Filippa",
-        "streetName": "test",
-        "houseNumber": "3",
-        "city": "Lund",
-        "phoneNumber": "9999999999",
+        "fullName": "Filippa Nilsson",
+        "streetName": "Flöjtvägen",
+        "houseNumber": "12B",
+        "city": "Malmö",
+        "phoneNumber": "9823928392",
         "isValid": true
       },
       "payment": {
-        "paymentMethod": "swish",
-        "cardNumber": "",
-        "nameOnCard": "",
-        "expiryDate": "",
-        "cvc": "",
-        "swishNumber": "9999999999",
+        "paymentMethod": "card",
+        "cardNumber": "2128 1921 9281 9281",
+        "nameOnCard": "F",
+        "expiryDate": "01/29",
+        "cvc": "129",
+        "swishNumber": "",
         "isValid": true
       },
-      "subtotal": 13.5,
-      "total": 16.4,
-      "createdAt": "2025-05-31T17:30:56.864Z",
-      "orderNumber": "DD-1748712656864"
+      "subtotal": 20.5,
+      "total": 23.4,
+      "createdAt": "2025-06-01T12:26:23.953Z",
+      "orderNumber": "DD-1748780783953"
     }
   ],
   "users": [
@@ -644,20 +492,6 @@
       "email": "filippa@gmail.com",
       "password": "Password1!",
       "createdAt": "2025-05-28T12:00:57.399Z"
-    },
-    {
-      "id": 1748648832314,
-      "username": "emma",
-      "email": "test@gmail.com",
-      "password": "emma11",
-      "createdAt": "2025-05-30T23:47:12.314Z"
-    },
-    {
-      "id": 1748648908377,
-      "username": "test",
-      "email": "testa@gmail.com",
-      "password": "testing",
-      "createdAt": "2025-05-30T23:48:28.377Z"
     }
   ]
 }

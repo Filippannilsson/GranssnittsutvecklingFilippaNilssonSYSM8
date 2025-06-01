@@ -1,5 +1,6 @@
 .favorites-section {
   width: 100%;
+  max-width: 1100px;
 }
 
 .favorites-grid {
@@ -17,7 +18,7 @@
 }
 
 .favorites-section .dish-image {
-  height: 250px !important;
+  height: 250px;
 }
 
 .clear-favorites-section {
@@ -33,7 +34,7 @@
   border: 1px solid #1a3a23;
   border-radius: 8px;
   padding: 12px 24px;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;

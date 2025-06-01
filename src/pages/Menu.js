@@ -31,10 +31,13 @@ function Menu() {
     } else if (category === "favorites") {
       getMenu()
         .then((data) => {
+          //Filtrera bara items som finns i användarens favoriter
           const favoritesItems = data.filter((item) =>
+            //Kolla om item.id finns i favorites-arrayen
             favorites.some((fav) => fav.id === item.id)
           );
           console.log("Favorites filtered:", favoritesItems.length, "items");
+          //Spara filtrerade favoriter
           setAllMenuItems(favoritesItems);
           setMenuItems(favoritesItems);
         })
@@ -42,6 +45,7 @@ function Menu() {
           console.error("Error fetching menu for favorites:", error);
         });
     } else {
+      //Hämta specifik kategori
       getMenuByCategory(category)
         .then((data) => {
           console.log(`Category ${category} fetched:`, data.length, "items");

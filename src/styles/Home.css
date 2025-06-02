@@ -1,5 +1,6 @@
 .home-page {
   background-color: #c2eace;
+  min-height: calc(100vh - 220px);
 }
 
 .main-content {

@@ -124,7 +124,7 @@
   .logo {
     width: 90%;
     min-width: auto;
-    margin: 0 auto 5px auto;
+    margin: 0 25px 0 0;
   }
 
   .logo-image {
@@ -134,11 +134,12 @@
   .drone-delights-header {
     font-size: 22px;
     line-height: 100%;
+    margin: 0;
   }
 
   .symbols {
-    gap: 16px;
-    height: 45px;
+    gap: 40px;
+    height: 35px;
     margin: 0 auto;
   }
 
@@ -152,9 +153,9 @@
   }
 
   .cart-badge {
-    width: 16px;
-    height: 16px;
-    font-size: 10px;
+    width: 14px;
+    height: 14px;
+    font-size: 9px;
     top: -3px;
     right: -2px;
   }

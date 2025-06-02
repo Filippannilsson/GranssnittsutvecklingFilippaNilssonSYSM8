@@ -202,7 +202,6 @@
 
   .order-summery-container {
     gap: 15px;
-    padding-bottom: 15px;
   }
 
   .cart-page .order-summary-title {
@@ -216,8 +215,8 @@
 
   .checkout-btn,
   .back-menu-btn {
-    font-size: 12px;
-    padding: 12px 8px;
+    font-size: 11px;
+    padding: 12px 10px;
     width: 120px;
   }
 

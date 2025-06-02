@@ -175,7 +175,6 @@ input[type="radio"]:checked {
   }
 
   .payment-form-row {
-    flex-direction: column;
     gap: 12px;
   }
 
@@ -214,6 +213,6 @@ input[type="radio"]:checked {
   }
 
   .payment-form {
-    gap: 15px;
+    gap: 5px;
   }
 }

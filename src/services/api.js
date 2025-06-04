@@ -135,7 +135,7 @@ export function getUserOrders(userId) {
       return response.json();
     })
     .then((orders) => {
-      //Filtrera manuellt
+      //Filtrera manuellt för att undvika gästbeställning sparas på användare
       return orders.filter((order) => order.userId === userId);
     })
     .catch((error) => {

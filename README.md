@@ -1,3 +1,6 @@
+## Drone Delights
+Kör JSON Server på port 3000
+
 ## Utvecklingsprocess
 
 Jag började med att skapa en första design i Figma för alla grundläggande sidor. Under utvecklingsprocessen fick jag visserligen gå tillbaka till Figma och ändra flera gånger, men det var ett bra underlag för att komma igång i början. Efter detta skapade jag mitt react-projekt och implementerade all HTML och CSS med hårdkodad data först för att bättre förstå komponentstrukturen. Även om detta tog lite extra tid till en början, gav det mig bättre förståelse för varje del av systemet. Ursprungligen planerade jag att använda den färdiga HTML/CSS som Figma genererade, men framför allt HTML var väldigt dåligt uppbyggt, så jag valde att själv göra både HTML och CSS från grunden, med viss inspiration från det som Figma föreslog. När frontend-strukturen var klar med hårdkodad data, byggde jag upp min db.json, api.js och context-filerna.

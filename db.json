@@ -160,7 +160,7 @@
       "price": 11.5,
       "description": "Beef, bacon, BBQ sauce, cheese, crispy onions",
       "image": "/images/bacon-bbq-burger.jpg",
-      "popular": false
+      "popular": true
     },
     {
       "id": "19",
@@ -187,7 +187,7 @@
       "price": 10.5,
       "description": "Fried chicken, salad, pickles, dressing",
       "image": "/images/chicken-burger.jpg",
-      "popular": true
+      "popular": false
     },
     {
       "id": "22",
@@ -286,7 +286,7 @@
       "price": 4.5,
       "description": "Fresh strawberry shake",
       "image": "/images/strawberry-milkshake.jpg",
-      "popular": false
+      "popular": true
     },
     {
       "id": "33",
@@ -295,7 +295,7 @@
       "price": 4.5,
       "description": "Sweet caramel shake",
       "image": "/images/caramel-milkshake.jpg",
-      "popular": true
+      "popular": false
     },
     {
       "id": "34",
@@ -435,8 +435,8 @@
   ],
   "orders": [
     {
-      "id": "08be",
-      "userId": 1,
+      "id": "ee72",
+      "userId": "1",
       "items": [
         {
           "id": "3",
@@ -455,48 +455,48 @@
           "quantity": 2
         },
         {
-          "id": "18",
-          "name": "Bacon BBQ Burger",
-          "description": "Beef, bacon, BBQ sauce, cheese, crispy onions",
-          "price": 11.5,
-          "image": "/images/bacon-bbq-burger.jpg",
+          "id": "21",
+          "name": "Chicken Crispy Burger",
+          "description": "Fried chicken, salad, pickles, dressing",
+          "price": 10.5,
+          "image": "/images/chicken-burger.jpg",
           "quantity": 1
         },
         {
-          "id": "32",
-          "name": "Strawberry Milkshake",
-          "description": "Fresh strawberry shake",
+          "id": "31",
+          "name": "Vanilla Milkshake",
+          "description": "Creamy vanilla shake",
           "price": 4.5,
-          "image": "/images/strawberry-milkshake.jpg",
+          "image": "/images/vanilla-milkshake.jpg",
           "quantity": 1
         }
       ],
       "delivery": {
-        "fullName": "User",
-        "streetName": "Test",
-        "houseNumber": "8",
-        "city": "Malmö",
-        "phoneNumber": "0700000000",
+        "fullName": "username",
+        "streetName": "userstreet",
+        "houseNumber": "1",
+        "city": "usercity",
+        "phoneNumber": "0777777777",
         "isValid": true
       },
       "payment": {
         "paymentMethod": "card",
-        "cardNumber": "4234 0124 9012 3198",
-        "nameOnCard": "User",
-        "expiryDate": "03/27",
-        "cvc": "342",
+        "cardNumber": "2497 1083 1381 9302",
+        "nameOnCard": "user",
+        "expiryDate": "02/28",
+        "cvc": "729",
         "swishNumber": "",
         "isValid": true
       },
-      "subtotal": 22.5,
-      "total": 25.4,
-      "createdAt": "2025-06-04T18:30:12.447Z",
-      "orderNumber": "DD-1749061812448"
+      "subtotal": 21.5,
+      "total": 24.4,
+      "createdAt": "2025-06-04T20:55:31.585Z",
+      "orderNumber": "DD-1749070531585"
     }
   ],
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "username": "user",
       "email": "user@gmail.com",
       "password": "password",

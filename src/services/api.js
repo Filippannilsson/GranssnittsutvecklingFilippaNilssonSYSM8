@@ -50,6 +50,7 @@ export function createOrder(orderData) {
   //Lägg till tidsstämpel, status och ordernummer
   const orderWithTimestamp = {
     ...orderData,
+    userId: orderData.userId || null,
     createdAt: new Date().toISOString(),
     orderNumber: `DD-${Date.now()}`,
   };
@@ -132,6 +133,10 @@ export function getUserOrders(userId) {
         throw new Error(`Error fetching user orders: ${response.status}`);
       }
       return response.json();
+    })
+    .then((orders) => {
+      //Filtrera manuellt
+      return orders.filter((order) => order.userId === userId);
     })
     .catch((error) => {
       console.error("Error fetching user orders:", error);

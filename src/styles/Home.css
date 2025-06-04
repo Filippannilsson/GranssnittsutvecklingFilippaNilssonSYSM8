@@ -4,26 +4,25 @@
 }
 
 .main-content {
-  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  padding-bottom: 10px;
 }
 
 .text-and-button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 1130px;
-  padding-bottom: 5px;
+  width: 90%;
+  padding: 5px 0;
 }
 
 .popular-title {
-  font-size: 28px;
+  font-size: 24px;
   color: #1a3a23;
   font-weight: bold;
   text-transform: uppercase;
@@ -36,7 +35,7 @@
   border-radius: 8px;
   padding: 9px 20px;
   color: #1a3a23;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -56,151 +55,47 @@
 }
 
 .home-page .product-card {
-  max-width: 350px;
-  width: 350px;
-}
-
-/* Responsive adjustments för home page */
-@media (max-width: 1200px) {
-  .popular-cards {
-    gap: 30px;
-  }
-
-  .home-page .product-card {
-    width: 350px;
-    max-width: 350px;
-  }
-}
-
-@media (max-width: 768px) {
-  .popular-cards {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .home-page .product-card {
-    width: 100%;
-    max-width: 400px;
-  }
-
-  .text-and-button {
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
-  }
-}
-
-.home-page {
-  background-color: #c2eace;
-}
-
-.main-content {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 250px;
   width: 100%;
 }
 
-.text-and-button {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 1130px;
-  padding-bottom: 5px;
+.home-page .dish-image {
+  height: 250px;
 }
 
-.popular-title {
-  font-size: 28px;
-  color: #1a3a23;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
-}
-
-.menu-btn {
-  background: #89c299;
-  border: 2px solid #1a3a23;
-  border-radius: 8px;
-  padding: 9px 20px;
-  color: #1a3a23;
-  font-size: 22px;
-  font-weight: bold;
-  text-transform: uppercase;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-}
-
-.menu-btn:hover {
-  background-color: #7ab38a;
-}
-
-.popular-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-
-.home-page .product-card {
-  max-width: 350px;
-  width: 350px;
-}
-
-/* Responsive adjustments för home page */
+/* Responsiv layout */
 @media (max-width: 1200px) {
   .popular-cards {
-    gap: 30px;
-  }
-
-  .home-page .product-card {
-    width: 350px;
-    max-width: 350px;
-  }
-}
-
-@media (max-width: 768px) {
-  .popular-cards {
-    flex-direction: column;
-    align-items: center;
     gap: 20px;
-  }
-
-  .home-page .product-card {
-    width: 100%;
-    max-width: 400px;
-  }
-
-  .text-and-button {
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
-  }
-}
-
-/* Ny media query för mindre än 480px */
-@media (max-width: 480px) {
-  .text-and-button {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
   }
 
   .popular-title {
-    font-size: 20px;
-    margin-left: 25px;
+    font-size: 22px;
   }
 
   .menu-btn {
     font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .home-page .product-card {
+    max-width: 220px;
+    width: 100%;
+  }
+
+  .home-page .dish-image {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .popular-title {
+    font-size: 18px;
+  }
+
+  .menu-btn {
+    font-size: 14px;
     padding: 6px 12px;
-    margin-right: 25px;
   }
 
   .popular-cards {
@@ -213,7 +108,11 @@
   }
 
   .home-page .product-card {
-    width: 150px;
-    max-width: 150px;
+    max-width: 170px;
+    width: 100%;
+  }
+
+  .home-page .dish-image {
+    height: 170px;
   }
 }

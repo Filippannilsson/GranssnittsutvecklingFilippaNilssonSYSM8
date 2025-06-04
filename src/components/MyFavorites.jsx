@@ -1,4 +1,3 @@
-import React from "react";
 import { useFavorites } from "../context/FavoritesContext";
 import MenuItem from "./MenuItem";
 import "../styles/MyFavorites.css";
@@ -6,7 +5,7 @@ import "../styles/MyFavorites.css";
 function MyFavorites() {
   const { favorites, clearAllFavorites } = useFavorites();
 
-  //Funktion för att hantera rensa alla favoriter
+  //Funktion för att hantera att rensa alla favoriter
   function handleClearAllFavorites() {
     if (window.confirm("Are you sure you want to clear all favorites?")) {
       clearAllFavorites();

@@ -1,8 +1,7 @@
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useUser } from "../context/UserContext";
-import { useState, useEffect } from "react";
 import "../styles/Login.css";
-import "../App.css";
 
 function Login() {
   const navigate = useNavigate();
@@ -66,34 +65,31 @@ function Login() {
             <label htmlFor="username" className="login-username-label">
               Username
             </label>
-            <div className="login-username-input">
-              <input
-                type="text"
-                id="username"
-                name="username"
-                value={formData.username}
-                onChange={handleInputChange}
-                placeholder="Username"
-                required
-              />
-            </div>
+
+            <input
+              type="text"
+              id="username"
+              name="username"
+              value={formData.username}
+              onChange={handleInputChange}
+              placeholder="Username"
+              required
+            />
           </div>
 
           <div className="login-password-section">
             <label htmlFor="password" className="login-password-label">
               Password
             </label>
-            <div className="login-password-input">
-              <input
-                type="password"
-                id="password"
-                name="password"
-                value={formData.password}
-                onChange={handleInputChange}
-                placeholder="Password"
-                required
-              />
-            </div>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              value={formData.password}
+              onChange={handleInputChange}
+              placeholder="Password"
+              required
+            />
           </div>
 
           {error && <div className="error-message">{error}</div>}

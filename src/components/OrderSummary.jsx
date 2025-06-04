@@ -1,7 +1,7 @@
-import "../styles/OrderSummery.css";
-import "../App.css";
+import "../styles/OrderSummary.css";
 
-function OrderSummery({ subtotal = 0 }) {
+function OrderSummary({ subtotal = 0 }) {
+  //Leveransavgift
   const delivery = 2.9;
   const total = (subtotal + delivery).toFixed(2);
 
@@ -29,4 +29,4 @@ function OrderSummery({ subtotal = 0 }) {
   );
 }
 
-export default OrderSummery;
+export default OrderSummary;

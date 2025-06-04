@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
-import "../styles/Menu.css";
-import "../App.css";
 import MenuFilter from "../components/MenuFilter";
 import MenuItem from "../components/MenuItem";
 import { getMenu, getMenuByCategory } from "../services/api";
 import { useFavorites } from "../context/FavoritesContext";
 import ScrollToTop from "../components/ScrollToTop";
-import example from "../assets/pictures/example.jpg";
+import "../styles/Menu.css";
 
 function Menu() {
   const [allMenuItems, setAllMenuItems] = useState([]);
@@ -95,30 +93,28 @@ function Menu() {
 
   return (
     <div className="menu-page">
-      <main>
-        <MenuFilter
-          onCategoryChange={handleCategoryChange}
-          selectedCategory={selectedCategory}
-          searchTerm={searchTerm}
-          onSearchChange={handleSearchChange}
-        />
-        <div className="menu-items">
-          {menuItems.length > 0 ? (
-            menuItems.map((menu) => (
-              <MenuItem
-                key={menu.id}
-                id={menu.id}
-                image={menu.image || example} // Använd en standardbild om ingen bild finns
-                name={menu.name}
-                description={menu.description}
-                price={`$${menu.price.toFixed(2)}`}
-              />
-            ))
-          ) : (
-            <p className="no-search-results">No matching items found</p>
-          )}
-        </div>
-      </main>
+      <MenuFilter
+        onCategoryChange={handleCategoryChange}
+        selectedCategory={selectedCategory}
+        searchTerm={searchTerm}
+        onSearchChange={handleSearchChange}
+      />
+      <div className="menu-items">
+        {menuItems.length > 0 ? (
+          menuItems.map((menu) => (
+            <MenuItem
+              key={menu.id}
+              id={menu.id}
+              image={menu.image} // Använd en standardbild om ingen bild finns
+              name={menu.name}
+              description={menu.description}
+              price={`$${menu.price.toFixed(2)}`}
+            />
+          ))
+        ) : (
+          <p className="no-search-results">No matching items found</p>
+        )}
+      </div>
       <ScrollToTop showButton={true} />
     </div>
   );

@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import "../styles/MyOrderOverview.css";
-import "../App.css";
+import { useState } from "react";
 import { ReactComponent as ArrowDropDownIcon } from "../assets/logos/arrow-drop-down.svg";
+import "../styles/MyOrderOverview.css";
 
 function MyOrderOverview({ orderData }) {
   const [isExpanded, setIsExpanded] = useState(false);

@@ -1,7 +1,6 @@
 .hero {
   height: 320px;
   position: relative;
-  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -52,11 +51,15 @@
 
 /* Responsiv design */
 @media (max-width: 768px) {
-  .slogan-frame {
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 390px;
+  .hero {
+    height: 200px;
+  }
+
+  .slogan-container {
+    right: 10px;
+    width: 250px;
+    height: 100px;
+    top: 70px;
   }
 
   .slogan-text {
@@ -64,11 +67,7 @@
   }
 
   .hero-tagline {
-    font-size: 28px;
-  }
-
-  .speed-flavour-list {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -82,10 +81,6 @@
     height: 60px;
     right: 10px;
     top: 30px;
-  }
-
-  .slogan-text {
-    width: 185px;
   }
 
   .hero-tagline {

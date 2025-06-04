@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import "../styles/ScrollToTop.css";
 import { ReactComponent as ArrowIcon } from "../assets/logos/arrow-up.svg";
+import "../styles/ScrollToTop.css";
 
 function ScrollToTop({ showButton = false }) {
   const { pathname } = useLocation();

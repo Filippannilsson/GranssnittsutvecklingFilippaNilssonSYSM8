@@ -1,5 +1,4 @@
 import "../styles/Searchbar.css";
-import "../App.css";
 
 function Searchbar({ searchTerm, onSearchChange }) {
   return (

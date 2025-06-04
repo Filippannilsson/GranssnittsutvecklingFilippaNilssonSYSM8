@@ -8,12 +8,12 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   color: #1a3a23;
 }
 
 .order-summary-title {
-  font-size: 22px;
+  font-size: 18px;
   text-decoration: underline;
   margin: 0;
 }
@@ -36,14 +36,14 @@
   margin: 10px 0;
 }
 
-/* Media queries för olika skärmstorlekar */
+/* Responsiv layout */
 @media (max-width: 768px) {
   .order-summary-container {
     padding: 20px 24px;
   }
 
   .order-summary-title {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .summary-row {
@@ -61,7 +61,7 @@
   }
 
   .order-summary-title {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .summary-row {

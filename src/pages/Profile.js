@@ -1,11 +1,10 @@
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useUser } from "../context/UserContext";
-import { useEffect, useState } from "react";
 import { getUserOrders } from "../services/api";
-import "../styles/Profile.css";
-import "../App.css";
 import MyOrderOverview from "../components/MyOrderOverview";
 import MyFavorites from "../components/MyFavorites";
+import "../styles/Profile.css";
 
 function Profile() {
   const navigate = useNavigate();
@@ -43,7 +42,6 @@ function Profile() {
     } catch (error) {
       console.error("Error fetching user orders:", error);
       setUserOrders([]);
-    } finally {
     }
   }
 

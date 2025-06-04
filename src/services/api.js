@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3018";
+const BASE_URL = "http://localhost:3000";
 
 //Hämtar allt från menu
 export function getMenu() {

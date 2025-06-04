@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "../styles/Header.css";
-import "../App.css";
 import { ReactComponent as HomeIcon } from "../assets/logos/home.svg";
 import { ReactComponent as CartIcon } from "../assets/logos/cart.svg";
 import { ReactComponent as MenuIcon } from "../assets/logos/menu.svg";
@@ -42,7 +41,7 @@ function Header() {
           </Link>
           <Link to="/cart" className="shopping-cart">
             <CartIcon className="icon" />
-            {/* Om cartCount är större än 0, visa antal */}
+            {/* Visa antal produkter om cartCount är större än 0 */}
             {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
           </Link>
           <Link to={isLoggedIn() ? "/profile" : "/login"} className="profile">

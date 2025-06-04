@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+## Utvecklingsprocess
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Jag började med att skapa en första design i Figma för alla grundläggande sidor. Under utvecklingsprocessen fick jag visserligen gå tillbaka till Figma och ändra flera gånger, men det var ett bra underlag för att komma igång i början. Efter detta skapade jag mitt react-projekt och implementerade all HTML och CSS med hårdkodad data först för att bättre förstå komponentstrukturen. Även om detta tog lite extra tid till en början, gav det mig bättre förståelse för varje del av systemet. Ursprungligen planerade jag att använda den färdiga HTML/CSS som Figma genererade, men framför allt HTML var väldigt dåligt uppbyggt, så jag valde att själv göra både HTML och CSS från grunden, med viss inspiration från det som Figma föreslog. När frontend-strukturen var klar med hårdkodad data, byggde jag upp min db.json, api.js och context-filerna.
 
-## Available Scripts
+## Tekniska val
 
-In the project directory, you can run:
+För att organisera min kod delade jag upp appen i många olika komponenter som jag kunde återanvända i andra komponenter och pages. Jag använde även contexts för att dela information mellan komponenter istället för att skicka data genom långa kedjor. Jag separerade all api-logik i en egen fil, vilket först kändes lite onödigt, men jag insåg sen att det gjorde koden mycket renare och att jag kunde återanvända api-funktioner mellan komponenter.
 
-### `npm start`
+Jag valde att använda olika valideringsnivåer på login/register och betalningsinformation. För login/register-formulären använder jag grundläggande validering, lite väl enkel om det skulle användas i verkligheten, medan betalningsformulären har mer avancerad validering med automatisk formattering och specifik validering av kortinformation och telefonnummer. Ett förbättringsområde hade varit en mer omfattande inloggningsprocess med krav för lösenord (längd, stor/liten bokstav, bekräfta lösenord) och säkrare datalagring med hash/salt-funktionalitet. Just nu sparas lösenordet i databasen vilket inte hade varit rimligt i en verklig applikation.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+För favorithantering valde jag att spara favoriter lokalt för gäster och koppla till userId för inloggade användare genom olika localStorage-nycklar. Jag implementerade även navigation guards för att hantera navigering baserat på användarstatus.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Problem och lösningar
 
-### `npm test`
+Jag stötte på en hel del problem under projektets gång. Ett problem uppstod med isFormValid()-funktionen, som läste gamla react state-värden eftersom setState inte uppdateras direkt. Detta hindrade användare från att genomföra beställningar trots att alla uppgifter var korrekt ifyllda. För att lösa detta ändrade jag funktionen så att den tog emot aktuell data som parameter istället för att använda gamla state-värden. Ett annat problem var att favoriter försvann när jag uppdaterade sidan eftersom tom data skrev över sparade favoriter. Problemet uppstod eftersom favoritesContext är beroende av userContext för att bestämma rätt localStorage-nyckel, vilket skapade felaktig ordning när sidan laddas. Lösningen blev att jag implementerade en kontrollvariabel som förhindrar sparning innan sidans initiala laddning är klar.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Utmaningar och reflektion
 
-### `npm run build`
+De största utmaningarna för mig var Figma och CSS-arbetet, som var både pilligt och tidskrävande. Jag lärde mig dock många olika funktioner i Figma under processen vilket underlättade och gjorde att det gick snabbare efter hand. Till en början hade jag även svårt att förstå kopplingen mellan alla filer eftersom projektet blev mycket större än något jag gjort tidigare.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Den största insikten var nog att jag fick en bättre förståelse för hur bra det faktiskt är att separera kod i olika filer och contexts för att kunna återanvända och hålla koden organiserad. Detta projekt har lärt mig mycket om hur viktigt det är med strukturerad planering och att våga prova mig fram med olika lösningar när det uppstår problem. Jag förde också dagliga anteckningar om vad jag gjort, vilka problem jag stött på och hur jag löst dem, vilket var bra både för att komma ihåg och för att kunna gå tillbaka och reflektera över olika beslut och lösningar.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Om jag hade haft mer tid för projektet hade jag skapat en separat backend med node.js, jobbat mer med säkerheten och lite mer med den responsiva layouten. Men överlag är jag nöjd med resultatet och tycker att det varit både väldigt lärorikt och roligt att inse att man har de kunskaper som krävs för att bygga en lite större fungerande applikation.

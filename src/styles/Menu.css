@@ -11,16 +11,17 @@
   padding: 2rem 2rem 2rem 3rem;
   max-width: 1500px;
   margin: 0 auto;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: start;
 }
 
 .menu-page .product-card {
   width: 230px;
-  height: 330px;
+  height: 340px;
 }
 
 .menu-page .dish-image {
-  height: 230px !important;
+  height: 230px;
 }
 
 .menu-page .dish-name {
@@ -28,8 +29,12 @@
 }
 
 .menu-page .price,
-.description {
+.menu-page .description {
   font-size: 14px;
+}
+
+.menu-page .description {
+  line-height: 1.4;
 }
 
 .no-search-results {
@@ -41,9 +46,54 @@
 
 @media (max-width: 1000px) {
   .menu-items {
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 220px);
     gap: 16px;
     padding: 1rem;
+  }
+
+  .menu-page .product-card {
+    width: 210px;
+    height: 330px;
+  }
+
+  .menu-page .dish-image {
+    height: 210px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-items {
+    grid-template-columns: repeat(auto-fit, 180px);
+    gap: 12px;
+  }
+
+  .menu-page .product-card {
+    width: 170px;
+    height: 300px;
+  }
+
+  .menu-page .dish-image {
+    height: 170px;
+  }
+
+  .menu-page .dish-name {
+    font-size: 14px;
+  }
+
+  .menu-page .price,
+  .menu-page .description {
+    font-size: 12px;
+  }
+
+  .menu-page .add-button {
+    font-size: 12px;
+    padding: 5px 10px;
+    bottom: 45px;
+    right: 2px;
+  }
+
+  .menu-page .row:last-child {
+    padding-right: 60px;
   }
 }
 
@@ -55,20 +105,16 @@
   }
 
   .menu-page .product-card {
-    width: 150px;
-    height: auto;
+    width: 160px;
+    height: 285px;
   }
 
   .menu-page .dish-image {
-    height: 150px !important;
+    height: 160px;
   }
 
   .menu-page .dish-name {
-    font-size: 14px;
-  }
-
-  .menu-page .price,
-  .description {
-    font-size: 12px;
+    font-size: 13px;
+    padding-right: 10px;
   }
 }

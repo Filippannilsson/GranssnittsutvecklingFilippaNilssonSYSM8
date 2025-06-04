@@ -52,11 +52,30 @@
   font-style: italic;
 }
 
+/* Responsiv design */
 @media (max-width: 1000px) {
   .favorites-grid {
     justify-content: center;
     gap: 16px;
-    padding: 1rem;
+    padding: 16pxrem;
+  }
+}
+
+@media (max-width: 768px) {
+  .favorites-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+    gap: 12px;
+    padding: 16px;
+    justify-content: center;
+  }
+
+  .favorites-section .product-card {
+    width: 200px;
+    height: 280px;
+  }
+
+  .favorites-section .dish-image {
+    height: 180px;
   }
 }
 

@@ -52,15 +52,9 @@
   margin-bottom: 8px;
 }
 
-.username-input,
-.register-email-input,
-.register-password-input {
-  width: 100%;
-}
-
-.username-input input,
-.register-email-input input,
-.register-password-input input {
+.register-username-section input,
+.register-email-section input,
+.register-password-section input {
   width: 100%;
   height: 45px;
   background-color: #c2eace;
@@ -74,9 +68,9 @@
   outline: none;
 }
 
-.username-input input::placeholder,
-.register-email-input input::placeholder,
-.register-password-input input::placeholder {
+.register-username-section input::placeholder,
+.register-email-section input::placeholder,
+.register-password-section input::placeholder {
   color: #439159;
   font-size: 14px;
 }
@@ -135,7 +129,7 @@
   margin-top: 5px;
 }
 
-/* Responsiv design */
+/* Responsiv layout */
 @media (max-width: 768px) {
   .main {
     padding: 15px;
@@ -150,7 +144,7 @@
     font-size: 22px;
   }
 
-  .register-name-label,
+  .register-username-label,
   .register-email-label,
   .register-password-label {
     font-size: 15px;

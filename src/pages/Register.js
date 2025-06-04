@@ -1,8 +1,7 @@
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useUser } from "../context/UserContext";
-import { useState, useEffect } from "react";
 import "../styles/Register.css";
-import "../App.css";
 
 function Register() {
   const navigate = useNavigate();
@@ -81,7 +80,7 @@ function Register() {
       const result = await registerUser(formData);
 
       if (result.success) {
-        console.log("Registration successfull");
+        console.log("Registration successful");
         navigate("/profile");
       } else {
         setError(result.error);
@@ -100,63 +99,57 @@ function Register() {
 
         <form onSubmit={handleRegister} noValidate>
           <div className="register-username-section">
-            <label htmlFor="name" className="register-username-label">
+            <label htmlFor="username" className="register-username-label">
               Username
             </label>
-            <div className="username-input">
-              <input
-                type="text"
-                id="username"
-                name="username"
-                value={formData.username}
-                onChange={handleInputChange}
-                placeholder="Username"
-                required
-              />
-              {validationErrors.username && (
-                <span className="field-error">{validationErrors.username}</span>
-              )}
-            </div>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              value={formData.username}
+              onChange={handleInputChange}
+              placeholder="Username"
+              required
+            />
+            {validationErrors.username && (
+              <span className="field-error">{validationErrors.username}</span>
+            )}
           </div>
 
           <div className="register-email-section">
             <label htmlFor="email" className="register-email-label">
               Email
             </label>
-            <div className="register-email-input">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleInputChange}
-                placeholder="Email"
-                required
-              />
-              {validationErrors.email && (
-                <span className="field-error">{validationErrors.email}</span>
-              )}
-            </div>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleInputChange}
+              placeholder="Email"
+              required
+            />
+            {validationErrors.email && (
+              <span className="field-error">{validationErrors.email}</span>
+            )}
           </div>
 
           <div className="register-password-section">
             <label htmlFor="password" className="register-password-label">
               Password
             </label>
-            <div className="register-password-input">
-              <input
-                type="password"
-                id="password"
-                name="password"
-                value={formData.password}
-                onChange={handleInputChange}
-                placeholder="Password"
-                required
-              />
-              {validationErrors.password && (
-                <span className="field-error">{validationErrors.password}</span>
-              )}
-            </div>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              value={formData.password}
+              onChange={handleInputChange}
+              placeholder="Password"
+              required
+            />
+            {validationErrors.password && (
+              <span className="field-error">{validationErrors.password}</span>
+            )}
           </div>
 
           {error && <div className="error-message">{error}</div>}

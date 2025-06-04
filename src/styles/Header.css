@@ -3,6 +3,7 @@
   position: relative;
   overflow: hidden;
 }
+
 .navbar {
   background-color: #5a976b;
   width: 100%;
@@ -11,6 +12,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .logo {
   margin-left: 30px;
   margin-top: 0;
@@ -56,6 +58,7 @@
   align-items: center;
   margin-right: 50px;
 }
+
 .symbols a {
   display: flex;
   align-items: center;
@@ -63,12 +66,14 @@
   padding: 10px;
   transition: transform 0.2s;
 }
+
 .symbols a:hover {
   transform: scale(1.1);
 }
+
 .icon {
   width: auto;
-  height: 40px;
+  height: 38px;
   fill: #122818;
 }
 
@@ -91,7 +96,34 @@
   font-size: 12px;
 }
 
-/* Media queries for responsiveness */
+/* Responsiv layout */
+@media (max-width: 1024px) {
+  .navbar {
+    height: 90px;
+  }
+
+  .logo {
+    margin-left: 20px;
+  }
+
+  .logo-image {
+    height: 85px;
+  }
+
+  .drone-delights-header {
+    font-size: 24px;
+  }
+
+  .symbols {
+    gap: 50px;
+    margin-right: 40px;
+  }
+
+  .icon {
+    height: 35px;
+  }
+}
+
 @media (max-width: 780px) {
   .navbar {
     flex-direction: column;
@@ -105,18 +137,42 @@
     margin: 0 auto;
   }
 
+  .logo-image {
+    height: 75px;
+  }
+
+  .drone-delights-header {
+    font-size: 20px;
+  }
+
   .symbols {
     width: auto;
-    height: 70px;
+    height: 60px;
     gap: 50px;
     justify-content: center;
     margin: 0 auto;
-    flex-wrap: wrap;
   }
 
   .icon {
-    width: auto;
-    height: 35px;
+    height: 30px;
+  }
+
+  .cart-badge {
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    top: -1px;
+    right: -1px;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo-image {
+    height: 70px;
+  }
+
+  .symbols {
+    height: 50px;
   }
 }
 
@@ -131,20 +187,9 @@
     height: 65px;
   }
 
-  .drone-delights-header {
-    font-size: 22px;
-    line-height: 100%;
-    margin: 0;
-  }
-
   .symbols {
     gap: 40px;
     height: 35px;
-    margin: 0 auto;
-  }
-
-  .symbols a {
-    padding: 5px;
   }
 
   .icon {
@@ -156,7 +201,7 @@
     width: 14px;
     height: 14px;
     font-size: 9px;
-    top: -3px;
-    right: -2px;
+    top: 1px;
+    right: 1px;
   }
 }

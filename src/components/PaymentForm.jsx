@@ -1,6 +1,5 @@
-import "../styles/PaymentForm.css";
-import "../App.css";
 import { useState } from "react";
+import "../styles/PaymentForm.css";
 
 function PaymentForm({ onDataChange }) {
   const [selectedPaymentMethod, setSelectedPaymentMethod] = useState(null);

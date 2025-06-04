@@ -1,6 +1,4 @@
 import "../styles/MenuItem.css";
-import "../App.css";
-import React from "react";
 import { ReactComponent as NotFavoriteIcon } from "../assets/logos/not-favorite.svg";
 import { ReactComponent as FavoriteIcon } from "../assets/logos/is-favorite.svg";
 import { useCart } from "../context/CartContext";

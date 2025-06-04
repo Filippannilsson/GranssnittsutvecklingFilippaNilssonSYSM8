@@ -107,7 +107,7 @@
 }
 
 .my-order-details.show {
-  max-height: 200px;
+  max-height: 300px;
   opacity: 1;
   border-bottom: 1px solid #1a3a23;
 }
@@ -136,6 +136,7 @@
   text-align: right;
 }
 
+/* Responsiv layout */
 @media (max-width: 780px) {
   .order-overview-container {
     height: 70px;
@@ -169,7 +170,7 @@
 
 @media (max-width: 600px) {
   .order-overview-container,
-  .order-details {
+  .my-order-details {
     max-width: 100%;
     padding: 0 10px;
   }
@@ -229,6 +230,6 @@
   }
 
   .my-order-details.show {
-    max-height: 150px;
+    max-height: 300px;
   }
 }

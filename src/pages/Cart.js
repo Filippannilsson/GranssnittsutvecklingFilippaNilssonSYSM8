@@ -1,15 +1,14 @@
 import { useNavigate } from "react-router-dom";
-import "../styles/Cart.css";
-import "../App.css";
 import CartItem from "../components/CartItem";
-import OrderSummery from "../components/OrderSummery";
+import OrderSummary from "../components/OrderSummary";
 import { useCart } from "../context/CartContext";
+import "../styles/Cart.css";
 
 function Cart() {
   const navigate = useNavigate();
   const { cartItems, getSubtotal } = useCart();
 
-  //Om tom varukorg
+  //Hantera tom varukorg
   if (cartItems.length === 0) {
     return (
       <div className="cart-page">
@@ -37,6 +36,7 @@ function Cart() {
         <h1 className="cart-title">Cart</h1>
         <div className="cart-content-wrapper">
           <div className="cart-items">
+            {/* Visa alla produkter i kundvagnen */}
             {cartItems.map((item) => (
               <CartItem
                 key={item.id}
@@ -48,11 +48,11 @@ function Cart() {
               />
             ))}
           </div>
-          <div className="order-summery-container">
-            <div className="order-summery-cart">
-              <OrderSummery subtotal={getSubtotal()} />
+          <div className="order-summary-wrapper">
+            <div className="order-summary-cart">
+              <OrderSummary subtotal={getSubtotal()} />
             </div>
-            <div className="order-summery-btn">
+            <div className="order-summary-btn">
               <button
                 className="checkout-btn"
                 onClick={() => navigate("/checkout")}

@@ -68,32 +68,32 @@
 
 @media (max-width: 768px) {
   .delivery-section {
-    padding: 15px; /* Mindre padding */
+    padding: 15px;
   }
 
   .delivery-information-title {
-    font-size: 18px; /* MINDRE text istället för större */
+    font-size: 18px;
     margin-bottom: 15px;
     padding-bottom: 8px;
   }
 
   .delivery-form-group label {
-    font-size: 13px; /* MINDRE text istället för större */
+    font-size: 13px;
     margin-bottom: 6px;
   }
 
   .delivery-form-group input {
-    height: 38px; /* Lite mindre höjd */
-    font-size: 13px; /* Mindre text */
-    padding: 0 12px; /* Mindre padding */
+    height: 38px;
+    font-size: 13px;
+    padding: 0 12px;
   }
 
   .delivery-form-group input::placeholder {
-    font-size: 12px; /* Mindre placeholder */
+    font-size: 12px;
   }
 
   .delivery-form-row {
-    gap: 20px; /* Mindre gap */
+    gap: 20px;
   }
 }
 

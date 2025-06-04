@@ -31,6 +31,7 @@
   transform: translateY(0);
 }
 
+/* Responsiv layout */
 @media (max-width: 768px) {
   .scroll-to-top-btn {
     bottom: 20px;

@@ -1,9 +1,8 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-import "../styles/Confirmation.css";
-import "../App.css";
 import OrderedItem from "../components/OrderedItem";
 import { useCart } from "../context/CartContext";
+import "../styles/Confirmation.css";
 
 function Confirmation() {
   const navigate = useNavigate();
@@ -11,13 +10,14 @@ function Confirmation() {
   const { clearCart } = useCart();
 
   const [orderData, setOrderData] = useState(null);
-  const [orderNumber, setOrderNumber] = useState(null);
+
+  //Leveranskostnad
+  const delivery = 2.9;
 
   useEffect(() => {
-    //Hämta den data som skickades från checkout
+    //Hämta den orderdata som skickades från checkout
     if (location.state) {
       setOrderData(location.state.orderData);
-      setOrderNumber(location.state.orderNumber);
       clearCart();
     } else {
       //Omdirigera till cart om den är tom
@@ -32,15 +32,12 @@ function Confirmation() {
 
   const orderedItems = orderData.items;
 
-  //Leveranskostnad
-  const delivery = 2.9;
-
   //Beräkna subtotal
-  const calculateSubtotal = () => {
+  function calculateSubtotal() {
     return orderedItems.reduce((total, item) => {
       return total + item.price * item.quantity;
     }, 0);
-  };
+  }
 
   //Beräkna total
   const subtotal = calculateSubtotal();

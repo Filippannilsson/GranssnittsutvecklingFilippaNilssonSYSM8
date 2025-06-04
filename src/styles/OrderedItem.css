@@ -27,27 +27,18 @@
   font-size: 16px;
   margin: 0;
   flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 }
 
+.ordered-item-price,
 .ordered-item-quantity {
-  font-size: 15px;
-}
-
-.ordered-item-price {
   color: #1a3a23;
   text-align: right;
   font-size: 15px;
   margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
   min-width: 80px;
 }
 
-/* Media queries for responsive design */
+/* Responsiv layout */
 @media (max-width: 768px) {
   .ordered-item-container {
     gap: 25px;

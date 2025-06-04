@@ -1,26 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { getPopularItems } from "../services/api";
-import "../styles/Home.css";
-import "../App.css";
 import Hero from "../components/Hero";
 import MenuItem from "../components/MenuItem";
-import example from "../assets/pictures/example.jpg";
+import "../styles/Home.css";
 
 function Home() {
   const navigate = useNavigate();
   const [popularItems, setPopularItems] = useState([]);
 
+  //Hämta populära items
   useEffect(() => {
     console.log("Fetching popular items");
 
     getPopularItems()
       .then((data) => {
-        console.log(
-          "Popular items fetched successfully:",
-          data.length,
-          "items"
-        );
+        console.log("Popular items fetched successfully:");
         setPopularItems(data);
       })
       .catch((error) => {
@@ -31,7 +26,7 @@ function Home() {
   return (
     <div className="home-page">
       <Hero />
-      <main className="main-content">
+      <div className="main-content">
         <div className="text-and-button">
           <h1 className="popular-title">Popular</h1>
           <button className="menu-btn" onClick={() => navigate("/menu")}>
@@ -43,14 +38,14 @@ function Home() {
             <MenuItem
               key={item.id}
               id={item.id}
-              image={item.image || example}
+              image={item.image}
               name={item.name}
               description={item.description}
               price={`$${item.price.toFixed(2)}`}
             />
           ))}
         </div>
-      </main>
+      </div>
     </div>
   );
 }

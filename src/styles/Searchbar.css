@@ -28,3 +28,15 @@
 .search-input:focus {
   outline: none;
 }
+
+@media (max-width: 480px) {
+  .searchbar {
+    width: 300px;
+    height: 35px;
+  }
+
+  .search-input {
+    font-size: 12px;
+    padding: 0 15px;
+  }
+}

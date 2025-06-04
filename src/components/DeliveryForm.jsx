@@ -1,6 +1,5 @@
-import "../styles/DeliveryForm.css";
-import "../App.css";
 import { useState } from "react";
+import "../styles/DeliveryForm.css";
 
 function DeliveryForm({ onDataChange }) {
   const [deliveryData, setDeliveryData] = useState({

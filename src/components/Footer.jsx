@@ -1,5 +1,4 @@
 import "../styles/Footer.css";
-import "../App.css";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,7 +10,7 @@ function Footer() {
         <a href="mailto:info@dronedelights.com">
           Email: info@dronedelights.com
         </a>
-        <p>Phone: 0707-070707</p>
+        <p>Phone: 070-5551234</p>
         <p>© {currentYear} Drone Delights</p>
       </div>
     </footer>

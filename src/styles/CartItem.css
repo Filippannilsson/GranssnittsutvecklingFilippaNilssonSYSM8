@@ -36,7 +36,7 @@
 .cart-item-name,
 .cart-item-price {
   color: #1a3a23;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   margin: 0;
 }
@@ -62,12 +62,12 @@
 
 .add-remove-container {
   background-color: #89c299;
-  border-radius: 13px;
+  border-radius: 8px;
   border: 1px solid #1a3a23;
-  padding: 4px 10px;
+  padding: 4px 6px;
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 12px;
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
@@ -79,7 +79,7 @@
 .cart-quantity {
   color: #1a3a23;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   position: relative;
   display: flex;
@@ -109,8 +109,8 @@
   border-width: 1px;
   padding: 6px;
   flex-shrink: 0;
-  height: 20px;
-  width: 20px;
+  height: 18px;
+  width: 18px;
   position: relative;
   display: flex;
   align-items: center;
@@ -126,7 +126,7 @@
   border: 1px solid #1a3a23;
 }
 
-/* Media queries för responsiv design */
+/* Responsiv layout */
 @media (max-width: 768px) {
   .cart-item-container {
     gap: 10px;
@@ -140,17 +140,14 @@
   }
 
   .cart-item-name,
-  .cart-item-price {
-    font-size: 16px;
+  .cart-item-price,
+  .cart-quantity {
+    font-size: 14px;
   }
 
   .add-remove-container {
     gap: 10px;
-    padding: 6px 8px;
-  }
-
-  .cart-quantity {
-    font-size: 16px;
+    padding: 4px 6px;
   }
 }
 
@@ -192,7 +189,6 @@
   }
 }
 
-/* Ny media query för 480px och mindre */
 @media (max-width: 480px) {
   .cart-item-container {
     padding: 6px;
@@ -231,41 +227,15 @@
 
   .remove-cart-item,
   .add-cart-item {
-    width: 14px;
-    height: 14px;
-    padding: 2px;
-  }
-
-  .close-cart-item-btn {
-    width: 18px;
-    height: 18px;
-    padding: 2px;
-    flex: 0 0 auto;
-  }
-}
-
-@media (max-width: 400px) {
-  .cart-item-container {
-    padding: 5px;
-    gap: 4px;
-  }
-
-  .cart-item-img {
-    width: 35px;
-    height: 35px;
-    flex: 0 0 35px;
-  }
-
-  .remove-cart-item,
-  .add-cart-item {
     width: 12px;
     height: 12px;
-    padding: 1px;
+    padding: 2px;
   }
 
   .close-cart-item-btn {
     width: 16px;
     height: 16px;
-    padding: 1px;
+    padding: 2px;
+    flex: 0 0 auto;
   }
 }

@@ -1,13 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-import "../styles/Checkout.css";
-import "../App.css";
 import DeliveryForm from "../components/DeliveryForm";
 import PaymentForm from "../components/PaymentForm";
-import OrderSummery from "../components/OrderSummery";
+import OrderSummary from "../components/OrderSummary";
 import { useCart } from "../context/CartContext";
 import { useUser } from "../context/UserContext";
 import { createOrder } from "../services/api";
+import "../styles/Checkout.css";
 
 function Checkout() {
   const navigate = useNavigate();
@@ -15,6 +14,7 @@ function Checkout() {
   const { user } = useUser();
   const [deliveryData, setDeliveryData] = useState({});
   const [paymentData, setPaymentData] = useState({});
+  const delivery = 2.9;
 
   //Omdirigera till cart om inget är tillagt i cart
   useEffect(() => {
@@ -23,19 +23,19 @@ function Checkout() {
     }
   }, [cartItems.length, navigate]);
 
-  //Funktion som tar emot data från DeliveryForm
+  //Funktion som tar emot och validerar data från DeliveryForm
   function handleDeliveryData(data) {
     setDeliveryData(data);
     console.log("Delivery data received:", data);
   }
 
-  //Funktion som tar emot data från PaymentForm
+  //Funktion som tar emot och validerar data från PaymentForm
   function handlePaymentData(data) {
     setPaymentData(data);
     console.log("Payment data received:", data);
   }
 
-  //Funktion för att validera beställningen
+  //Funktion för att validera och genomföra beställningen
   function handleCompletePayment() {
     if (!deliveryData.isValid) {
       alert("Please fill in all delivery information correctly");
@@ -53,7 +53,7 @@ function Checkout() {
       delivery: deliveryData,
       payment: paymentData,
       subtotal: getSubtotal(),
-      total: getSubtotal() + 2.9,
+      total: getSubtotal() + delivery,
     })
       .then((createdOrder) => {
         navigate("/confirmation", {
@@ -77,14 +77,9 @@ function Checkout() {
           <DeliveryForm onDataChange={handleDeliveryData} />
           <PaymentForm onDataChange={handlePaymentData} />
         </div>
-        <OrderSummery subtotal={getSubtotal()} />
+        <OrderSummary subtotal={getSubtotal()} />
         <div className="checkout-btns">
-          <button
-            className="complete-btn"
-            onClick={() => {
-              handleCompletePayment();
-            }}
-          >
+          <button className="complete-btn" onClick={handleCompletePayment}>
             Complete Payment
           </button>
           <button className="back-cart-btn" onClick={() => navigate("/cart")}>

@@ -1,5 +1,5 @@
 .main-page {
-  background-color: #c2eace;
+  background-color: #def1e4;
   min-height: calc(100vh - 220px);
   display: flex;
   align-items: flex-start;
@@ -9,7 +9,7 @@
 }
 
 .login-section {
-  background-color: #89c299;
+  background-color: #bce0c6;
   border-radius: 8px;
   border: 1px solid #1a3a23;
   padding: 25px;
@@ -54,7 +54,7 @@
 .login-password-section input {
   width: 100%;
   height: 45px;
-  background-color: #c2eace;
+  background-color: #def1e4;
   border-radius: 8px;
   border: none;
   padding: 0 17px;
@@ -80,7 +80,7 @@
 
 .login-btn,
 .to-register-btn {
-  background-color: #c2eace;
+  background-color: #def1e4;
   border-radius: 8px;
   border: 1px solid #1a3a23;
   height: 42px;
@@ -108,7 +108,7 @@
 .login-btn:hover,
 .to-register-btn:hover {
   background-color: #1a3a23;
-  color: #c2eace;
+  color: #def1e4;
 }
 
 .error-message {

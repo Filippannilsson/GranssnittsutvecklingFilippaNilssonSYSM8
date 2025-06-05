@@ -29,7 +29,7 @@
 }
 
 .clear-favorites-btn {
-  background-color: #89c299;
+  background-color: #bce0c6;
   color: #1a3a23;
   border: 1px solid #1a3a23;
   border-radius: 8px;
@@ -42,7 +42,7 @@
 
 .clear-favorites-btn:hover {
   background-color: #1a3a23;
-  color: #c2eace;
+  color: #def1e4;
 }
 
 .no-favorites {

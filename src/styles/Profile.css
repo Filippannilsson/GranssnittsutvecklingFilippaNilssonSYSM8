@@ -1,5 +1,5 @@
 .profile-main {
-  background-color: #c2eace;
+  background-color: #def1e4;
   min-height: calc(100vh - 220px);
   box-sizing: border-box;
   padding: 0 30px;
@@ -23,7 +23,7 @@
 
 .profile-welcome {
   color: #1a3a23;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
   padding: 20px 0px;
@@ -31,7 +31,7 @@
 }
 
 .logout-btn {
-  background-color: #89c299;
+  background-color: #bce0c6;
   border-radius: 8px;
   border: 1px solid #1a3a23;
   color: #1a3a23;
@@ -48,7 +48,7 @@
 
 .logout-btn:hover {
   background-color: #1a3a23;
-  color: #c2eace;
+  color: #def1e4;
 }
 
 .profile-body {
@@ -130,7 +130,7 @@
   }
 
   .profile-welcome {
-    font-size: 22px;
+    font-size: 20px;
     padding: 15px 0;
   }
 

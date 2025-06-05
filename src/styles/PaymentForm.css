@@ -3,7 +3,7 @@
 }
 
 .payment-section {
-  background-color: #89c299;
+  background-color: #bce0c6;
   border-radius: 8px;
   border: 1px solid #1a3a23;
   padding: 20px;
@@ -46,7 +46,7 @@
 
 input[type="radio"] {
   appearance: none;
-  background-color: #c2eace;
+  background-color: #def1e4;
   border: 1px solid #1a3a23;
   border-radius: 50%;
   width: 18px;
@@ -57,7 +57,7 @@ input[type="radio"] {
 
 input[type="radio"]:checked {
   background-color: #1a3a23;
-  border: 4px solid #c2eace;
+  border: 4px solid #def1e4;
 }
 
 .radio-group label {
@@ -94,7 +94,7 @@ input[type="radio"]:checked {
 .payment-form-group input {
   width: 100%;
   height: 40px;
-  background-color: #c2eace;
+  background-color: #def1e4;
   border-radius: 8px;
   border: none;
   padding: 0 15px;

@@ -1,6 +1,6 @@
 .cart-page {
   color: #1a3a23;
-  background-color: #c2eace;
+  background-color: #def1e4;
   margin: 0;
   min-height: calc(100vh - 220px);
 }
@@ -33,7 +33,7 @@
 
 .cart-items {
   width: 100%;
-  background-color: #89c299;
+  background-color: #bce0c6;
   padding: 15px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -69,7 +69,7 @@
 .empty-cart button {
   width: 130px;
   border-radius: 8px;
-  background-color: #89c299;
+  background-color: #bce0c6;
   font-size: 14px;
   letter-spacing: normal;
   transition: all 0.3s ease;
@@ -135,11 +135,11 @@
 
 .checkout-btn {
   background-color: #1a3a23;
-  color: #89c299;
+  color: #bce0c6;
 }
 
 .back-menu-btn {
-  background-color: #89c299;
+  background-color: #bce0c6;
   color: #1a3a23;
 }
 

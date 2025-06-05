@@ -1,5 +1,5 @@
 .checkout-page {
-  background-color: #c2eace;
+  background-color: #def1e4;
   min-height: calc(100vh - 120px);
   padding: 0 30px;
   color: #1a3a23;
@@ -78,7 +78,7 @@
 
 .complete-btn {
   background-color: #1a3a23;
-  color: #c2eace;
+  color: #def1e4;
 }
 
 .complete-btn:hover {
@@ -86,7 +86,7 @@
 }
 
 .back-cart-btn {
-  background-color: #89c299;
+  background-color: #bce0c6;
   color: #1a3a23;
 }
 

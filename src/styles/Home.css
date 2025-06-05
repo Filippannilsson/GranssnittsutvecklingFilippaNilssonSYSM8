@@ -1,5 +1,5 @@
 .home-page {
-  background-color: #c2eace;
+  background-color: #def1e4;
   min-height: calc(100vh - 220px);
 }
 
@@ -30,7 +30,7 @@
 }
 
 .menu-btn {
-  background: #89c299;
+  background: #bce0c6;
   border: 2px solid #1a3a23;
   border-radius: 8px;
   padding: 9px 20px;

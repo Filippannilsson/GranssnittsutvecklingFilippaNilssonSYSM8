@@ -1,5 +1,5 @@
 .confirmation-page {
-  background-color: #c2eace;
+  background-color: #def1e4;
   min-height: calc(100vh - 120px);
   padding: 0 30px;
   color: #1a3a23;
@@ -124,7 +124,7 @@
   font-weight: bold;
   font-size: 14px;
   letter-spacing: 2px;
-  background-color: #89c299;
+  background-color: #bce0c6;
   color: #1a3a23;
   text-transform: uppercase;
   display: flex;

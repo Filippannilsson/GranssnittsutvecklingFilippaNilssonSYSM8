@@ -1,5 +1,5 @@
 .menu-filter-section {
-  background-color: #c2eace;
+  background-color: #def1e4;
   border-bottom: 2px solid #439159;
   padding: 20px 40px 30px 40px;
   display: flex;
@@ -25,7 +25,7 @@
 }
 
 .filter-bar {
-  background-color: #89c299;
+  background-color: #bce0c6;
   border-radius: 8px;
   padding: 5px 30px;
   display: flex;
@@ -44,7 +44,7 @@
 }
 
 .filter-bar-btns button {
-  background-color: #c2eace;
+  background-color: #def1e4;
   border-radius: 8px;
   border: 2px solid #1a3a23;
   padding: 10px 20px;
@@ -63,12 +63,12 @@
 
 .filter-bar-btns button:hover {
   background-color: #1a3a23;
-  color: #c2eace;
+  color: #def1e4;
 }
 
 .filter-bar-btns button.active {
   background-color: #1a3a23;
-  color: #c2eace;
+  color: #def1e4;
 }
 
 .clear-section {
@@ -76,7 +76,7 @@
 }
 
 .clear-filter-btn {
-  background-color: #c2eace;
+  background-color: #def1e4;
   border-radius: 8px;
   border: 1px solid #1a3a23;
   padding: 10px 12px;

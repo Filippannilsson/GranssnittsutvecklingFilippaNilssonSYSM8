@@ -1,5 +1,5 @@
 .cart-item-container {
-  background-color: #c2eace;
+  background-color: #def1e4;
   border-radius: 8px;
   border: 1px solid #1a3a23;
   width: 100%;
@@ -61,7 +61,7 @@
 }
 
 .add-remove-container {
-  background-color: #89c299;
+  background-color: #bce0c6;
   border-radius: 8px;
   border: 1px solid #1a3a23;
   padding: 4px 6px;
@@ -102,7 +102,7 @@
 }
 
 .close-cart-item-btn {
-  background-color: #89c299;
+  background-color: #bce0c6;
   border-radius: 50%;
   border-style: solid;
   border-color: #1a3a23;

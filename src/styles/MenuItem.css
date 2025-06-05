@@ -1,5 +1,5 @@
 .product-card {
-  background: #c2eace;
+  background: #def1e4;
   border-radius: 12px;
   height: 420px;
   display: flex;
@@ -65,7 +65,7 @@
 }
 
 .add-button {
-  background: #89c299;
+  background: #bce0c6;
   color: #1a3a23;
   border-radius: 26px;
   border: 2px solid #1a3a23;
@@ -86,7 +86,7 @@
 
 .add-button:active {
   background-color: #1a3a23;
-  color: #c2eace;
+  color: #def1e4;
 }
 
 .favorite-heart {
